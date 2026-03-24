@@ -1,0 +1,48 @@
+<div class="bx-def-bc-margin">
+	<link href="<bx_url_root />templates/base/css/forms_adv.css" rel="stylesheet" type="text/css" />
+	<form name="mem_levels" id="mem_levels" action="" class="form_advanced">
+	
+		<table id="mbs_table">
+			<tr><th class="header">&nbsp</th>
+				<th class="header">Image</th>
+				<th class="header">Membership Name</th>
+				<th class="header">Price</th>
+				<th class="header">Length</th>
+				<!--<th class="header">Trial</th>-->
+				<th class="header">Payment Type</th>
+				<th class="header">Status</th>
+			</tr>
+			<bx_repeat:items>
+				<tr id="mlevel" class="__tr_class__">
+					<td class="checkbox"><input type="radio" name="membership" id="__ID__" value="__ID__" /></td>
+					<td class="icon"><img src="__Icon__" width="40" height="40"/></td>
+					<td class="name"><h4>__Name__</h4></td>
+					<td class="price">__Price__</td>	
+					<td class="days">__Length__</td>
+					<!--<td class="days">__Trial__</td>-->
+					<td class="auto">__Auto__</td>
+					<td class="auto">__Active__</td>
+				</tr>
+			</bx_repeat:items>
+		</table>
+	__controls__
+	</form>
+	
+	<div style="background-image: url('<bx_url_root />templates/base/images/loading_bg.png');" class="loading" >
+		<img src="<bx_url_root />templates/base/images/loading.gif">
+	</div>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('tr#mlevel').click(function(){
+			$('input[type=radio]',this).attr('checked','checked');
+		});
+	});
+	</script>
+	<script type="text/javascript">
+	$('input[name=adm_mlevels_delete]').click(function(event){
+		if(!confirm('Are you sure you want to delete this membership?'))
+			event.preventDefault();
+	});
+	</script>
+</div>

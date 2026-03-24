@@ -1,0 +1,74 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="bx-twig-unit bx-twig-unit-admin modzzz_listing_unit bx-def-margin-top-auto">
+ 
+	<div class="bx_sys_unit_checkbox" >
+		<input type="checkbox" name="entry[]" value="__id__" />
+	</div>   
+	 	
+    <div class="bx-twig-unit-info">
+    
+    
+
+        <div class="bx-twig-unit-title bx-def-font-h3 bx-twig-checkbox-pad">
+        
+         
+           
+        
+           <bx_if:pay><a href="__pay_url__">&nbsp&nbsp <span style="font-size:24px;"><i class="sys-icon cc-paypal"></i></span> 
+           <span style="font-size:24px;">  <i class="fa fa-hand-o-right"></i> </span>
+            <bx_text:_modzzz_listing_pay_invoice />
+            <span style="font-size:24px;">  <i class="fa fa-hand-o-left"></i> </span></a> 
+             <br />&nbsp&nbsp </bx_if:pay> <i class="sys-icon briefcase"></i> <span style="font-size:14px;"> __package__ </span>
+             
+            
+             
+            <br />&nbsp&nbsp&nbsp <a href="__listing_url__"><span style="font-size:16px;"> <i class="sys-icon building"></i>__listing_title__</span></a> 
+		
+        
+        
+        </div>
+		<div class="clear_both"></div>
+		   
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class="sys-icon sliders"></i> <bx_text:_modzzz_listing_invoice_id />:</span> __invoice_id__
+		</div>
+		<div class="clear_both"></div>
+
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class="sys-icon sliders"></i> <bx_text:_modzzz_listing_invoice_no />:</span> __invoice_no__
+		</div>
+		<div class="clear_both"></div>
+ 
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp<i class="sys-icon user"></i> <bx_text:_modzzz_listing_purchaser />:</span> <a href="__author_url__">__author__</a>
+		</div>
+		<div class="clear_both"></div>
+
+        <div class="bx-twig-unit-title">  
+			<span class="bx-twig-unit-caption">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp<i class="sys-icon credit-card"></i> <bx_text:_modzzz_listing_total />:</span> __currency_sign____total__
+		</div>
+		<div class="clear_both"></div>
+  
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class="sys-icon calendar"></i> <bx_text:_modzzz_listing_invoice_date />:</span> __create_date__
+		</div>
+		<div class="clear_both"></div>
+
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class="sys-icon calendar"></i> <bx_text:_modzzz_listing_invoice_due_date />:</span> __due_date__
+		</div>
+		<div class="clear_both"></div>
+
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp<i class="sys-icon lock"></i> <bx_text:_modzzz_listing_status />:</span> __invoice_status__
+		</div>  
+		<div class="clear_both"></div>
+
+	</div> 
+	<div class="clear_both"></div>
+</div>
+<br />
+ 
+
+ 

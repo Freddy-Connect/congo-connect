@@ -1,0 +1,95 @@
+<script type="text/javascript">
+function deleterow(id) {
+	$(".slidearr"+id).css('opacity',0.4);
+	$.ajax({
+	type:"post",
+	url:"__site_url__modules/?r=giveme/deleteslider",
+	data:"&id="+id,
+	success:function(result){
+		$(".slidearr"+id).remove();
+	}
+	})
+}
+
+$("input[value='save_slidersettings']").click(function(){
+    $(this).prop("disabled",true);
+
+});
+function reloadurl() {
+	location.href='<bx_url_root />modules/?r=giveme/administration/slider/resource';
+}
+$(document).ready(function(e) {
+    setTimeout(function(){
+        $('.message').fadeOut('slow');
+    },5000)
+});
+</script>
+
+<div id="tabsholder">
+<div class="logo clsClearfix">
+ <h1 class="clsFloatLeft"><a target="_blank" href="http://www.bsetec.com"><img src="<bx_url_root />modules/bsetec/giveme/templates/base/images/logo.png"></a></h1>
+ <div class="themepanel clsFloatRight"><a target="_blank" href="http://www.bsetec.com">Theme-panel</a></div>
+ <div class="clear"></div>
+ </div>
+<div class="panelwhole">
+<bx_injection:injection_bsetecgivemefootermenu />
+<div class="contents marginbot">
+<div class="tabscontent">
+<div id="tabssecond">
+<ul>
+<li><a href="<bx_url_root />modules/?r=giveme/administration/slider">Slider Settings</a></li>
+<li class="active"><a href="<bx_url_root />modules/?r=giveme/administration/slider/resource">Slider Resources</a></li>
+</ul>
+<div class="tabcontentinner slider">
+	
+<form  enctype="multipart/form-data" action="<bx_url_root />modules/?r=giveme/administration/slider/resource/__id__" method="post">
+<div class="createslide">
+<p class="message">__message__</p>
+<div class="formrowwhole">
+
+<div class="formrow">
+				<div class="formrowcotent-left clsFloatLeft">	<label>Slider image</label> </div>
+				<div class="formrowcotent-right clsFloatLeft">	
+                <div class="formrow">			
+					<input type="file" value="" name="file" id="file-slider">
+                    <input type="hidden" name="slider_img" value="__slider__" />
+                    __sliderimg__
+                </div>  
+                
+                 </div>
+                 <div class="clear"></div>
+</div>
+
+                    <div class="formrow">
+					  <div class="formrowcotent-left clsFloatLeft"><label>slider Text </label></div>
+                    
+                     <div class="formrowcotent-right clsFloatLeft"><textarea type="text" name="giveme_bigtxt_one">__text__</textarea></div>
+                     <div class="clear"></div>
+                    </div>		
+					 <div class="formrow" style="display: none"> <div class="formrowcotent-left clsFloatLeft"><label>Data Link</label></div>
+                     <div class="formrowcotent-right clsFloatLeft"> <input type="text" value="__link__" name="giveme_datalnk_one" >	
+                     </div>
+                     <div class="clear"></div>
+                    </div>		
+   </div>      
+<div class="formrow">		
+             <div class="formrowcotent-left clsFloatLeft"><label>&nbsp; </label></div>
+           <div class="formrowcotent-right clsFloatLeft"> 
+				<input type="submit" value="save" name="save_slidersettings">
+                __cancel__
+                </div>
+                 <div class="clear"></div>		
+  
+                </div>	
+</div>
+
+			 		 
+</form>
+__data__
+</div>
+</div>
+
+</div>
+</div>
+</div> 
+</div>

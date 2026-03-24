@@ -1,0 +1,47 @@
+<style>
+.aqb_asf_list {
+	width: 92px;
+	height: 21px;
+	overflow:hidden;
+	padding:7px 5px 0 20px;
+	white-space:nowrap;
+	background: url(<bx_image_url:custom_item_bg.gif />) no-repeat;
+}
+.aqb_asf_list a {
+	color:#6666CC;
+	display:block;
+	overflow:hidden;
+	text-decoration:none;
+	font-size: 11px;
+}
+</style>
+<script language="javascript">
+function showPropertiesForm(iFieldID) {
+	$('#aqb_loading_field').bx_loading();
+
+	var oDate = new Date();
+
+	if ($('#aqb_asf_popup').length) {
+        $('#aqb_asf_popup').remove();
+    }
+
+    $.get('__base_url__action_get_properties_form/', {field:iFieldID, time:oDate.getTime()}, function(sResponse) {
+        $(sResponse).prependTo('body').dolPopup({fog: {color: '#444', opacity: .7}, closeOnOuterClick: true});
+        $('#aqb_loading_field').bx_loading();
+    }, 'html');
+}
+function saveFieldProperties(oForm) {
+	$('#aqb_form_loading').bx_loading();
+
+	$.post('__base_url__action_save_properties/', $(oForm).serialize(), function(sResponse) {
+		$('#aqb_asf_form').html(sResponse);
+		setTimeout('$(\'#aqb_asf_popup\').dolPopupHide();', 1000);
+    }, 'html');
+}
+</script>
+<div class="bx-def-padding" style="position: relative;">
+	<bx_repeat:fields>
+		<div class="aqb_asf_list"><a href="#" onclick="showPropertiesForm(__ID__); return false;">__Name__</a></div>
+	</bx_repeat:fields>
+	__aqb_loading_field__
+</div>

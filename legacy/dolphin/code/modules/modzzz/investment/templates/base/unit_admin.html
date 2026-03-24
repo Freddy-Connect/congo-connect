@@ -1,0 +1,143 @@
+<!-- freddy ajoiut pour flasher les icones
+ <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<div class="bx-twig-unit bx-twig-unit-admin modzzz_investment_unit bx-def-margin-top-auto">
+
+    <div class="bx_sys_unit_checkbox bx-def-round-corners">
+        <input type="checkbox" name="entry[]" value="__id__" />
+    </div>
+    
+    
+   <div class="bx-twig-unit-thumb-cont bx-def-margin-sec-right">
+        <a href="__investment_url__"><img class="bx-twig-unit-thumb bx-def-round-corners " src="__thumb_url__"></a>
+    </div>
+    
+    
+ 
+
+    <div class="bx-twig-unit-info">
+    
+    
+    
+      <div class="CSSProjetHome" >
+   <table >
+       <tr>
+        <td >
+     <div class="bx-twig-unit-line bx-twig-unit-special">
+			
+			<i class="sys-icon briefcase"></i> __investment_type__ 
+		</div>
+    
+     <div class="bx-twig-unit-title bx-def-font-h2"> 
+			<!--<span class="posttype">__investment_type__:</span>-->
+             <a class="actions" href="__investment_url__">__investment_title__</a><bx_if:capital>  <b>(__capital__)</b>   </bx_if:capital>
+        </div>
+    
+     </td>
+  
+      </tr>   
+       
+    
+     </table>
+    </div>
+    
+    
+    
+    
+    
+     <div class="CSSBusinessListingHome" >
+   <table >
+       <tr>
+        <td >
+    
+        
+   <div>
+		__post_uthumb__  &nbsp;<a href="__author_url__">   __author__</a> 
+	</div>
+  
+       
+        
+         </td>
+  
+      </tr>   
+      
+       <tr>
+        <td >
+        
+        
+ 
+       <!-- <div class="bx-twig-unit-title bx-def-font-h2">
+			<bx_if:why>
+				<div class="unit_why">
+					<span class="attribute-title"><bx_text:_modzzz_investment_why /> </span>
+					<img src="<bx_icon_url:start_quote_gray.gif />" /> 
+						__why__
+					<img src="<bx_icon_url:end_quote_gray.gif />" /> 
+				</div>
+			</bx_if:why>
+        </div>
+        -->
+ 
+     
+       <!-- freddy modif
+       <div class="bx-twig-unit-line bx-twig-unit-desc">__snippet_text__</div> -->
+        <div class="listing_description">__snippet_text__</div>
+        
+
+        <div class="bx-twig-unit-line bx-twig-unit-special">
+			<!--__fans_count__ <bx_text:_modzzz_investment_fans />
+			__comments_count__ <bx_text:_comments />-->
+		  
+			<bx_text:_Categories />: __all_categories__ 
+		</div>
+        
+        
+  
+        <bx_if:full>
+
+           
+
+            <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+             
+              <span class="bullet">&#183;</span> <!--<bx_text:_From />--> <i class="sys-icon clock-o"></i>   __created__ 
+            </div>
+
+        </bx_if:full>
+        
+        </td>
+  
+      </tr>   
+      
+       <tr>
+        <td >
+        
+         <div>          
+     <button class="InscriptionSearch"   onclick="window.open ('__investment_url__','_self');">
+		  <i class="sys-icon sign-out"> &nbsp;</i><strong><bx_text:_modzzz_investment_action_en_savoir_plus />  </strong>
+				</button>
+     </div>
+     
+      <div class="bx-twig-unit-line bx-twig-unit-rate">
+                __rate__
+            </div>
+        
+          </td>
+  
+      </tr>   
+       
+    
+     </table>
+    </div>
+    
+    
+        <div class="clear_both"></div> 
+        
+        
+        
+
+    </div>    
+
+</div>

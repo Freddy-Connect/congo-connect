@@ -1,0 +1,113 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+   
+    <div class="CSSEspaceEmploi" >
+   <table >
+       <tr>
+      <td >
+     <div style="text-align:left;">
+      <a href="member.php"  title="__Business_caption__">
+       <i class="sys-icon dashboard"> </i> <i class="sys-icon user"> </i> __FirstName__ __LastName__
+       </a>
+       </div>
+      <div class="biz-topbar">
+      
+  <div class="biz-topbar__left">
+    __thumbnail__
+    <div class="biz-topbar__stats">
+      <!-- mini-stats ici -->
+      <div class="mini-stats">
+       
+        <bx_if:JobsCountPositive> 
+         <a href="m/jobs/browse/my"  title="__EmploiCaption__">
+         <div class="mini-stats__chip"><i class="fa-solid fa-briefcase"></i> <span class="mini-stats__txt">__EmploiCaption__</span>: <span class="mini-stats__num"> <span class="biz-stat-number">__EmploiCount__</span></span>
+        </div>
+        </a>
+        </bx_if:JobsCountPositive> 
+        
+        
+        
+          <!--
+           <bx_if:JobsCountZero> 
+         <a href="__page_url__"  title="__Business_caption_survol__">
+         <div class="mini-stats__chip"><i class="fa-solid fa-graduation-cap"></i><span class="mini-stats__num">__EmploiCount__</span><span class="mini-stats__txt">__EmploiCaption__</span>
+        </div>
+        </a>
+        </bx_if:JobsCountZero> 
+        -->
+        
+        
+         <bx_if:MesCandidatures> 
+         <a href="m/jobs/browse/application"  title="__ApplyCaption__">
+         <div class="mini-stats__chip"><i class="fa-solid fa-paper-plane"></i> <span class="mini-stats__txt">__ApplyCaption__</span>: <span class="mini-stats__num"> <span class="biz-stat-number">__jobapply__</span></span>
+        </div>
+        </a>
+        </bx_if:MesCandidatures> 
+        
+        
+         <bx_if:FavoriteJobs> 
+        <a href="m/jobs/browse/favorite" target="_self"  title="__FavoriteCaption__">
+        <div class="mini-stats__chip"><i class="fa-solid fa-heart"></i> <span class="mini-stats__txt">__FavoriteCaption__</span>: <span class="mini-stats__num"> <span class="biz-stat-number">__FavoriteJobs__</span></span>
+        </div>
+        </a>
+        </bx_if:FavoriteJobs> 
+        
+      
+      
+  <div class="biz-actions">      
+  <div style="margin-bottom:10px;">
+     <button class="biz-publier biz-publier-primary"  onclick="window.open ('m/jobs/browse/my&filter=add_job','_self');">
+            <i class="fa fa-desktop"></i> &nbsp;<i class="fa fa-briefcase"></i>  &nbsp;<bx_text:_modzzz_jobs_ajouter_job /> 
+           </button>
+           </div>
+           
+           
+            <div style="margin-bottom:10px;">
+           <button class="biz-rechercher biz-rechercher-primary"  onclick="window.open ('m/jobs/search','_self');">
+			     <i class="sys-icon search"> </i>&nbsp; <bx_text:_modzzz_jobs_titre_home_page_search /> 
+		    </button>
+           </div> 
+           
+           
+    </div>
+    
+    
+    
+    
+       
+    
+        
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--
+  <div style="margin-bottom:10px;">
+           <button class="ConnectNetworkBlue"  onclick="window.open ('m/jobs/search','_self');">
+			     <i class="sys-icon search"> </i> <bx_text:_modzzz_jobs_titre_home_page_search /> 
+		    </button>
+           </div> 
+           -->
+   
+   
+    
+ 
+      
+      
+      
+     
+       </td>
+      </tr>   
+     </table>
+    </div>
+ 
+    
+   
+    
+    
+        <div class="clear_both"></div> 
+        
+    

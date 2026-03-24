@@ -1,0 +1,50 @@
+div.activity_spacer{
+   margin-bottom:3px;margin: 0; padding: 5px 0px 5px 0px; 
+}  
+ 
+div.activity_date {
+	float: right; 
+	color: #999999;
+	padding-left: 5px;
+}
+
+div.activity_desc {
+	float: left; 
+	padding-left: 5px;
+} 
+ 
+.bx-twig-unit-icon-cont {
+    float:left;
+    display:table-cell;
+    top:0;
+    left:0;
+    width:70px;
+    text-align:center;
+    vertical-align:top;
+    padding-left:2px;
+    padding-bottom:3px;
+}
+
+.bx-twig-unit-icon-cont img {
+    background-color:white;
+}
+
+/*
+.bx-twig-unit-caption {
+	color:green;
+}
+
+.bx-twig-checkbox-pad {
+	margin-left:30px;
+}
+ 
+.bx-twig-unit-desc {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.bx-twig-unit-comment{
+    margin-bottom:5px;
+}
+*/
+

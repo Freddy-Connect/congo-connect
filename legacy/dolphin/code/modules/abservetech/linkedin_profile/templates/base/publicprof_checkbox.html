@@ -1,0 +1,48 @@
+<div class="each_container" >
+
+
+<p><bx_text:_abs_plinkin_Control_how_you_appear_when_people_search_for_you_on_Google_Yahoo_Bing_etc /></p>
+<form name="profile_settings" method="post" action="">
+
+
+
+<input type="radio" name="is_viewable" class="is_viewable __prv_checked__" value="private" __prv_checked__><bx_text:_abs_plinkin_Make_my_public_profile_visible_to_no_one /> <br>
+<input type="radio" name="is_viewable" class="is_viewable __pub_checked__" value="public" __pub_checked__><bx_text:_abs_plinkin_Make_my_public_profile_visible_to_everyone />
+
+ </br></br>
+
+<div class="settings_group">
+<bx_if:is_picture>
+<input name="picture" id="picture" type="checkbox" data-div="" value="1" __picture_style__> <bx_text:_abs_plinkin_picture /> </br>
+</bx_if:is_picture>
+<bx_if:is_headline>
+<input name="headline" id="headline" type="checkbox"  value="1" __headline_style__> <bx_text:_abs_plinkin_headline /> </br>
+</bx_if:is_headline>
+<bx_if:is_curpos>
+<input name="currentposition" id="curr_pos" type="checkbox" data-div="current_position" value="1" __curpos_style__> <bx_text:_abs_plinkin_current_position /></br>
+</bx_if:is_curpos>
+<bx_if:is_pastpos>
+<input name="pastposition" id="past_pos" type="checkbox" data-div="past_position" value="1" __pastpos_style__> <bx_text:_abs_plinkin_past_position /></br>
+</bx_if:is_pastpos>
+<bx_if:is_edu>
+<input name="education" id="edu" type="checkbox" data-div="edu_display_area" value="1" __education_style__><bx_text:_abs_plinkin_education /> </br>
+</bx_if:is_edu>
+<bx_if:is_skill>
+<input name="skill" id="skills" type="checkbox" data-div="skill_display_area" value="1" __skill_style__>__skills__ </br>
+</bx_if:is_skill>
+<bx_if:is_lang>
+<input name="language" id="lang" type="checkbox" data-div="lang_display_area" value="1" __lang_style__> <bx_text:_abs_plinkin_languages /> </br>
+</bx_if:is_lang>
+<bx_if:is_project>
+<input name="project" id="project" type="checkbox" data-div="projects_display_area" value="1" __project_style__> <bx_text:_abs_plinkin_projects /> </br>
+</bx_if:is_project>
+<bx_if:is_certs>
+<input name="certificate" id="cert" type="checkbox" data-div="certicates_display_area" value="1" __cert_style__> <bx_text:_abs_plinkin_certificates /> </br>
+</bx_if:is_certs>
+</br>
+</div>
+<input type= "submit" name="button1" value="<bx_text:_abs_plinkin_save />"  id = "save">
+<input type= "button" name="button2" value="<bx_text:_abs_plinkin_cancel />" id="cancel">
+</form>
+
+</div>

@@ -1,0 +1,105 @@
+<div class="bx-twig-unit modzzz_charity_unit bx-def-margin-top-auto">
+
+    <div class="bx-twig-unit-title bx-def-font-h1"> 
+     
+
+             <a href="__charity_url__">__charity_title__</a>
+        </div>
+
+    
+    <div class="bx-twig-unit-thumb-cont bx-def-margin-sec-right">
+        <a href="__charity_url__"><img class="bx-twig-unit-thumb bx-def-round-corners bx-def-shadow" src="__thumb_url__"></a>
+    </div>
+
+    <div class="bx-twig-unit-info">
+
+       <div class="CSSProfessionalUnit">
+    
+       <table>
+       
+         <tr>
+         <td>
+  
+        
+        <div class="bx-twig-unit-line"> <span style="font-size:18px;"><b>  <i class="sys-icon map-marker"></i>  __city__</b> </span>__drapeau__  __zip__</div>  
+        <!-- <div class="bx-twig-unit-line"> <i class="sys-icon map"></i> <bx_text:_modzzz_charity_zip />: __zip__ </div>  -->
+        
+      <!--  <div class="bx-twig-unit-line"> <i class="sys-icon map"></i> <bx_text:_modzzz_charity_state />: <b> __state__</b> </div>     -->   
+ 
+<!--
+        <div class="bx-twig-unit-line bx-twig-unit-special"> 
+			<bx_text:_Categories />: __all_categories__ 
+ 		</div>
+        
+        
+
+        <div class="bx-twig-unit-line bx-twig-unit-special">
+			 __fans_count__ <bx_text:_modzzz_charity_fans />&nbsp;&nbsp;<span class="bullet">&#183;</span>
+			__comments_count__ <bx_text:_comments />
+		</div>
+    -->
+    
+      </td>
+        </tr>
+         <tr>
+         <td>
+    
+     <bx_if:businesstelephone>
+				<div class="bx-twig-unit-line"> <i class="sys-icon phone"></i>  __businesstelephone__ </div>  
+				
+		</bx_if:businesstelephone> 
+        
+        
+          <bx_if:businesswebsite>
+				<div class="bx-twig-unit-line"> <i class="sys-icon desktop"></i>  __businesswebsite__ </div>  
+				
+		</bx_if:businesswebsite> 
+    
+    
+    
+
+      </td>
+        </tr>
+         <tr>
+         <td>
+     
+             <div class="bx-twig-unit-line bx-twig-unit-desc"><a href="__charity_url__">__snippet_text__</a></div>
+
+      <div>          
+     <button class="ConnectNetwork_MarginTop"   onclick="window.open ('__charity_url__','_self');">
+		  <i class="sys-icon sign-out"> &nbsp;</i><strong><bx_text:_modzzz_listing_action_en_savoir_plus />  </strong>
+				</button>
+     </div>
+     
+     </td>
+        </tr>
+         <tr>
+         <td> 
+     
+     
+        <bx_if:full>
+ <!--
+            <div class="bx-twig-unit-line bx-twig-unit-rate">
+                __rate__
+            </div>
+            -->
+
+            <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+               <!-- __created__ <span class="bullet">&#183;</span> --> <!--<bx_text:_From />--> <i class="sys-icon user"></i> <a href="__author_url__">__author__</a>
+            </div>
+
+        </bx_if:full>
+        
+        
+         </td>
+                       
+          </tr>
+     </table>
+   
+    </div>
+        <div class="clear_both"></div>
+
+    </div>    
+
+</div>
+

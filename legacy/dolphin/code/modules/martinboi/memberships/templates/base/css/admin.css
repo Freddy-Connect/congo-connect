@@ -1,0 +1,152 @@
+div.loading {width: 89px;height: 64px;position: absolute;z-index: 777;display: none;background-position: center;background-repeat: no-repeat;}
+div.loading img {width: 31px;height: 31px;margin: 16px 0px 0px 29px;}
+
+/** Settings Page **/
+table.custom{
+	width:100%;
+	background:#ECECEC!important;
+}
+td.custom_caption{
+	width:125px!important;
+	padding-left:15px!important;
+	line-height:30px;
+}
+td.custom_value{
+	line-height:35px;
+	padding-left:15px!important;
+}
+
+/** Membership Setup Page **/
+table#mbs_table{
+	width:100%;
+	border-collapse:collapse; 
+}
+th.header{
+    background-color:#efefef;
+	text-align:left;
+	padding:13px 0px;
+	border-bottom:1px solid #e1e1e1;
+}
+table tbody tr.light {
+    background-color:white;
+}
+
+table tbody tr.dark {
+    border:1px solid #efefef;
+}
+
+table tbody tr.light:hover,
+table tbody tr.dark:hover {
+    background-color: #F4F7FA;
+}
+td.icon{
+	width:80px!important;
+}
+td.name{
+
+}
+
+/** Edit Membership Page **/
+	
+#mlevel_desc{
+	height:50px;
+}								
+table.actions{
+	width:100%;
+	border-collapse:collapse;
+}
+td.enable_action,
+th.first{
+	text-align:center!important;
+}
+table.actions tr{
+	background-color: #F4F7FA;
+ 	border:1px solid #DADADA;
+}
+table.actions tbody td{
+	padding:4px;
+}
+table.actions th.header{
+    background-color:#efefef;
+	text-align:left;
+	padding:8px 0px;
+	border-bottom:1px solid #e1e1e1;
+}
+input.action_input{
+	background:url(../images/inputbg.png) 0 0 no-repeat;
+	border:none;
+	height:13px;
+	overflow:visible;
+	line-height:13px;
+	padding:8px 7px;
+	width:55px;
+	font-size:13px;
+}
+.back_button{
+	margin:20px 0px;
+}
+
+/** Subscriptions Page **/
+.subs_main{
+	width:850px;
+}
+/** Payments Page **/
+
+.stats_left_column{
+	width:50%;
+	float:left;
+}
+.stats_right_column{
+	width:50%;
+	float:right;
+}
+.box{
+	background-color:#ECECEC;
+	padding:5px 15px 25px 15px;
+	margin:5px;
+}
+span.cash{
+	font-weight:bold;
+	font-size:18px;
+	color:#197114;
+}
+
+/** Content Control Page **/
+.top_menu_item,
+.custom_menu_item,
+.system_menu_item {
+	width: 92px;
+	height: 21px;
+	overflow:hidden;
+	padding:7px 5px 0 20px;
+	white-space:nowrap;
+}
+.top_menu_item {
+	background: url(../images/top_item_bg.gif) no-repeat;
+}
+.custom_menu_item {
+	background: url(../images/custom_item_bg.gif) no-repeat;
+}
+.system_menu_item {
+	background: url(../images/system_item_bg.gif) no-repeat;
+}
+.top_menu_item a,
+.custom_menu_item a,
+.system_menu_item a{
+	color:#6666CC;
+	display:block;
+	overflow:hidden;
+	text-decoration:none;
+	font-size: 11px;
+}
+.invalid{
+	font-size:16px;
+	margin:0px auto;
+	padding:40px;
+}
+.invalid span{
+	background:#FBAF34;
+	font-weight:bold;
+	padding:5px;
+}
+

@@ -1,0 +1,99 @@
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+    <script src="<bx_url_root />templates/base/js/jquery-ui-1.10.4.custom.js"></script> 
+<div id="sys_search_wrapper" class="sys-search-wrapper">
+    <div id="sys_search" class="sys-search bx-def-margin-left bx-def-round-corners-with-border">
+        <form action="searchKeyword.php" method="get" name="SearchForm">
+            <input type="text" name="keyword" id="keyword" value="" placeholder="__text__" class="bx-def-font" />
+        </form>
+    </div>
+</div>
+        <div class="scroll_hide"><div class="move_auto"></div></div>
+<style>
+  .hide{
+    display:none;
+  }
+  div div.sys_main_menu {
+     z-index: 0;
+  }
+</style>
+<script type="text/javascript">
+$(document).ready(function () {
+
+
+      //alert();
+    $( "#keyword" ).autocomplete({
+      delay: 0,
+      /*source:data,*/
+      source: function( request, response ) {
+        $.ajax({
+          url: "<bx_url_root />AbsSearch.php/",
+        dataType: "json",
+          data: {
+            q: request.term
+          },
+          success: function( data ) {
+            //alert(data);
+            response( data );
+          }
+        });
+      },
+      autoFocus: true ,
+       select: function( event, ui ) { 
+            window.location.href = ui.item.value;
+        }
+
+    }).data('ui-autocomplete')._renderItem = function(ul, item) {
+     var html, paragraph;
+     html = '<a href="' + item.value + '"> ' + item.label + '</a>  ';
+     paragraph = '<p class="'+ item.class +'">'+ item.title +'</p>';
+     html = paragraph + html;
+     return $('<li>').append(html).appendTo(ul);
+    };
+$('.ui-autocomplete').insertAfter('.move_auto');
+  }
+);
+</script>
+<style type="text/css">
+p.hide {display: none;}
+p.show {font-weight: bold;margin-bottom: 0;border-bottom: 1px solid #aaaaaa;background: rgba(225,225,225,.7);padding-left: 13px;width: 100%;}
+.scroll_hide .ui-widget-content {max-height: 250px;overflow: auto;/*width: 350px !important;*/position: absolute;}
+div.login_ajax_wrap .ui-widget-content {width: auto !important;overflow: visible;max-height: none !important;}
+div#sys_search {margin-left: 0;}
+.scroll_hide .ui-state-hover, .scroll_hide .ui-widget-content .ui-state-hover,.scroll_hide .ui-widget-header .ui-state-hover, .scroll_hide .ui-state-focus, .scroll_hide .ui-widget-content .ui-state-focus, .scroll_hide .ui-widget-header .ui-state-focus {background: #EEEEEE;border-color: #D8D8D8;color: #000;}
+#sys_search_wrapper {
+    z-index: 10;
+}
+.scroll_hide .ui-menu .ui-menu-item a {
+    /*padding: 2px 0.85em;*/
+    }
+.scroll_hide .ui-widget-content {
+    max-height: 250px;
+    overflow: auto;    overflow-x: hidden;
+    width: 107% !important;
+    position: relative;
+    box-sizing: border-box;
+    left: 0 !important;
+    top: 0 !important;
+    text-align: left;    padding-right: 7% !important;    border-color: transparent;
+}
+.scroll_hide {
+    width: 100%;
+    position: absolute;
+    top: 37px;
+    overflow: hidden;
+    z-index: 5;
+    max-height: 293px;
+    text-overflow: ellipsis;    border-radius: 5px;    box-shadow: 0 1px 4px 0 rgba(0,0,0,.4);
+}
+.scroll_hide .ui-widget-content .ui-menu-item a.ui-corner-all {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div.sys-service-menu div.sys-sm-item.sys-smi-search{overflow: visible;height: auto;}
+p.show {padding-left: 17px;}
+.scroll_hide .ui-widget-content{border: 0px;padding: 0 7% 0 0 !important;}
+.scroll_hide .ui-widget-content .ui-menu-item a.ui-corner-all{border-radius: 0;padding: 2px 10px;}
+div.sys_sub_menu.sys_sm_fixed, div.sys_sub_menu{z-index: 4;}
+</style>

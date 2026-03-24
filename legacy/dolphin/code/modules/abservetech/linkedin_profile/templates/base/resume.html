@@ -1,0 +1,83 @@
+<div>
+<bx_if:profile>
+ <div class="personal_info">
+  <h1 style="margin: 0px; padding: 5px 0px; font-family: Times;">__Name__</h1>
+  <div style="font-size: 21px; padding: 5px 0px; font-family: Times;">__usr_title__</div>
+  <div style="color: #999999; font-size: 23px; padding: 5px 0px; font-family: Times;">__usr_email__</div>
+ </div>
+ <div style="margin:20px 0 0; width:90%; height:1px;display:inline-block;border:0;border-top:1px solid;"></div>
+</bx_if:profile>
+<bx_if:summary>
+<div class="summary_info">
+<div style="color: #999999; font-size: 28px; padding: 5px 0px; font-family: Times;"><bx_text:_abs_plinkin_resume_summary />:</div>
+<div style="font-size: 16px; font-weight: normal; padding: 3px 0px; font-family: Times;">__summary_txt__</div>
+</div>
+</bx_if:summary>
+<bx_if:experience>
+ <div class="experience_info">
+  <div style="color: #999999; font-size: 28px; padding: 5px 0px; font-family: Times;"><bx_text:_abs_plinkin_resume_experience />:</div>
+  <bx_repeat:exps>
+   <div style="font-size: 20px; font-weight: bold; padding: 10px 0px 5px; font-family: Times;">__title__ <bx_text:_abs_plinkin_at /> __comp_name__</div>
+   <div style="padding: 5px 0px; font-size: 21px; font-family: Times;">__period__</div>
+  </bx_repeat:exps>
+ </div>
+ <div style="margin:20px 0 0; width:90%; height:1px;display:inline-block;border:0;border-top:1px solid;"></div>
+</bx_if:experience>
+<bx_if:skills>
+ <div class="skills">
+  <div style="color: #999999; font-size: 28px; padding: 5px 0px; font-family: Times;"><bx_text:_abs_plinkin_resume_skills />:</div>
+  <bx_repeat:skills>
+   <div style="font-size: 20px; font-weight: bold; font-family: Times; padding: 3px 0px;">__skill_name__</div>
+  </bx_repeat:skills>
+ </div>
+ <div style="margin:20px 0 0; width:90%; height:1px;display:inline-block;border:0;border-top:1px solid;"></div>
+</bx_if:skills>
+<bx_if:education>
+ <div class="edu_info">
+  <div style="color: #999999; font-size: 28px; padding: 5px 0px; font-family: Times;"><bx_text:_abs_plinkin_resume_eudcation />:</div>
+  <bx_repeat:edus>
+   <div style="font-size: 20px; font-weight: bold; padding: 3px 0px; font-family: Times;">__school_name__</div>
+   <div style="padding: 3px 0px; font-size: 21px; font-family: Times;">__type__, __fieldofstudy__, __period__</div>
+   <div style="padding: 3px 0px; font-size: 21px; font-family: Times;">__grade__</div>
+  </bx_repeat:edus>
+ </div>
+ <div style="margin:20px 0 0; width:90%; height:1px;display:inline-block;border:0;border-top:1px solid;"></div>
+</bx_if:education>
+<bx_if:certificate>
+ <div class="cert_info">
+  <div style="color: #999999; font-size: 28px; padding: 5px 0px; font-family: Times;"><bx_text:_abs_plinkin_resume_certificates />:</div>
+  <bx_repeat:certs>
+   <div style="font-size: 20px; font-weight: bold; padding: 4px 0px; font-family: Times;">__cert_name__</div>
+   <div style="padding: 3px 0px; font-family: Times; color: rgb(102, 102, 102); font-size: 20px;">__cert_authority__ &nbsp; License __cert_license__&nbsp; __cert_period__</div>
+  </bx_repeat:certs>
+ </div>
+ <div style="margin:20px 0 0; width:90%; height:1px;display:inline-block;border:0;border-top:1px solid;"></div>
+</bx_if:certificate>
+<bx_if:language>
+ <div class="lang_info">
+  <div style="color: #999999; font-size: 28px; padding: 5px 0px; font-family: Times;"><bx_text:_abs_plinkin_resume_languages />:</div>
+  <bx_repeat:langs>
+      <div style="font-size: 20px; font-weight: bold; padding: 4px 0px; font-family: Times;width: 50%;float: left;">__lang__</div>
+      <div style="padding: 3px 0px; font-family: Times; color: rgb(102, 102, 102); font-size: 20px;width: 50%;float: left;">(__Proficiency__)</div>
+  </bx_repeat:langs>
+ </div>
+ <div style="margin:20px 0 0; width:90%; height:1px;display:inline-block;border:0;border-top:1px solid;"></div>
+</bx_if:language>
+<bx_if:project>
+ <div class="project_info" >
+  <div style="color: #999999; font-size: 28px; padding: 5px 0px; font-family: Times;"><bx_text:_abs_plinkin_resume_projects />:</div>
+  <bx_repeat:projects>
+   <div style="font-size: 20px; font-weight: bold; padding: 4px 0px; font-family: Times;">__project_name__</div>
+   <div style="font-size: 21px; padding: 5px 0px; font-family: Times;">__project_period__</div>
+   <div style="font-size: 21px; padding: 5px 0px; font-family: Times;"><bx_text:_abs_plinkin_pdf_project_role />: __project_occupation__</div>
+   <div style="font-size: 21px; padding: 5px 0px; font-family: Times;"><bx_text:_abs_plinkin_pdf_Members />: __project_team__</div>
+   <div style="padding: 3px 0px; font-family: Times; color: rgb(102, 102, 102); font-size: 20px;">Description: __project_desc__</div>
+  </bx_repeat:projects>
+ </div>
+ <div style="margin:20px 0 0; width:90%; height:1px;display:inline-block;border:0;border-top:1px solid;"></div>
+</bx_if:project>
+<div class="footer_info">
+  <div style="color: rgb(153, 153, 153); font-weight: bold; font-family: Helvetica; font-size: 27px; padding: 20px 0px;">__site_title__</div><br><br>
+  <a style="text-decoration: none; font-size: 20px; font-family: Times;" href="__profile_url__"><bx_text:_abs_plinkin_contact /> __nickname__ <bx_text:_abs_plinkin_on /> __site_title__</a>
+</div>
+</div>

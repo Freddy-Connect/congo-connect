@@ -1,0 +1,329 @@
+/***************************************************************************
+* 
+*     copyright            : (C) 2009 AQB Soft
+*     website              : http://www.aqbsoft.com
+*      
+* IMPORTANT: This is a commercial product made by AQB Soft. It cannot be modified for other than personal usage.
+* The "personal usage" means the product can be installed and set up for ONE domain name ONLY. 
+* To be able to use this product for another domain names you have to order another copy of this product (license).
+* 
+* This product cannot be redistributed for free or a fee without written permission from AQB Soft.
+* 
+* This notice may not be removed from the source code.
+* 
+***************************************************************************/
+
+.items-control-wrapper{
+	padding:20px;
+	position:relative;
+}
+ 
+.items-control-wrapper .form_advanced_table .colspan .input_wrapper{
+	width:100%;
+} 
+
+tr.header th{
+	background-color: lightgray;
+	padding: 5px 5px 5px 35px;
+    text-align: left;
+}
+
+table.items-levels-table td{
+	margin:2px;
+	text-align:center;
+	padding: 5px 5px 5px 35px;
+}
+
+tr.up_header td{
+	text-align:center;
+	font-weight: bold;
+	padding: 5px 5px 5px 5px;
+	text-transform: capitalize;
+}
+
+.items-control-wrapper .input_wrapper_textarea {
+	width:250px;
+	height:250px;
+}
+
+.items-control-wrapper .form_input_textarea{
+   height:250px;	
+}
+
+.items-members-wrapper{
+	position:relative;
+}
+
+.items-section {
+   width:100%;
+   height:auto;
+   border:1px solid #DADADA;
+}
+ 
+
+div.items-panel {
+	background-color:#EDEDED;
+	font-size:11px;
+	height:30px;
+	line-height:30px;
+}
+
+.order-select-right {
+	float:right;
+	padding:0 10px 0 0;
+}
+
+.order-select-left {
+	float:left;
+	padding-left:10px;
+	position:relative;
+}
+ 
+ 
+.items-wrapper{
+	position:relative;
+}
+
+
+.aff-auto-banner{
+	height:250px;
+	width:640px;
+	overflow: auto;
+}
+ 
+.aff-top-paginate{
+	position:absolute;
+	top:-30px;
+	width:auto;
+	border:0px solid red;
+	height:30px;
+}
+
+table.aff-banner-table tr{
+   	text-align:left;
+}
+
+
+table.aff-banner-table td{
+   	padding:2px 0;
+}
+
+table.aff-banner-table th{
+   	padding:2px 0;
+	text-align:center;
+}
+
+tr.aff-active td{
+	 text-align:center;	
+}
+ 
+ #tabs{
+   width:auto;    	
+}
+
+.ui-tabs .ui-tabs-nav li {
+	border-bottom-width:0 !important;
+	float:left;
+	margin:0 0.5em -1px 0;
+	padding:4px;
+	position:relative;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	border-bottom-width:0;
+	padding-bottom:1px;
+	background-color:#FFFFFF;
+}
+
+.ui-helper-clearfix {
+	display:block;
+	overflow:hidden;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+	background:none;
+	background-color:#F4F7FA;
+	border:1px solid #D3D3D3;
+	color:#555555;
+	font-weight:normal;
+	outline:medium none;
+}
+
+.ui-widget-content {
+	background:none;
+	border:none;
+}
+
+.ui-helper-reset {
+	border:0 none;
+	font-size:10px;
+	line-height:20px;
+	list-style:none outside none;
+	margin:3px;
+	outline:0 none;
+	text-decoration:none;
+}
+
+.ui-widget-header {
+   background:none;
+   background-color:#FFF; 
+   border:1px solid #BBB;
+   color:#222222;
+   font-weight:bold;
+}
+
+.ui-tabs .ui-tabs-hide {
+	display:none !important;
+} 
+
+#aqb_popup
+{
+  z-index:1000;	
+  display:block;
+}
+
+div.items-control-wrapper div.sys-loading{
+  z-index:900;		
+}
+
+.items-top-paginate
+{
+	position: relative;
+	width: auto;
+	border: 0px solid red;
+	max-height:2rem;
+	margin-top:0.2rem;
+}
+
+.items-top-paginate > div
+{
+	margin:0.5rem;
+	padding:0;
+}
+
+div.items-members-table{
+	margin-left:5px;
+}
+
+div.items-members-table-commission{
+	margin:0;
+}
+
+table.items-members-table tr{
+   	text-align:left;
+}
+
+
+table.items-members-table td{
+   	padding:2px 0;
+}
+
+table.items-members-table th{
+   	padding:2px 0;
+	text-align:left;
+}
+
+.items-active{
+	 text-align:left;	
+}
+
+
+.items-search {
+   width:100%;
+   height:auto;
+   overflow:hidden;
+   display:block;
+   margin-bottom:10px;
+}
+
+.items-member-section {
+   height:auto;
+   border:1px solid #DADADA;
+   position:relative;
+}
+ 
+div.items-control-panel {
+	background-color:#EDEDED;
+	font-size:11px;
+	height:40px;
+	line-height:30px;
+}
+
+div.items-control-panel  div.paginate_per_page span{
+	float: left;
+	margin-right: 0.5rem;
+	height: 2.5rem;
+	vertical-align: middle;
+}
+
+div.items-control-panel  div.paginate_per_page div
+{
+	float:left;
+}
+
+.items-order-item-right {
+	float:right;
+	padding:0 10px 0 0;
+}
+
+.items-links-item-left {
+	float:right;
+	padding-left:10px;
+	position:relative;
+	margin-top:5px;
+}
+
+div.items-order-item-left{
+	overflow:hidden;
+	float:left;
+	margin-left: 10px;
+}
+.items-order-item-left select{
+	width:auto;
+}
+
+.items-sort-arrow {
+  position:relative;
+  vertical-align: middle;
+  width:15px;
+  height:15px;
+}
+
+.items-control-links {
+	background-position:0 7px;
+	background-repeat:no-repeat;
+	float:left;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	position:relative;
+	text-indent:20px;
+	width:auto;
+}
+
+.form_advanced_table  td.caption{
+	white-space:normal;
+}
+
+.active a{
+  text-decoration:none;	
+}
+
+.not_active a{
+  color:#999999;
+  text-decoration:none;	
+}
+
+.aqb-info-link{
+   font-size:12px;
+   font-weight:bold;	
+}
+
+.aqb-info-link a {
+   text-decoration: none;
+}
+
+div.contentblock{
+	overflow:hidden;
+	background-color:rgba(255, 255, 255, 0.8);
+}

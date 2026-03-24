@@ -1,0 +1,245 @@
+/***************************************************************************
+* 
+*     copyright            : (C) 2009 AQB Soft
+*     website              : http://www.aqbsoft.com
+*      
+* IMPORTANT: This is a commercial product made by AQB Soft. It cannot be modified for other than personal usage.
+* The "personal usage" means the product can be installed and set up for ONE domain name ONLY. 
+* To be able to use this product for another domain names you have to order another copy of this product (license).
+* 
+* This product cannot be redistributed for free or a fee without written permission from AQB Soft.
+* 
+* This notice may not be removed from the source code.
+* 
+***************************************************************************/
+
+@CHARSET "UTF-8";
+
+div.aqb-tree-item {
+	width:100%;
+	height:20px;
+	overflow:hodden;
+	text-align:left;
+}
+
+div.aqb-aff-matrix-tree b{
+	font-weight: normal;
+}
+
+div.aqb-aff-matrix-tree img{
+	background-position: center center;
+    background-repeat: no-repeat;
+    height: 8px;
+}
+
+div.aqb-aff-matrix-tree {
+	font-weight: normal;
+	overflow:auto;		
+}
+
+div.aqb-aff-matrix-tree span{
+	margin:10px;
+}
+
+div.aqb-aff-referral-block-left{
+	float:left;
+	width:35%;
+	overflow:hidden;
+	position:relative;
+}
+
+div.aqb-aff-referral-block{
+	width:100%;
+	overflow:hidden;
+	position:relative;
+	margin:3px;
+}
+
+div.aqb-aff-referral-block-right{
+	float:left;
+	width:65%;
+	overflow:hidden;
+	position:relative;
+	font-size:11px;
+}
+
+table.aqb-aff-invite-form-table  div.button_wrapper{
+	float:none;	
+}
+
+div.aqb-aff-invite-form-table{
+	margin:20px;
+	width:auto;
+}
+
+table.aqb-aff-invite-form-table  td{
+	text-align:center;	
+}
+
+div.aqb-aff-lines{
+   overflow:hidden;
+   width:100%;
+   float:left;
+   margin:3px;   
+}
+
+div.aqb-aff-left-block{
+   position:relative;
+   margin:5px;   
+   overflow:hidden;
+}
+
+div.aff-preview-banner{
+	height:100%;
+	width:620px;
+	overflow:auto;
+}
+div.aff-preview-banner-info{
+	overflow:hidden;
+	height:auto;
+        width:100%;	
+	margin-top: 10px;
+}
+
+div.aff-info-item{
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:50%;
+}
+
+div.aqb-aff-textarea{
+	text-align:center;
+	display:none;
+	float: left;
+    margin: 5px;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
+div.aqb-aff-banner-button{
+	float:left;
+	position:relative;
+	overflow:hidden;
+	margin-left: 10px;
+    margin-top: 10px;
+}
+
+div.aff-preview-banner img{
+   border: 1px solid black;
+}
+
+table.aff-history tr:not(.headers):nth-child(odd)
+{
+	background-color:rgba(0,0,0,0.1);
+}
+
+table.aff-history td{
+   text-align:center;		
+}
+
+div.button_wrapper {
+	float:left;
+	margin-right:10px;
+	position:relative;
+}
+
+tr.total-bold  td{
+  font-weight:bold;   	
+}
+
+table.member-info-table td{
+	margin:2px;
+	text-align:center;
+	padding: 5px 5px 5px 0px;
+}
+
+.aqb-aff-count{
+	overflow:hidden;
+	width:100%;
+}
+
+div.aqb-real-ref{
+   color:green;
+   font-weight:normal;
+   font-style:italic
+}
+
+div.aqb-tree-member-status{
+   color:red;
+   font-weight:normal;
+   font-style:italic   
+}
+
+#aqb-tree-area{
+   margin:10px;	
+}
+
+span.aqb-top-right-search{
+	position: relative;
+	width:100%;
+}
+
+span.aqb-top-right-search div.input_wrapper_text,
+span.aqb-top-right-search div.input_wrapper_button{
+	float:left;
+	position: relative;
+	margin-bottom:10px;
+}
+
+span.aqb-top-right-search .input_wrapper_text{
+	max-width:250px;
+}
+
+div.ref-table{
+	width:100%;
+	height:auto;
+	position:relative;
+	float:left;
+}
+
+table.ref-table th{
+	text-align:center;
+}
+
+table.ref-table td{
+	text-align:center;
+	font-size:11px;
+}
+
+table.ref-table tr.ref-odd{
+	background-color: #EEE;
+}
+
+div.aqb-aff-matrix-table{
+	width:100%;
+	height:auto;
+	position:relative;
+}
+
+div.aqb-aff-ref-delete{
+	overflow:hidden;
+	text-align:right;
+	margin:10px;
+}
+
+div.aqb-aff-referral-block-wrapper{
+	overflow:hidden;
+    width:100%;	
+}
+
+div.aqb-aff-wrapper{
+	margin:10px;
+	overflow: hidden;
+}
+
+div.aqb-aff-matrix-tree div.input_wrapper{
+	margin-top:20px;
+}
+.aqb-invitation-button
+{
+	max-width:250px;
+	float:left;
+}

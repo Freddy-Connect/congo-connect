@@ -1,0 +1,127 @@
+/***************************************************************************
+* 
+*     copyright            : (C) 2009 AQB Soft
+*     website              : http://www.aqbsoft.com
+*      
+* IMPORTANT: This is a commercial product made by AQB Soft. It cannot be modified for other than personal usage.
+* The "personal usage" means the product can be installed and set up for ONE domain name ONLY. 
+* To be able to use this product for another domain names you have to order another copy of this product (license).
+* 
+* This product cannot be redistributed for free or a fee without written permission from AQB Soft.
+* 
+* This notice may not be removed from the source code.
+* 
+***************************************************************************/
+
+@CHARSET "UTF-8";
+
+div.aqb-credits-block{
+	width:auto;
+	overflow:hidden;
+	position:relative;
+	margin:15px;
+}
+
+div.aqb-credits-lines{
+   overflow:hidden;
+   width:100%;
+   float:left;
+   margin:3px;   
+}
+
+div.aqb-credits-left-block{
+   position:relative;
+   margin:5px;   
+   overflow:hidden;
+}
+
+div.aqb-credits-carts-table{
+	margin:15px;
+}
+
+div.aqb-credits-carts-table td{
+	text-align:center;
+}
+
+tr.aqb-credits-carts-table-total td{
+	font-weight:bold;	
+}
+
+tr.aqb-credits-carts-table-total td:first-child {
+	text-align:right;
+}
+
+tr.aqb-credits-vendor {
+	height:20px;	
+}
+
+tr.aqb-credits-vendor  td{
+	text-align:left;
+	font-weight:bold;
+}
+
+div.aqb-credits-table{
+	width:100%;
+	height:auto;
+	position:relative;	
+}
+
+table.aqb-credits-table th{
+	text-align:center;
+}
+
+table.aqb-credits-table td{
+	text-align:center;
+	font-size:13px;
+}
+
+table.aqb-credits-table tr.credits-odd{
+	background-color: #EEE;
+}
+
+div.aqb-credits-list-table{
+	margin:15px;
+	overflow:hidden;
+}
+
+div.aqb-credits-actions-list-table{
+	width:auto;
+	overflow:hidden;
+	position:relative;
+	margin:15px;
+}
+
+div.aqb-credits-actions-list-table i{
+	color:lightcoral;
+}
+
+div.aqb-credits-popup-window-table{
+	margin:15px;
+	max-width:400px;
+}
+
+div.aqb-credits-popup-window-table a{
+	margin:5px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+div.aqb-credits-popup-window-table span{
+	margin:10px;	
+}
+
+div.aqb-credits-popup-window-table label{
+	font-weight:bold;
+}
+
+
+table.aqb-credits-popup-actions-table td{
+	text-align:center;
+	font-size:13px;
+}
+
+table.aqb-credits-popup-actions-table  td.aqb-credits-justify{
+	text-align:justify;
+	font-size:15px;
+}

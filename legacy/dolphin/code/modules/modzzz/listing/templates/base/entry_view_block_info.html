@@ -1,0 +1,78 @@
+  <div class="CSSBusinessListingViewTop" >
+      <table >
+        
+          
+          
+            <tr>
+            <td>   
+         <div class="thumbnail_block_with_info  thumb_username" >
+            __author_thumb__
+            </div>
+  
+    </td>
+           </tr>
+            
+    <!-- AQB Soft Freddy: Befriend -->
+			<bx_if:befriend>
+             <tr>
+            <td>
+				<div class="aqb-guest-actions">
+				<button class="ConnectNetwork" onclick="$.post('list_pop.php?action=friend', {ID: __id__}, function(sData){document.location.href=document.location.href;}); return false;">
+						<i class="sys-icon user-plus"></i> <bx_text:_connexiont_btn_befriend_with /> __FirstName__
+					</button>
+				</div>
+                
+                
+           </td>
+           </tr>
+			</bx_if:befriend>
+  <!-- AQB Soft Freddy: Befriend -->
+  
+  
+
+  
+    
+           
+           
+           
+           
+            <tr>
+            <td> 
+          
+          <div class="clear_both"></div>
+          
+           <div class="infoText bx-def-margin-sec-top">
+            <div class="infoUnit infoUnitFontIcon bx-def-font-small bx-def-font-grayed">
+                <i class="sys-icon clock-o"></i> __date__ 
+            </div>
+ 
+			
+            <bx_if:owner>
+				<div class="infoUnit infoUnitFontIcon bx-def-font-small bx-def-font-grayed">        
+					<i class="sys-icon lock"></i>
+					<bx_text:_modzzz_listing_expires />: __expire__
+				</div>
+				<div class="infoUnit infoUnitFontIcon bx-def-font-small bx-def-font-grayed">        
+					<i class="sys-icon star"></i>
+					 __featured__
+				</div> 
+			</bx_if:owner>
+            
+            
+            
+            
+        </div>
+        <div class="clear_both"></div>
+          
+    
+        
+     </td>
+           </tr>
+       </table>
+    </div>
+    <div class="clear_both"></div>     
+        
+
+
+__fields__
+

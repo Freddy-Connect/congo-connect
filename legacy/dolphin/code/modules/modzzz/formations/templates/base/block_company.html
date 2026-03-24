@@ -1,0 +1,105 @@
+ <div class="bx-twig-unit modzzz_formations_unit bx-def-margin-top-auto">
+ 
+<!--
+ <div class="CssFormationViewApplyDescription" >
+  
+   <table >
+     <tr>
+     <td >
+     
+    
+           
+         <bx_if:career_level> 
+			<div class="Formation_details_View bx-def-font-grayed">
+				<b>  <i class="sys-icon building"></i> <bx_text:_modzzz_formations_career_level_details />:</b>  __career_level__
+			</div>
+
+		</bx_if:career_level>
+        
+         <bx_if:Formation_Status_Type> 
+		        <div class="infoUnit infoUnitFontIcon  bx-twig-unit-line bx-def-font-grayed"> 
+                
+                <strong> <i class="sys-icon black-tie"></i> <bx_text:_modzzz_formations_type_details />:</strong> __formation_status__ <i class="sys-icon certificate"></i> __formation_type__
+              </div>
+		    </bx_if:Formation_Status_Type>
+      
+      
+            <bx_if:experience> 
+			<div class="infoUnit infoUnitFontIcon  bx-twig-unit-line bx-def-font-grayed"> 
+				<strong>  <i class="sys-icon briefcase"></i> <bx_text:_modzzz_formations_experience_details />:</strong> __experience__
+		    </div>
+		   </bx_if:experience>
+           
+           
+            <bx_if:qualification> 
+			<div class="infoUnit infoUnitFontIcon  bx-twig-unit-line bx-def-font-grayed"> 
+				<strong> <i class="sys-icon graduation-cap"></i> <bx_text:_modzzz_formations_equalification_details />:</strong> __qualification__
+			</div>
+		</bx_if:qualification>
+        
+        <div class="infoUnit infoUnitFontIcon  bx-twig-unit-line bx-def-font-grayed"> 
+				<strong> <i class="sys-icon wrench"></i> <bx_text:_modzzz_formations_industry_details />:</strong> <a href="__category_url__">__category_name__</a> <bx_if:sub_category> <span class="bullet">&#8594;</span> <a href="__subcategory_url__">__subcategory_name__</a>
+           </bx_if:sub_category>
+   
+			</div>
+
+          
+ 
+   
+     </td>
+     </tr>
+    </table>
+    </div>
+    <div class="clear_both"></div> 
+    -->
+    
+    
+     <div class="CSSEspaceFormation" >
+   <table >
+                   
+    <tr>
+  <td style="text-align:right;width:50%;">
+          
+        <div>
+           <div>
+             <button class="SaveFormation"  onclick="getHtmlData ('ajaxy_popup_result_div___id__','__Favorite_Url__', false, 'post');return false;">
+						  __AddToFavorite__
+	       </button> 
+           </div>
+      <div class="clear_both"></div> 
+                  
+      <div id="ajaxy_popup_result_div___id__" style="display:none;"></div> 
+     
+      </div>  
+       
+      </td>
+   
+    <td style="text-align:left; width:50%;">
+        <bx_if:applyLink> 
+		     
+              <div>  
+			  <button class="PostulerFormation"   onclick="window.open ('__applyLink__','_self');">
+						<strong><i class="fa fa-briefcase"></i>  &nbsp;__APPLY__  </strong>
+			</button>
+          
+           </div>
+		 </bx_if:applyLink>
+         
+         
+          <bx_if:applyLinkExternal> 
+		     <div style='float:left;width:50%'>  
+          
+            <button class="PostulerFormation"   onclick="window.open ('__applyLinkExternal__');">
+						<strong><i class="fa fa-briefcase"></i>  &nbsp;__APPLYExternal__  </strong>
+			</button>
+          
+           </div>
+		 </bx_if:applyLinkExternal>
+     </td>
+    </tr>
+   </table>
+    </div>
+    <div class="clear_both"></div> 
+    
+    
+  </div>

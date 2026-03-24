@@ -1,0 +1,20 @@
+<form id="__form_name__" enctype="multipart/form-data" method="post" action="" class="form_advanced">
+    <input type=hidden name='parent' value='__id__'>
+	<div class="modules-items">
+        <bx_repeat:items>
+            <div class="modules-item" style='float:left;width:30%'>
+                <input type="hidden" class="form_input_checkbox" id="__name__" name="pathes[]" value="__value__" />
+                <label for="pathes-__name__">__title__</label>
+            </div>
+			<div style='float:left'>
+				<select name='parentcat[__name__]'>
+					<bx_repeat:options>
+						<option __option_selected__ value='__option_value__'>__option_name__</option>
+					</bx_repeat:options>
+				</select>
+			</div>
+			<div class=clear_both></div>
+        </bx_repeat:items>
+    </div>
+    __controls__
+</form>

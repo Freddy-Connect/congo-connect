@@ -1,0 +1,100 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+   
+    <div class="CSSEspaceFormation" >
+   <table >
+       <tr>
+      <td >
+     <div style="text-align:left;">
+      <a href="member.php"  title="__Business_caption__">
+       <i class="sys-icon dashboard"> </i> <i class="sys-icon user"> </i> __FirstName__ __LastName__
+       </a>
+       </div>
+      <div class="biz-topbar">
+      
+  <div class="biz-topbar__left">
+    __thumbnail__
+    <div class="biz-topbar__stats">
+      <!-- mini-stats ici -->
+      <div class="mini-stats">
+       
+        <bx_if:FormationsCountPositive> 
+         <a href="m/formations/browse/my"  title="__FormationCaption__">
+         <div class="mini-stats__chip"><i class="fa-solid fa-graduation-cap"></i> <span class="mini-stats__txt">__FormationCaption__</span>: <span class="mini-stats__num"> <span class="biz-stat-number">__FormationCount__</span></span>
+        </div>
+        </a>
+        </bx_if:FormationsCountPositive> 
+        
+        
+        
+         
+        
+        
+         <bx_if:FormationsCandidats> 
+         <a href="m/formations/browse/application"  title="__ApplicationCaption__">
+         <div class="mini-stats__chip"><i class="fa-solid fa-paper-plane"></i> <span class="mini-stats__txt">__ApplicationCaption__</span>: <span class="mini-stats__num"> <span class="biz-stat-number">__ApplicationCount__</span></span>
+        </div>
+        </a>
+        </bx_if:FormationsCandidats> 
+        
+        
+         <bx_if:FavoriteFormations> 
+        <a href="m/formations/browse/favorite" target="_self"  title="__FavoriteCaption__">
+        <div class="mini-stats__chip"><i class="fa-solid fa-heart"></i> <span class="mini-stats__txt">__FavoriteCaption__</span>: <span class="mini-stats__num"> <span class="biz-stat-number">__FavoriteFormations__</span></span>
+        </div>
+        </a>
+        </bx_if:FavoriteFormations> 
+        
+        
+    
+           
+ <div class="biz-actions">           
+   <div style="margin-bottom:10px;">
+     <button class="biz-publier biz-publier-primary"  onclick="window.open ('m/formations/browse/my&filter=add_formation','_self');">
+            <i class="fa fa-desktop"></i> &nbsp; <i class="fa fa-graduation-cap"></i>  &nbsp; <bx_text:_modzzz_formations_ajouter_formation /> 
+           </button>
+           </div>
+          
+          
+          
+          
+            <div style="margin-bottom:10px;">
+           <button class="biz-rechercher biz-rechercher-primary"  onclick="window.open ('m/formations/search','_self');">
+			     <i class="sys-icon search"> </i>&nbsp; <bx_text:_modzzz_formations_titre_home_page_search /> 
+		    </button>
+           </div> 
+           
+      </div>
+      
+      
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+ 
+          
+   
+   
+    
+
+       
+      
+      
+      
+     
+       </td>
+      </tr>   
+     </table>
+    </div>
+ 
+    
+   
+    
+    
+        <div class="clear_both"></div> 
+        
+    

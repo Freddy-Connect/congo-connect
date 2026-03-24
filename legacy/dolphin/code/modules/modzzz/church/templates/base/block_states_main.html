@@ -1,0 +1,11 @@
+<div class="bx-def-bc-padding"> 
+	  <bx_repeat:entries>  
+		  <bx_if:selstate> 
+				<div class="categories_col">__state_name__ (__num_items__)</div>
+ 		  </bx_if:selstate> 
+		  <bx_if:regstate> 
+ 				<div class="categories_col"><a class="actions" href='__state_url__'>__state_name__</a> (__num_items__)</div>  
+		  </bx_if:regstate> 
+	      <div class='clear_both'></div>	 
+	  </bx_repeat:entries>  
+ </div>

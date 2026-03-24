@@ -1,0 +1,57 @@
+<div class="aqb_conditional_fields_form">
+	__form__
+</div>
+
+<script type="text/javascript">
+	function aqb_conditional_fields_toggle_block_headers() {
+		$('.bx-form-block-header').each(function(i, header){
+			if ($('.bx-form-caption', header).css('display') == 'none') {
+				$(header).hide();
+				$(header).next().hide();
+			} else {
+				$(header).show();
+				$(header).next().show();
+			}
+		});
+	}
+
+	function aqb_conditional_fields_change_select(cur_value, dependent_field_name, show_if_value) {
+		var allowed_val = false;
+		for (var i = show_if_value.length - 1; i >= 0; i--) {
+			if (show_if_value[i] == cur_value) {
+				allowed_val = true;
+				break;
+			}
+		}
+
+		if (allowed_val) $('#aqb_cf_' + dependent_field_name).show();
+		else $('#aqb_cf_' + dependent_field_name).hide();
+
+		aqb_conditional_fields_toggle_block_headers();
+	}
+
+	function aqb_conditional_fields_change_radio_set(set_div, dependent_field_name, show_if_value) {
+		var cur_value = $('input[type=radio]:checked', set_div).val();
+
+		var allowed_val = false;
+		for (var i = show_if_value.length - 1; i >= 0; i--) {
+			if (show_if_value[i] == cur_value) {
+				allowed_val = true;
+				break;
+			}
+		}
+
+		if (allowed_val) $('#aqb_cf_' + dependent_field_name).show();
+		else $('#aqb_cf_' + dependent_field_name).hide();
+
+		aqb_conditional_fields_toggle_block_headers();
+	}
+
+	aqb_conditional_fields_toggle_block_headers();
+</script>
+
+<style type="text/css">
+	.aqb_conditional_fields_form .bx-form-block-header-collapse {
+		display: none;
+	}
+</style>

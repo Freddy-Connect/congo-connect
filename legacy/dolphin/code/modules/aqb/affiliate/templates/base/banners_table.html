@@ -1,0 +1,28 @@
+<span class="aff-top-paginate">__paginate__</span>
+<div class="aff-banner-table">
+    <table width="100%" class="aff-banner-table" cellpadding="0" cellspacing="0">
+        <tr height="20px">
+            <th width="20">&nbsp;</th>
+            <th><a href="javascript:void(0);" __item_id_function__ ><bx_text:_aqb_aff_admin_banner_id /> __banner_id_arrow__</a></th>
+			<th><a href="javascript:void(0);" __item_name_function__ ><bx_text:_aqb_aff_admin_banner_name /> __banner_name_arrow__</a></th>
+			<th><a href="javascript:void(0);" __item_size_function__ ><bx_text:_aqb_aff_admin_banner_size /> __banner_size_arrow__</a></th>
+			<th><a href="javascript:void(0);" __item_link_function__ ><bx_text:_aqb_aff_admin_banner_link /> __banner_link_arrow__</a></th>
+			<th><a href="javascript:void(0);" __item_date_function__ ><bx_text:_aqb_aff_admin_banner_date /> __banner_date_arrow__</a></th>
+			<th><a href="javascript:void(0);" __item_active_function__ ><bx_text:_aqb_aff_admin_banner_active /> __banner_active_arrow__</a></th>
+			<th><bx_text:_aqb_aff_admin_actions /></th>  	
+	     </tr>
+        <bx_repeat:items>
+            <tr class="aff-active">
+                <td width="20"><input type="checkbox" class="form_input_checkbox" id="aff-b-__id__" name="banners[]" value="__id__" /></td>
+				<td width="*">__id__</td>
+				<td width="100"><a href="javascript:void(0);">__banner_name__</a></td>
+				<td width="*">__banner_size__</td>
+				<td width="*">__banner_link__</td>
+				<td width="*">__banner_created__</td>
+				<td width="*">__banner_active__</td>
+				<td width="*"><a href="javascript:void(0);" onclick="__edit_banner_link__">__edit_banner__</a>&nbsp;|&nbsp;<a href="javascript:void(0);" onclick="__view_banner_link__">__view_banner__</a></td>
+            </tr>
+        </bx_repeat:items>
+    </table>
+</div>
+__paginate__

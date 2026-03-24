@@ -1,0 +1,38 @@
+<div class="bx_sys_block_info">
+    <div class="infoMain">
+        __author_unit__
+        <div class="infoText bx-def-margin-sec-top">
+            <div class="infoUnit infoUnitFontIcon">
+                <i class="sys-icon time"></i>
+                __date__ (__date_ago__)
+            </div>
+
+            <div class="infoUnit infoUnitFontIcon">
+                <i class="sys-icon folder-close"></i>
+                <a href="__category_url__">__category_name__</a><bx_if:subcategory>&nbsp;<span class="bullet">&#8594;</span> <a href="__subcategory_url__">__subcategory_name__</a></bx_if:subcategory>
+            </div>
+ 
+            <div class="infoUnit infoUnitFontIcon">
+                <i class="sys-icon eye-open"></i>
+                __views__ <bx_text:_modzzz_articles_views />
+            </div>
+             <div class="infoUnit infoUnitFontIcon">
+                <i class="sys-icon check"></i>
+                __subscribers__ <bx_text:_modzzz_articles_subscribers />
+            </div>
+        </div>
+        <div class="clear_both"></div>
+    </div>
+</div>
+   
+<bx_if:location>
+	<div class="infoUnitBorderFirst"></div>
+	<div class="bx-twig-unit-line">
+		__location__
+	</div>
+</bx_if:location>
+
+<bx_if:show_owner> 
+<div class="infoUnitBorderFirst"></div>
+<div class='bx-twig-unit-line bx-def-font-large'>__other_items__</div>
+</bx_if:show_owner> 

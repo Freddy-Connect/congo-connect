@@ -1,0 +1,60 @@
+<style>
+	.file {
+		font-weight: bold;
+		font-size: 8pt;
+		color: red;
+	}
+</style>
+1. Edit the the file <span class="file">inc/classes/BxDolProfileFields.php</span>
+	a) find the line
+
+		<div class="code">foreach( $this -> aBlocks as $iBlockID => $aBlock ) {</div>
+
+	insert <span class="file">above</span> it the code
+
+		<div class="code">//--- AQB Conditional Fields ---//
+if (BxDolRequest::serviceExists('aqb_conditional_fields', 'filter_post_data')) BxDolService::call('aqb_conditional_fields', 'filter_post_data', array(&amp;$this->aBlocks));
+//--- AQB Conditional Fields ---//</div>
+
+
+	b) replace 2 occurences of the line
+
+		<div class="code">$oForm = new BxTemplFormView($aForm);</div>
+
+	with the code
+
+		<div class="code">//--- AQB Conditional Fields ---//
+if (BxDolRequest::serviceExists('aqb_conditional_fields', 'get_form_object')) $oForm = BxDolService::call('aqb_conditional_fields', 'get_form_object', array($aForm));
+else $oForm = new BxTemplFormView($aForm);
+//--- AQB Conditional Fields ---//</div>
+
+2. Edit the the file <span class="file">templates/base/scripts/BxBaseProfileView.php</span>
+	find the line
+
+		<div class="code">$this->aPFBlocks = $this->oPF->aBlocks;</div>
+
+	insert <span class="file">above</span> it the code
+
+		<div class="code">//--- AQB Conditional Fields ---//
+if (BxDolRequest::serviceExists('aqb_conditional_fields', 'filter_view_data')) BxDolService::call('aqb_conditional_fields', 'filter_view_data', array(&amp;$this->oPF->aBlocks, $ID));
+//--- AQB Conditional Fields ---//</div>
+
+Installation finished.
+If you need some help feel free to <a href="mailto:support@aqbsoft.com">contact us</a>.
+
+
+<div id="aqb_offer" style="display:none;">
+<b class="bx-def-font-h2" style="color:red">We have a special offer for you:</b> leave feedback for this product on <a href="https://www.boonex.com/m/conditional-fields" target="_blank">Boonex site</a> and you will get a <b class="bx-def-font-h3" style="color:red">&#36;10</b> credit for the next purchase of any of our modules. To get a &#36;10 credit all you need is to leave a review for the module on <a href="https://www.boonex.com/m/conditional-fields" target="_blank">Boonex site</a> and contact us via Boonex internal mailbox or directly via <a href="mailto:support@aqbsoft.com">support@aqbsoft.com</a> letting us know what you'd like to spend this credit for. The full list of our products is available on <a href="https://www.boonex.com/market/posts/antonlv" target="_blank">Boonex</a> and <a href="http://www.aqbsoft.com" target="_blank">our own site</a>.
+</div>
+<script language="javascript">
+	$(document).ready(function(){
+		$('.modules-plank-switch').toggleClass('modules-plank-switch-opened').next().slideDown(1000, function(){
+			$('#aqb_offer').fadeIn(500);
+		});
+	});
+</script>
+<style type="text/css">
+	#aqb_offer {
+		white-space: normal;
+	}
+</style>

@@ -1,0 +1,336 @@
+<link href="__site_url__modules/bsetec/giveme/templates/base/css/colorbox.css" rel="stylesheet" />
+<script type="text/javascript" src="__site_url__modules/bsetec/giveme/js/vendor/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="__site_url__modules/bsetec/giveme/js/jquery.fileupload.js"></script>
+<script type="text/javascript" src="__site_url__modules/bsetec/giveme/js/jquery.colorbox-min.js"></script>
+<script src="<bx_url_root />modules/bsetec/giveme/js/jscolor.js"  type="text/javascript"></script>
+<script type="text/javascript">
+    function getval(sel) {
+	   $(".front_page_type").hide();	
+       $("#"+sel.value+"_div").css('display','block');
+    }
+	
+	function imagefiles(type){
+		$.colorbox({
+			href:"__site_url__modules/?r=giveme/readimages/"+type, 
+			width:"70%",
+            onComplete: function() {
+			 $('body').addClass('fixed');
+			 $.colorbox.resize();
+			 $('#mediaImages li').on('click',function(){
+				 if(type=="single") {
+			        $('#mediaImages li').removeClass('active');	
+				 }
+			    $(this).addClass('active');	;	
+	     	 });
+	    	},
+		    onClosed: function() {
+		  	 $('body').removeClass('fixed');
+		    }
+	    });
+
+	}
+	
+	
+	function imagefrommedia(type) {
+	  if($('#mediaImages li.active').length>0) {
+		var multiimageid='';
+		$('#mediaImages li').each(function(){
+			if($(this).hasClass('active')) {
+				if(type=="single") {
+					$("#singimageid").val($(this).children('img').attr('alt'));
+					$(".singleimagedata").html('<img width="125px" height="125px" src="__site_url__modules/bsetec/giveme/images/parallax/'+$(this).children('img').attr('alt')+'">');
+					parent.$.colorbox.close();
+				} else {
+			        if($("#multiimageid").val().length>0) {
+				       multiimageid= $("#multiimageid").val()+'&bse&';
+			        } else {
+					   multiimageid='';
+					}
+					alert(multiimageid+$(this).children('img').attr('alt'));
+			        $("#multiimageid").val(multiimageid+$(this).children('img').attr('alt'));
+					$(".multipleimagedata").append('<div class="multiimage"><img width="125px" height="125px" src="__site_url__modules/bsetec/giveme/images/parallax/'+$(this).children('img').attr('alt')+'" alt="'+$(this).children('img').attr('alt')+'"><a href="#" class="deletemulitimage"></a></div>');
+					parent.$.colorbox.close();
+				}
+			} 
+		});
+	  } else {
+		  alert('select image to upload');
+	  }
+	}
+	
+	
+	$(document).ready(function() {
+		if($("#front_page_type").attr('alt').length>0) {
+			var front_page_type=$("#front_page_type").attr('alt');
+			$(".front_page_type").hide();
+			$("#"+front_page_type+"_div").show();
+		}
+		
+		$(".deletemulitimage").live('click',function(e) {
+			$(this).parent('.multiimage').remove();
+			var multiimageremain=''
+			var inc=0;
+			$('.multiimage').each(function(){
+				if($(this).children('img').attr('alt').length>0) {
+					if(inc==0) {
+						multiimageremain+=$(this).children('img').attr('alt');
+					} else {
+						multiimageremain+='&bse&'+$(this).children('img').attr('alt');
+					}
+					inc++;
+				}
+			});
+			$('#multiimageid').val(multiimageremain);
+			e.preventDefault();
+		});
+		
+	});
+	
+	$(function () {
+
+	
+    $('#single_image_fileupload').fileupload({
+		dataType: 'json',
+		add: function(e, data) {
+                var uploadErrors = [];
+                var acceptFileTypes = /^image\/(gif|jpe?g|png)$/i;
+                if(data.originalFiles[0]['type'].length && !acceptFileTypes.test(data.originalFiles[0]['type'])) {
+                    uploadErrors.push('Not an accepted file type');
+                }
+                if(data.originalFiles[0]['size'].length && data.originalFiles[0]['size'] > 5000000) {
+                    uploadErrors.push('Filesize is too big');
+                }
+                if(uploadErrors.length > 0) {
+					$('.single_image_progress .bar').text(uploadErrors.join("\n"));
+					$('.single_image_progress').css('background-color','#ff0000');
+					$('.single_image_progress').css('color','#ffffff');
+                } else {
+					
+                    data.submit();
+                }
+        },
+        done: function (e, data) {
+		  if(data.result.msg=="error") {
+			  alert(data.result.data);
+		  } else {
+			  $("#singimageid").val(data.result.data);
+			  $(".singleimagedata").html("<img src='__site_url__modules/bsetec/giveme/images/parallax/"+data.result.data+"' width='125px' height='125px' />");
+		  }
+			 
+        },
+	    progressall: function (e, data) {
+        var progress = parseInt(data.loaded / data.total * 100, 10);
+        $('.single_image_progress .bar').css('width',progress + '%');
+		$('.single_image_progress').addClass('meter');
+		$('.single_image_progress .bar').text('');
+		$('.single_image_progress span').text('uploading'); 
+		
+       }	
+    });
+	
+	$('#multiple_image_fileupload').fileupload({
+		dataType: 'json',
+		add: function(e, data) {
+                var uploadErrors = [];
+                var acceptFileTypes = /^image\/(gif|jpe?g|png)$/i;
+                if(data.originalFiles[0]['type'].length && !acceptFileTypes.test(data.originalFiles[0]['type'])) {
+                    uploadErrors.push('Not an accepted file type');
+                }
+                if(data.originalFiles[0]['size'].length && data.originalFiles[0]['size'] > 5000000) {
+                    uploadErrors.push('Filesize is too big');
+                }
+                if(uploadErrors.length > 0) {
+					$('.multiple_image_progress .bar1').text(uploadErrors.join("\n"));
+					$('.multiple_image_progress').css('background-color','#ff0000');
+					$('.multiple_image_progress').css('color','#ffffff');
+                } else {
+					
+                    data.submit();
+                }
+        },
+        done: function (e, data) {
+		  if(data.result.msg=="error") {
+			  alert(data.result.data);
+		  } else {
+			  var multiimageid='';
+			  if($("#multiimageid").val().length>0) {
+				  multiimageid= $("#multiimageid").val()+'&bse&';
+			  } else {
+				  multiimageid='';
+			  }
+			  $("#multiimageid").val(multiimageid+data.result.data);
+			  $(".multipleimagedata").append("<div class='multiimage'><img src='__site_url__modules/bsetec/giveme/images/parallax/"+data.result.data+"' width='125px' height='125px' alt='"+data.result.data+"' /><a href='#' class='deletemulitimage'></a></div>");
+		  }
+			 
+        },
+	    progressall: function (e, data) {
+        var progress = parseInt(data.loaded / data.total * 100, 10);
+        $('.multiple_image_progress .bar1').css('width',progress + '%');
+		$('.multiple_image_progress').addClass('meter1');
+		$('.multiple_image_progress .bar1').text('');
+		$('.multiple_image_progress span').text('uploading'); 
+		
+       }	
+    });
+
+});
+
+	
+</script>
+<div id="tabsholder">
+<div class="logo clsClearfix">
+ <h1 class="clsFloatLeft"><a target="_blank" href="http://www.bsetec.com"><img src="<bx_url_root />modules/bsetec/giveme/templates/base/images/logo.png"></a></h1>
+ <div class="themepanel clsFloatRight"><a target="_blank" href="http://www.bsetec.com">Theme-panel</a></div>
+ <div class="clear"></div>
+ </div>
+<div class="panelwhole">
+<!-- <ul class="tabs clsClearfix">
+		<li id="tab2"><div class="back"><div class="img"><a href="<bx_url_root />modules/?r=giveme/administration/general"><img src="<bx_url_root />modules/bsetec/giveme/templates/base/images/general.png"></a></div>
+		<h2><a href="<bx_url_root />modules/?r=giveme/administration/general">General</a></h2></div></li> 
+        <li id="tab6" class="current"><div class="back"><div class="img"><a href="<bx_url_root />modules/?r=giveme/administration/parallax"><img src="<bx_url_root />modules/bsetec/giveme/templates/base/images/page.png"></a></div><h2><a href="<bx_url_root />modules/?r=giveme/administration/parallax">Parallax</a></h2></div></li>  
+		<li id="tab1"><div class="back"><div class="img"><a href="<bx_url_root />modules/?r=giveme/administration/social"><img src="<bx_url_root />modules/bsetec/giveme/templates/base/images/banner.png"></a></div><h2><a href="<bx_url_root />modules/?r=giveme/administration/social">Social</a></h2></div></li>
+       <li id="tab4"><div class="back"><div class="img"><a href="<bx_url_root />modules/?r=giveme/administration/colorization"><img src="<bx_url_root />modules/bsetec/giveme/templates/base/images/color.png"></a></div><h2><a href="<bx_url_root />modules/?r=giveme/administration/colorization">Colorization</a></h2></div></li> 
+		<li id="tab5"><div class="back"><div class="img"><a href="<bx_url_root />modules/?r=giveme/administration/slider"><img src="<bx_url_root />modules/bsetec/giveme/templates/base/images/slider.png"></a></div><h2><a href="<bx_url_root />modules/?r=giveme/administration/slider">Slider</a></h2></div></li>  
+</ul> -->
+<div class="contents marginbot">
+<div class="tabscontent">
+<div id="tabssecond">
+<ul>
+<li><a href="<bx_url_root />modules/?r=giveme/administration/parallax/pages">Parallax Pages</a></li>
+<li><a href="<bx_url_root />modules/?r=giveme/administration/parallax/menu">Parallax  Menu</a></li>
+<li class="active"><a href="<bx_url_root />modules/?r=giveme/administration/parallax/settings">Parallax  Settings</a></li>
+</ul>
+<div class="tabcontentinner slider">
+<form  enctype="multipart/form-data" action="<bx_url_root />modules/?r=giveme/administration/parallax/settings" method="post">
+		
+<div class="formrow">	
+<div class="formrowcotent-left clsFloatLeft">
+<label> Front Page Type</label>				
+</div>
+<div class="formrowcotent-right clsFloatLeft">	
+<select class="selecttransition" name="front_page_type" onchange="getval(this);">
+<option value="__front_page_type__">__front_page_type__</option>
+<option value="image">Image</option>
+<option value="slider">Slider</option>
+<option value="video">video</option>
+</select>
+</div>
+<div class="clear"></div>
+</div> 
+<div class="formrow" alt="__front_page_type__" id="front_page_type">
+<div id="image_div" class="front_page_type">
+<div class="formrowcotent-left clsFloatLeft">
+<label> Background Image</label>				
+</div>
+<div class="formrowcotent-right clsFloatLeft">
+<div id="progress" class="single_image_progress">
+    <div class="bar"> Image files must be jpg, png </div>
+</div>
+<div class="single_image_fileupload">
+<input type="file" data-url="<bx_url_root />modules/?r=giveme/imageupload" name="files[]" id="single_image_fileupload"> <span>OR</span> <a href="#" onclick="imagefiles('single'); return false;">choose for media</a>
+<input type="hidden" id="singimageid" value="__front_page_image__" name="front_page_image">
+<div class="singleimagedata">__front_page_image_url__</div>
+
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+<div id="slider_div" class="front_page_type">
+<div class="formrowcotent-left clsFloatLeft">
+<label> Background Slider</label>				
+</div>
+<div class="formrowcotent-right clsFloatLeft">
+<div id="progress1" class="multiple_image_progress">
+<div class="bar1"> Image files must be jpg, png </div>
+</div>
+<div class="multiple_image_fileupload">
+<input type="file" data-url="<bx_url_root />modules/?r=giveme/imageupload" name="files[]" id="multiple_image_fileupload"> <span>OR</span> <a href="#" onclick="imagefiles('mutliple'); return false;">choose for media</a>
+<input type="hidden" id="multiimageid" value="__front_page_slider__" name="front_page_slider">
+<div class="multipleimagedata clsClearfix">__front_page_slider_data__</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div id="video_div" class="front_page_type">
+<div class="formrowcotent-left clsFloatLeft">
+<label> Background Video</label>				
+</div>
+<div class="formrowcotent-right clsFloatLeft">
+<input type="text" value="__front_page_video__" name="front_page_video" >
+<label class="notify">please insert the url only e.g. http://youtu.be/gvt_YFuZ8LA . Please do not insert the complete embedded code! This video will be displayed on the front page as well as all pages.</label>
+</div>
+<div class="clear"></div>
+</div>
+
+</div>
+
+<div class="formrow">
+<div class="formrowcotent-left clsFloatLeft"> 
+<label>Front Page Slogan</label></div>
+<div class="formrowcotent-right clsFloatLeft">	 
+<textarea name="front_page_slogan">__front_page_slogan__</textarea></div>
+<div class="clear"></div>
+</div>
+
+<div class="formrow">
+<div class="formrowcotent-left clsFloatLeft"> 
+<label>Front page Caption</label></div>
+<div class="formrowcotent-right clsFloatLeft">	 
+<textarea name="front_page_caption">__front_page_caption__</textarea>
+<label class="notify">Use <strong>"&lt;span&gt;"</strong> html tags to add caption in diferrent color"</label>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="formrow">
+<div class="formrowcotent-left clsFloatLeft"> 
+<label>Parallax Background Color</label></div>
+<div class="formrowcotent-right clsFloatLeft">	 
+<input type="text" value="__parallax_background_color__" name="parallax_background_color" class="color {required:false}"></div>
+<div class="clear"></div>
+</div>
+
+<div class="formrow">
+<div class="formrowcotent-left clsFloatLeft"> 
+<label>Parallax Patern Style</label></div>
+<div class="formrowcotent-right clsFloatLeft">	 
+<select name="parallax_pattern_style">
+<option value="__parallax_pattern_style__">__parallax_pattern_style__</option>
+<option value="style1">Style1</option>
+<option value="style2">Style2</option>
+</select>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="formrow">
+<div class="formrowcotent-left clsFloatLeft"> 
+<label>Parallax Pattern Color</label></div>
+<div class="formrowcotent-right clsFloatLeft">	 
+<input type="text" value="__parallax_pattern_color__" name="parallax_pattern_color" class="color {required:false}"></div>
+<div class="clear"></div>
+</div>
+
+				
+<div class="formrow">
+                                                    <div class="formrowcotent-left clsFloatLeft"> 
+                        <label>&nbsp;</label></div>	
+                        <div class="formrowcotent-right clsFloatLeft">
+				<input type="submit" value="save" name="save_parallaxsettings">
+                </div>
+                <div class="clear"></div>
+                           </div>
+		
+						
+	</form>	
+
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div>
+

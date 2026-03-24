@@ -1,0 +1,27 @@
+<bx_repeat:review>  
+	<div class="bx-twig-unit modzzz_church_unit bx-def-margin-top-auto" id='review___entry_id_____review_id__'> 
+		<div class="bx-twig-unit-icon-cont bx-def-margin-sec-right">
+		   __post_uthumb__
+		</div>
+
+		<div class="bx-twig-unit-info">  
+
+			<div class="bx-twig-unit-line"><b><bx_text:_modzzz_church_review_for /></b> <a href="__church_url__">__church_name__</a></div> 
+
+			<div class="bx-twig-unit-line bx-twig-unit-desc">__review_snippet__</div>
+	
+			<div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+				__created__ <span class="bullet">&#183;</span> <bx_text:_From /> <a href="__author_url__">__author__</a>
+			</div> 
+ 
+			<bx_if:allowdelete>
+				<div class="bx-twig-unit-line bx-twig-unit-desc">
+					<button title="<bx_text:_modzzz_church_remove />" class="bx-btn bx-btn-small bx-btn-img bx-btn-ifont" onclick="getHtmlData( 'review___entry_id_____review_id__', '__url__?ajax=delete_review&review=__review_id__&id=__entry_id__');">
+						<i class="sys-icon remove"></i><bx_text:_modzzz_church_remove /> 
+					</button>    
+				</div> 
+			</bx_if:allowdelete>  
+		</div>   
+	</div> 
+</bx_repeat:review> 
+ 

@@ -1,0 +1,33 @@
+<div itemscope itemtype="http://schema.org/Organization"  class="bx-twig-unit modzzz_professional_unit bx-def-margin-top-auto">
+
+    <div class="bx-twig-unit-thumb-cont bx-def-margin-sec-right">
+        <a href="__professional_url__"><img itemprop="image" class="bx-twig-unit-thumb bx-def-round-corners bx-def-shadow" src="__thumb_url__"></a>
+    </div>
+
+    <div class="bx-twig-unit-info">
+ 
+        <div class="bx-twig-unit-title bx-def-font-h2">
+            <a itemprop="url" href="__professional_url__"><span itemprop="name">__professional_title__</span></a>
+        </div>
+
+        <div itemprop="description" class="bx-twig-unit-line bx-twig-unit-desc">__snippet_text__</div>
+
+        <div class="bx-twig-unit-line bx-twig-unit-special"> 
+			<a href="__category_url__">__category_name__</a><bx_if:subcategory>&nbsp;<span class="bullet">&#8594;</span> <a href="__subcategory_url__">__subcategory_name__</a></bx_if:subcategory>
+		</div>
+ 
+        <bx_if:full>
+
+            <div class="bx-twig-unit-line bx-twig-unit-rate">
+                __rate__
+            </div>
+
+            <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+                __created__ <span class="bullet">&#183;</span> <bx_text:_From /> <a href="__author_url__">__author__</a>
+            </div>
+
+        </bx_if:full>
+
+    </div>    
+
+</div>

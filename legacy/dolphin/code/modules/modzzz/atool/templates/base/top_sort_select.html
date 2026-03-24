@@ -1,0 +1,16 @@
+<div class="top_settings_block">
+    <div class="ordered_block">
+        __name__&nbsp;
+		
+		<select id="select_sort" class="browse_select"  
+		onchange="getHtmlData('__block_reload__', '__pageurl__?&ajax=2&sort=' + this.value);">            
+			
+			<bx_repeat:items>
+                <option value="__value__" __selected__>
+                    __caption__
+                </option>
+            </bx_repeat:items>
+
+        </select>
+    </div>
+</div>

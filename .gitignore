@@ -1,0 +1,25 @@
+# Fichiers sensibles
+.env
+/config/database.php
+
+# Uploads utilisateurs
+/uploads/
+
+# Fichiers générés
+/storage/
+
+# Cache Dolphin legacy
+/legacy/dolphin/code/cache/
+/legacy/dolphin/code/cache_public/
+/legacy/dolphin/code/tmp/
+/legacy/dolphin/code/logs/
+
+# Médias Dolphin (trop lourds)
+/legacy/dolphin/code/media/
+/legacy/dolphin/code/images/
+
+/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db

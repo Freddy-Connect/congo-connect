@@ -1,0 +1,25 @@
+<div id="title_curr" style='font-weight:bold' class="bx-def-bc-margin bx_sys_block_videos_title_curr bx-def-font-large">
+		__video_title__
+</div>
+<div class="bx-def-bc-margin bx_sys_block_videos_title_curr">
+ 
+	<div id="ytplayer_div" style='text-align:center'> 
+		<iframe id="ytplayer" allowfullscreen="" src="//www.youtube-nocookie.com/embed/__video_id__?rel=0" frameborder="0" height="315" width="420"></iframe>	 
+	</div>
+  
+	<script type="text/javascript">
+		function loadYTVideo(id, sTitle) { 
+			var sVideo = "//www.youtube-nocookie.com/embed/"+id+"?rel=0";
+			document.getElementById('ytplayer').src = sVideo;
+ 
+			$('#title_curr').html(sTitle);
+		} 
+	</script>
+
+	<div class='clear_both'></div><br>
+	<div style='text-align:center'> 
+		<bx_repeat:video> 
+			<a href="javascript:void(0)" onClick="loadYTVideo( '__video_id__', '__video_title__');"><img width=60px height=45px src="//img.youtube.com/vi/__video_id__/default.jpg" /></a>
+		</bx_repeat:video> 
+	</div>
+</div>

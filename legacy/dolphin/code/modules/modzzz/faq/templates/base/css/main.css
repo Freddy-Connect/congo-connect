@@ -1,0 +1,45 @@
+
+.modzzz_faq_main_photo {
+    border:1px solid #CCCCCC;
+    width:604px;
+    padding:2px 0;
+    margin:0 auto;
+    text-align:center;
+}
+
+.modzzz_faq_main_info {
+    width:606px;
+    margin:2px auto 0px auto;
+}
+
+.modzzz_faq_main_info a:first-child {
+    font-weight:bold;
+}
+
+.modzzz_faq_main_info_text {
+    width:50%;
+    float:left;
+    text-align:left;
+    font-size:11px;
+    line-height:14px;
+}
+.modzzz_faq_main_info_img {
+    width:50%;
+    float:left;
+    text-align:right;
+    font-size:11px;
+}
+
+.modzzz_faq_main_info_img .votes_small {
+    width:auto;
+}
+.modzzz_faq_main_info_img>img {
+    position:relative;
+    top:3px;
+}
+ 
+
+.categories_col {
+    font-weight:bold;
+    font-size:12px; 
+}

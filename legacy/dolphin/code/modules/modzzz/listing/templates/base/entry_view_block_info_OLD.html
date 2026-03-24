@@ -1,0 +1,273 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="bx_sys_block_info">
+    <div class="infoMain">
+ 
+         
+       
+   <div class="thumbnail_block_espace_job thumbnail_block_with_info" style="float:none;">
+        
+             <div class="thumbnail_image_entreprise_home" > __author_thumb__</div>
+      </div>
+          
+            
+         
+            <div class="clear_both"></div> 
+       
+       
+       
+       
+      <div class="infoText bx-def-margin-sec-top">
+           
+  <div class="CSSbusinessListingUnit" >
+        <table>
+      
+           <tr>
+                       
+             <td>
+                          <!-- __author_thumb__ -->
+            
+           <br /> 
+            
+           <!-- AQB Soft Freddy: Befriend -->
+			<div class="aqb-guest-actions">
+            <bx_if:befriend>
+				
+					<button class="ConnectNetwork" style="margin-right:10px;" onclick="$.post('list_pop.php?action=friend', {ID: __id__}, function(sData){document.location.href=document.location.href;}); return false;">
+						<i class="sys-icon user-plus"></i> <bx_text:_connexiont_btn_befriend /> &nbsp;&nbsp;
+				
+			</bx_if:befriend>
+			 
+            
+                 
+         <bx_if:contacter_url>
+         
+              <button class="ConnectNetwork"    onclick="window.open ('__contacter_url__','_self');">
+		  <i class="sys-icon envelope"> &nbsp;</i><bx_text:_modzzz_listing_message_contacter />  
+				</button>
+        
+        </bx_if:contacter_url>
+         </div> 
+        
+        <!-- AQB Soft Freddy: Befriend --> 
+        
+        
+        
+             </td>
+           </tr>
+         </table>
+
+  </div>  
+  
+  
+  
+  
+  
+  <div class="CSSbusinessListingUnit" >
+        <table>
+      
+           <tr>
+                       
+             <td>
+                       
+        
+             <div> 
+             
+              <div>  <span style="font-size:16px;">  <strong>   <i class="sys-icon briefcase"></i>  </strong></span></div>
+              <div>  <span style="font-size:16px;">  <strong>    __listing_title__  </strong></span></div>
+            
+            
+             </div>
+        
+             </td>
+           </tr>
+         </table>
+
+  </div>  
+  
+  
+  
+  
+  
+        
+   <div class="CSSbusinessListingUnit" >
+    <table>
+      
+     <!--
+       <tr>
+                       
+       <td>
+       <bx_if:employees_count>
+				<div>        
+					<i class="sys-icon users"></i> __employees_count__ 
+				</div>
+				
+			</bx_if:employees_count>  
+            
+           </td>
+         </tr>
+         -->
+      
+          <tr>
+           <td >
+       
+       
+       <div> <strong><i class="sys-icon map"></i> <bx_text:_modzzz_listing_action_adresse /></strong> </div>
+       
+       <div class="infoUnit infoUnitFontIcon  bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+              
+             __adresse__
+            </div>
+           
+            
+            
+             <div class="infoUnit infoUnitFontIcon bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+               
+                <bx_if:zip>	__zip__	<br></bx_if:zip> __city__
+            </div>    
+            
+            <div class="infoUnit infoUnitFontIcon bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+             
+              __drapeau__ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__province__, __country__
+            </div>       
+            
+            
+            
+      
+           
+
+         </td>
+         </tr>
+      
+          <tr>
+           <td >
+             
+			
+             <div class="infoUnit infoUnitFontIcon">        
+					<strong>
+                    <i class="fa fa-phone"></i>
+					 __businesstelephone__
+                     </strong>
+		   </div>
+           
+				
+			
+            
+           
+            
+            <bx_if:businessemail>
+				<div class="infoUnit infoUnitFontIcon">        
+					<i class="sys-icon envelope"></i>
+					 __businessemail__
+				</div>
+				
+			</bx_if:businessemail>
+            
+             <bx_if:businesswebsite>
+				<div class="infoUnit infoUnitFontIcon">        
+					<i class="sys-icon desktop"></i>
+					 <a href="__businesswebsite__" target="_blank"> __businesswebsite__</a>
+				</div>
+				
+			</bx_if:businesswebsite>
+            
+            
+             <bx_if:LinkedinUrl>
+				<div class="infoUnit infoUnitFontIcon">        
+					<i class="sys-icon linkedin"></i>
+					 <a href="__LinkedinUrl__" target="_blank"> __LinkedinUrl__</a>
+				</div>
+				
+			</bx_if:LinkedinUrl>         
+
+       
+         </td>
+         </tr>
+
+         <tr>
+         <td >
+         
+          
+           
+           
+           
+            
+            
+        
+         <bx_if:classified_count>
+				<div>        
+					<i class="sys-icon shopping-cart"></i>&nbsp;&nbsp;
+					<a href="__classified_count_url__"> __classified_count__ 
+                    <bx_text:_modzzz_listing_action_classified /> &nbsp;<i class="sys-icon hand-o-left"> </i> </a>
+				</div>
+				
+	 </bx_if:classified_count>
+     
+     
+       
+          <bx_if:events_count>
+				<div class="connect-listing">           
+					<i class="sys-icon calendar"></i>&nbsp;&nbsp;
+					<a href="__events_count_url__"> __events_count__ 
+                    <bx_text:_modzzz_listing_action_events /> &nbsp;<i class="sys-icon hand-o-left"> </i> </a>
+				</div>
+				
+			</bx_if:events_count>
+   
+      <bx_if:jobs_count>
+				<div class="connect-listing">        
+					<strong>
+                    <i class="sys-icon building"></i>&nbsp;&nbsp;
+					<a href="__jobs_count_url__"> __jobs_count__ 
+                    <bx_text:_modzzz_listing_action_jobs /> &nbsp;<i class="sys-icon hand-o-left"> </i> </a>
+                    </strong>
+				</div>
+				
+		</bx_if:jobs_count>
+			
+            
+            
+            
+            
+          </td>
+           </tr>
+                   
+           <tr>
+           <td >
+    
+     
+     
+           
+          
+
+		 <!--
+          <div class="infoUnit infoUnitFontIcon">
+                <i class="sys-icon bell"></i>
+                __date__ 
+            </div>
+            -->
+            
+ 
+      <bx_if:owner>
+				<div class="infoUnit infoUnitFontIcon">        
+					<i class="sys-icon lock"></i>
+					<bx_text:_modzzz_listing_expires />: __expire__
+				</div>
+				<div class="infoUnit infoUnitFontIcon">        
+					<i class="sys-icon trophy"></i>
+					 __featured__
+	         </div> 
+	</bx_if:owner>
+          </td>
+           </tr>
+         </table>
+
+    </div>  
+			
+        
+        <div class="clear_both"></div>
+    </div>
+</div>
+</div>
+
+__fields__
+

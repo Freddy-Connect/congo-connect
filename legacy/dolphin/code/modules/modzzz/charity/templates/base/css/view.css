@@ -1,0 +1,31 @@
+.modzzz_charity_subdivision {
+    padding:10px;
+    font-size:11px;
+}
+
+/* update 7.1 */
+table.modzzz_charity_fields {
+    border-collapse:collapse;
+    border-spacing:0px; 
+}
+
+td.modzzz_charity_field_name {
+    padding-bottom:10px;
+    text-align:left;
+}
+
+td.modzzz_charity_field_value {
+    padding-bottom:10px;
+    text-align:left;
+}
+
+.modzzz_charity_profile_unit {
+    overflow:hidden;
+    float:left;
+}
+
+.rss_item_topic {
+	 font-weight:bold; 
+	 font-size:12px;
+	 padding-bottom:10px;   
+}

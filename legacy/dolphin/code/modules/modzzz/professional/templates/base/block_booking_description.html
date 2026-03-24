@@ -1,0 +1,28 @@
+<div class="bx-def-font-large">
+ 
+	<div class="bx-def-border bx-def-margin-sec-bottom"></div> 
+	<div class="bx-twig-unit-line"><b>__title__</b></div> 
+	<div class="bx-def-border bx-def-margin-sec-top bx-def-margin-sec-bottom"></div>
+ 	<div class="bx-twig-unit-line bx-def-margin-sec-top">__description__</div>
+ 
+	<bx_if:location> 
+		<div class="bx-def-border bx-def-margin-sec-top bx-def-margin-sec-bottom"></div>
+	 
+		<div class="bx-twig-unit-line">
+			<b><span class="bx-def-font-grayed"><bx_text:_modzzz_professional_location /></span></b> 
+		</div>
+
+		<div class="bx-twig-unit-line bx-def-margin-sec-top">__location__</div>
+	</bx_if:location>
+
+	<bx_if:contact>
+		<div class="bx-def-border bx-def-margin-sec-top bx-def-margin-sec-bottom"></div>
+
+		<div class="bx-twig-unit-line">
+			<b><span class="bx-def-font-grayed"><bx_text:_modzzz_professional_contact /></span></b> 
+		</div>
+
+		<div class="bx-twig-unit-line bx-def-margin-sec-top">__contact__</div>
+	</bx_if:contact>
+
+</div>

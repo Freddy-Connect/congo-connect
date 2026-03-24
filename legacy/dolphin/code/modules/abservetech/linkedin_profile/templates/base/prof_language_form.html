@@ -1,0 +1,46 @@
+<form class="editLanguageForm" name="editLanguageForm" id="editLanguageForm">
+  <hr class="setting-separator">
+  <div class="edit-langs-top-half"></div>
+  <div class="manage-langs selected">
+
+  <div class="add-lang-container">
+  <div class="langrow head"><label><b><bx_text:_abs_plinkin_Language1 /></b></label>
+        <label><b><bx_text:_abs_plinkin_Proficiency1 /></b></label></div>
+    <bx_repeat:languages>
+        <div class="__first_lang__ loadlang">
+        <div class="langrow"><label>
+          <input type="text" name="language[]" value="__lang__">
+        </label>
+        <label>
+        <select name="proficiency[]">
+            <option selected="selected" value=""><bx_text:_abs_plinkin_select_proficiency /></option>
+            <bx_repeat:proficiency>
+                <option value="__proficiency_key__" __selected__>__proficiency_text__</option>
+            </bx_repeat:proficiency>
+        </select>
+        </label>
+        <a href="javascript:void(0)" class="remove">X</a>
+        </div></div>
+      </bx_repeat:languages>
+        <div class="">
+        <div class="langrow"><label>
+          <input type="text" name="language[]" value="">
+        </label>
+        <label>
+          <select name="proficiency[]">
+            <option selected="selected" value=""><bx_text:_abs_plinkin_select_proficiency /></option>
+            <bx_repeat:newlang>
+                <option value="__proficiency_key__" __selected__>__proficiency_text__</option>
+            </bx_repeat:newlang>
+        </select>
+        </label>
+        <a href="javascript:void(0)" class="remove">X</a>
+        </div></div>
+    </div>
+
+
+    <a href="javascript:void(0)" name="addlang" class="addlang"><bx_text:_abs_plinkin_Add_another_language /></a>
+    <input type="submit" value="<bx_text:_abs_plinkin_setting_Save />" name="submit" class="btn-primary">
+      <input type="button" value="<bx_text:_abs_plinkin_setting_cancel />" class="edit_lang">
+  </div>
+</form>

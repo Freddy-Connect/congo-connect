@@ -1,0 +1,37 @@
+<div class="bx-twig-unit bx_events_unit bx-def-margin-top-auto">
+
+    <div class="bx-twig-unit-thumb-cont bx-def-margin-sec-right">
+        <a href="__event_url__"><img class="bx-twig-unit-thumb bx-def-round-corners bx-def-shadow" src="__thumb_url__"></a>
+    </div>
+	<div class="clear_both"></div>
+
+    <div class="bx-twig-unit-info">
+
+        <div class="bx-twig-unit-title bx-def-font_titre-h2">
+            
+             <a class="BoutonJobUnit" href="__event_url__"><span itemprop="name">__event_title__</span></a>
+        </div>
+ 
+        
+        
+      <div class="bx-twig-unit-line bx-twig-unit-special">
+      <span style="font-size:16px;"> <i class="sys-icon calendar-check-o"> &nbsp;</i> __event_start__<span itemprop="startDate" content="__event_start_rsnippet__"></span></span>
+       </div>   
+
+        <div itemprop="location" class="bx-twig-unit-line">
+               <strong> <i class="sys-icon home"> &nbsp;</i> __country_city__</strong>
+        </div>
+ 
+        <bx_if:full>
+
+            <div class="bx-twig-unit-line bx-twig-unit-rate">__rate__</div>
+        
+            <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+                <bx_text:_From /> <a href="__author_url__">__author__</a>
+            </div>                    
+
+        </bx_if:full>
+
+    </div>    
+
+</div>

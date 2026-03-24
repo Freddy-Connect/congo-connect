@@ -1,0 +1,28 @@
+<script>
+function setTitleText(sText){
+	if(document.getElementById('etext').value == "")
+		document.getElementById('etext').value = sText; 
+}
+
+function emptyTitleText(sText){
+	if(document.getElementById('etext').value == sText)
+		document.getElementById('etext').value = ""; 
+}
+</script>
+
+<form name='createfrm' method=post action='__create_url__'>
+	<div class="bx-def-bc-padding">
+		<div> 
+			  <textarea id="etext" name="title" style='height:25px;width:100%' onblur="setTitleText('<bx_text:_bx_groups_enter_your_group_name />')" onfocus="emptyTitleText('<bx_text:_bx_groups_enter_your_group_name />')"><bx_text:_bx_groups_enter_your_group_name /></textarea>
+		</div>
+		<div class="clear_both"></div>
+		<div> 
+			 <button class="bx-btn bx-btn-small bx-btn-img bx-btn-ifont" onclick="document.createfrm.submit()"> 
+				<i class="sys-icon plus"></i>
+				<bx_text:_bx_groups_continue />
+			</button>  
+		</div> 
+		<div class="clear_both"></div>
+   </div>
+</form>
+ 

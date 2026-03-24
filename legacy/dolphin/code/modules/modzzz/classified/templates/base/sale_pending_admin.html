@@ -1,0 +1,55 @@
+<div class="bx-twig-unit bx-twig-unit-admin bx_groups_unit bx-def-margin-top-auto">
+
+    <div class="bx_sys_unit_checkbox bx-def-round-corners">
+        <input type="checkbox" name="entry[]" value="__id__" />
+    </div>
+
+    <div class="bx-twig-unit-thumb-cont bx-def-margin-sec-right">
+        <a href="__classified_url__"><img class="bx-twig-unit-thumb bx-def-round-corners bx-def-shadow" src="__thumb_url__"></a>
+    </div>
+
+    <div class="bx-twig-unit-info">
+  
+        <div class="bx-twig-unit-title bx-def-font-h2">
+			<span class="posttype">__classified_type__:</span> <a class="actions" href="__classified_url__">__classified_title__</a><bx_if:price> <bx_text:_modzzz_classified_for /> <b>__price__</b></bx_if:price> 
+        </div>
+ 
+        <div class="bx-twig-unit-title bx-def-font-h2">
+			<bx_if:why>
+				<div class="unit_why">
+					<span class="attribute-title"><bx_text:_modzzz_classified_why /> </span>
+					<img src="<bx_icon_url:start_quote_gray.gif />" /> 
+						__why__
+					<img src="<bx_icon_url:end_quote_gray.gif />" /> 
+				</div>
+			</bx_if:why>
+        </div>
+ 
+        <div class="bx-twig-unit-line bx-twig-unit-desc">__snippet_text__</div>
+        <div class="bx-twig-unit-line">&nbsp;</div>
+
+        <div class="bx-twig-unit-line bx-twig-unit-special">
+			<!--__fans_count__ <bx_text:_modzzz_classified_fans />
+			__comments_count__ <bx_text:_comments />-->
+		  
+			<bx_text:_Categories />: __all_categories__
+			
+			<bx_text:_Tags />: __post_tags__ 
+		</div>
+  
+        <bx_if:full>
+
+            <div class="bx-twig-unit-line bx-twig-unit-rate">
+                __rate__
+            </div>
+
+            <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+                __created__ <span class="bullet">&#183;</span> <bx_text:_From /> <a href="__author_url__">__author__</a>
+            </div>
+
+        </bx_if:full>
+
+    </div>    
+
+</div>
+ 

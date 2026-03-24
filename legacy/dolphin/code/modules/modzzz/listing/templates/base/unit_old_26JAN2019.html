@@ -1,0 +1,150 @@
+<!-- freddy ajoiut pour flasher les icones
+ <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+<div itemscope itemtype="https://schema.org/Organization"  class="bx-twig-unit modzzz_listing_unit bx-def-margin-top-auto">
+
+    <div class="bx-twig-unit-thumb-cont bx-def-margin-sec-right">
+        <a href="__listing_url__"><img itemprop="image" class="responsive-image"  src="__thumb_url__"></a>
+         
+    </div>
+
+    <div class="bx-twig-unit-info">
+    
+     <div class="CSSProfessionalUnit">
+       <table>
+        <tr>
+        <td>
+ 
+        <div class="bx-twig-unit-title bx-def-font-h2">
+             <a itemprop="url" href="__listing_url__"><span itemprop="name"><i class="sys-icon briefcase"></i>  __listing_title__</span></a>
+        </div>
+        
+         </td>
+        </tr>
+         <tr>
+         <td>
+  
+          <bx_if:employees_count>
+				<div>        
+					<strong> <i class="sys-icon users"></i> __employees_count__</strong>
+				</div>
+				
+			</bx_if:employees_count>  
+        
+        
+        
+         <div class="infoUnit infoUnitFontIcon bx-twig-unit-line  bx-def-font-grayed">
+               <i class="sys-icon map-marker"></i>
+               __zip__  __city__   <br>__drapeau__ __country__
+          </div> 
+         </td>
+        </tr>
+         <tr>
+         <td>
+        
+       <!--
+        <div class="bx-def-font-small">  
+	    <bx_if:parent_category>
+         <a href="__category_url__"> <i class="sys-icon sliders"></i> <bx_text:_modzzz_listing_unit_type />: __category_name__</a> 
+         </bx_if:parent_category><bx_if:sub_category>__subcategories__</bx_if:sub_category>
+        </div>
+        -->
+
+        <div class="listing_description">__snippet_text__</div>
+        
+         </td>
+        </tr>
+         <tr>
+         <td>
+        
+        
+        
+        <bx_if:jobs_count>
+				<div>        
+					<strong>
+                    <i class="sys-icon building"></i>&nbsp;&nbsp;
+					<a class="BoutonJoCompanybUnit" href="__jobs_count_url__"> __jobs_count__ 
+                    __Job_Single_Plural__ &nbsp;<i class="sys-icon hand-o-left"> </i> </a>
+                    </strong>
+				</div>
+				
+		</bx_if:jobs_count> 
+         
+        
+        
+         <bx_if:classified_count>
+				<div>        
+					<i class="sys-icon shopping-cart"></i>&nbsp;&nbsp;
+					<a class="BoutonJoCompanybUnit"  href="__classified_count_url__"> __classified_count__ 
+                    <bx_text:_modzzz_listing_action_classified /> &nbsp;<i class="sys-icon hand-o-left"> </i> </a>
+				</div>
+				
+	 </bx_if:classified_count>
+     
+     
+       
+          <bx_if:events_count>
+				<div>           
+					<i class="sys-icon calendar"></i>&nbsp;&nbsp;
+					<a class="BoutonJoCompanybUnit" href="__events_count_url__"> __events_count__ 
+                    <bx_text:_modzzz_listing_action_events_unit /> &nbsp;<i class="sys-icon hand-o-left"> </i> </a>
+				</div>
+				
+			</bx_if:events_count>
+            
+            </td>
+        </tr>
+         <tr>
+         <td>
+            
+            
+             <div>          
+     <button class="ConnectNetwork_MarginTop"   onclick="window.open ('__listing_url__','_self');">
+		  <i class="sys-icon sign-out"> &nbsp;</i><strong><bx_text:_modzzz_listing_action_en_savoir_plus />  </strong>
+				</button>
+     </div>
+        
+       </td>
+        </tr>
+         <tr>
+         <td> 
+ 
+  
+        <!--<div itemprop="location" class="bx-twig-unit-line"></div>-->
+
+		
+ 
+        <bx_if:full>
+
+            <div class="bx-twig-unit-line bx-twig-unit-rate">
+                __rate__
+            </div>
+
+            <!--
+            <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+                __created__ <span class="bullet">&#183;</span> <bx_text:_From /> <a href="__author_url__">__author__</a>
+          
+           </div>  
+           -->
+
+        </bx_if:full>
+        
+        
+          </td>
+                       
+          </tr>
+     </table>
+   
+    </div>
+        <div class="clear_both"></div>
+        
+        
+
+    </div>    
+
+</div>
+<br /><br />

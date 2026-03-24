@@ -1,0 +1,39 @@
+<style>
+	.file {
+		font-weight: bold;
+		font-size: 8pt;
+		color: red;
+	}
+</style>
+1. Edit the the file <span class="file">inc/classes/BxDolProfileFields.php</span>
+	a) remove the code
+
+		<div class="code">//--- AQB Conditional Fields ---//
+if (BxDolRequest::serviceExists('aqb_conditional_fields', 'filter_post_data')) BxDolService::call('aqb_conditional_fields', 'filter_post_data', array(&amp;$this->aBlocks));
+//--- AQB Conditional Fields ---//</div>
+
+	b) the code
+
+		<div class="code">//--- AQB Conditional Fields ---//
+if (BxDolRequest::serviceExists('aqb_conditional_fields', 'get_form_object')) $oForm = BxDolService::call('aqb_conditional_fields', 'get_form_object', array($aForm));
+else $oForm = new BxTemplFormView($aForm);
+//--- AQB Conditional Fields ---//</div>
+
+	replace with the code
+
+		<div class="code">$oForm = new BxTemplFormView($aForm);</div>
+
+2. Edit the the file <span class="file">templates/base/scripts/BxBaseProfileView.php</span>
+	remove the code
+
+		<div class="code">//--- AQB Conditional Fields ---//
+if (BxDolRequest::serviceExists('aqb_conditional_fields', 'filter_view_data')) BxDolService::call('aqb_conditional_fields', 'filter_view_data', array(&amp;$this->oPF->aBlocks, $ID));
+//--- AQB Conditional Fields ---//</div>
+
+Uninstallation finished.
+If you need some help feel free to <a href="mailto:support@aqbsoft.com">contact us</a>.
+<script language="javascript">
+$(document).ready(function(){
+	$('.modules-plank-switch').toggleClass('modules-plank-switch-opened').next().toggle();
+});
+</script>

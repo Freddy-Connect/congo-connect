@@ -1,0 +1,46 @@
+/* Text color in the home section */
+.theme-home-text {
+	color: white;
+}
+
+/* Color in features section */
+.theme-color {
+	color: #FAD800 !important;
+}
+
+/* Border color in features section */
+.theme-color-border {
+	border-color: #FAD800;
+	border-style: solid;
+}
+
+/* Color of home navigation links */
+.theme-link {
+	color: white;
+}
+
+/* Color of home navigation links during scroll */
+.theme-link-scroll {
+	color: #333333;
+}
+
+/* Hover on home navigation links */
+.theme-link:hover {
+	color: #FAD800;
+}
+
+/* Button on the home slides */
+.theme-button {
+	background-color: #FAD800;
+	color: white;
+}
+
+/* Hover on Button on the home slides */
+.theme-button:hover {
+	background-color: #333333;
+}
+
+/* Hover on footer links */
+.theme-footer-link:hover {
+	color: #FAD800 !important;;
+}

@@ -1,0 +1,18 @@
+<div class="aqb-guests-cnt bx-def-bc-padding">
+	<bx_repeat:guests>
+    <!-- <div class="searchrow_block_simple bx-def-bc-padding-guest">-->
+		<div class="aqb-guest bx-def-margin-sec-top-auto">__guest__</div>
+        
+          <!-- AQB Soft: Befriend -->
+			<bx_if:befriend>
+				<div class="aqb-guest-actions">
+					<button class="ConnectNetwork" onclick="$.post('list_pop.php?action=friend', {ID: __id__}, function(sData){document.location.href=document.location.href;}); return false;">
+						<i class="sys-icon user-plus"></i> <bx_text:_aqb_gst_btn_befriend />
+					</button>
+				</div>
+			</bx_if:befriend>
+			<!-- AQB Soft: Befriend -->
+
+	</bx_repeat:guests>
+</div>
+__paginate__

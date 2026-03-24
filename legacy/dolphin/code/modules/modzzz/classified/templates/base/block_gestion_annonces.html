@@ -1,0 +1,114 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!--
+<div class="thumbnail_block_espace_job thumbnail_block_with_info" style="float:none;">
+
+		
+            
+         <div class="thumbnail_image_classified_home" >
+				__thumbnail__  
+	    </div>	
+   </div>	
+   <div class="clear_both"></div> 
+   -->
+
+    <div class="CSSBusinessClassifiedHome" >
+      <table >
+          <tr>
+          <td >
+               <div class="ConnectHomeClassified"> <bx_text:_modzzz_classified_titre_home_page />  </div>
+               <div>
+                      <button class="ConnectNetworkBlue"  onclick="window.open ('member.php','_self');">
+                          <i class="sys-icon dashboard"> </i> <i class="sys-icon user"> </i> __FirstName__ __LastName__
+                        </button>
+                </div>
+         </td>
+           </tr>
+       </table>
+    </div>
+    <div class="clear_both"></div> 
+    
+    
+
+     <div class="CSSBusinessClassifiedHome" >
+   <table >
+       <tr>
+      <td >
+      
+           <bx_if:FactureInvoice> 
+       <div>  
+         <button class="espaceemploibouton"  onclick="window.open ('m/classified/browse/my&filter=my_pending_invoices','_self');">
+       <span style="color:red; font-size:18px;"><strong>  <i class="fa fa-warning"></i>  </strong></span>
+        <!-- <bx_text:_modzzz_listing_avez_invoice_facture /> --><strong>__FactureInvoiceCount__</strong> __FactureCaption__ <span style="font-size:20px"> <i class="fa fa-hand-o-left"></i> </span> 
+        
+     </button>
+     </div> 
+         
+   </bx_if:FactureInvoice> 
+   
+             
+             <bx_if:Zero_Annonce>
+             <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+           <i  class="sys-icon user"></i> <bx_text:_modzzz_classified_vous_avez_poste /> <span style="color:#3b5998; font-size:18px; font-weight:700;"> __AnnoncesCount__ </span>__AnnoncesCaption__ .
+           </div>
+           </bx_if:Zero_Annonce>  
+                 
+           
+       
+           
+          
+            <bx_if:go_to_your_space_caption>
+                            
+              <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">  
+                   <button class="espaceemploibouton"  onclick="window.open ('m/classified/browse/my','_self');">
+        <span style="color:#3b5998; font-size:14px;"> <i class="sys-icon desktop"> </i> </span> 
+         <!--<bx_text:_modzzz_classified_vous_avez_poste />--> <strong>__AnnoncesCount__</strong>  __AnnoncesCaption__   
+         </button>
+          </div>
+         
+          </bx_if:go_to_your_space_caption>  
+            
+            
+      
+      
+        
+        
+         <bx_if:Annonces_Favorites> 
+           <div>  
+         <button class="espaceemploibouton"  onclick="window.open ('m/classified/browse/favorite','_self');">
+       <i class="sys-icon heart-o"> </i> 
+        <!-- <bx_text:_modzzz_listing_ajouter_favorite /> --><strong>__FavoriteAnnonces__</strong>  __FavoriteCaption__ 
+        
+         </button>
+         </div> 
+   </bx_if:Annonces_Favorites> 
+   
+   
+       <bx_if:Membre_Zero_Annonce> 
+           <div> 
+           <button class="AjouterAnnonce"  onclick="window.open ('m/classified/browse/my&filter=add_classified','_self');">
+            <i class="fa fa-desktop"></i> <i class="fa fa-user"></i> &nbsp; <bx_text:_modzzz_classified_poster_annonce /> 
+           </button>
+           </div>
+       </bx_if:Membre_Zero_Annonce> 
+       
+       <bx_if:Membre_Plusieurs_Annonces> 
+           <div> 
+           <button class="AjouterAnnonce"  onclick="window.open ('m/classified/browse/my&filter=add_classified','_self');">
+            <i class="fa fa-desktop"></i> <i class="fa fa-user"></i> &nbsp; <bx_text:_modzzz_classified_poster_autre_annonce /> 
+           </button>
+           </div>
+       </bx_if:Membre_Plusieurs_Annonces> 
+      
+      
+  
+       </td>
+  
+      </tr>   
+       
+    
+     </table>
+    </div>
+   <div class="clear_both"></div> 
+        
+    

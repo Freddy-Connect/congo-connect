@@ -1,0 +1,36 @@
+div.aqb-profiles-block {
+	position: relative;
+}
+div.aqb-profiles-block div.MsgBox {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+div.aqb-profiles-block table.MsgBox {
+	margin-top: 0px;
+	margin-bottom: 0px;
+} 
+
+/* Freddy ajout  */
+div.aqb_popularity_profile {
+	float: left;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+
+.suggerito {
+ background: #DDD;
+ border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ box-shadow: 0 0 1px 0 #333;
+ -webkit-box-shadow: 0 0 1px 0 #333;
+ -moz-box-shadow: 0 0 1px 0 #333;
+ color: #333 !important;
+ cursor: pointer;
+ float: left;
+ margin-top: 2px;
+ padding: 1px 8px;
+ font-weight: bold;
+ font-size:11px;
+}
