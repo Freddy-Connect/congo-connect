@@ -1,0 +1,54 @@
+<div class="bx-twig-unit bx-twig-unit-admin bx_events_unit bx-def-margin-top-auto">
+ 
+	<div class="bx_sys_unit_checkbox" >
+		<input type="checkbox" name="entry[]" value="__id__" />
+	</div>   
+	 	
+    <div class="bx-twig-unit-info">
+
+        <div class="bx-twig-unit-title bx-def-font-h2 bx-twig-checkbox-pad">
+			<bx_if:pay>[<a href="__pay_url__"><bx_text:_bx_events_pay_invoice /></a>] - </bx_if:pay>__package__ - <a href="__event_url__">__event_title__</a> 
+		</div>
+		<div class="clear_both"></div>
+		   
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption"><bx_text:_bx_events_invoice_id />:</span> __invoice_id__
+		</div>
+		<div class="clear_both"></div>
+
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption"><bx_text:_bx_events_invoice_no />:</span> __invoice_no__
+		</div>
+		<div class="clear_both"></div>
+ 
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption"><bx_text:_bx_events_purchaser />:</span> <a href="__author_url__">__author__</a>
+		</div>
+		<div class="clear_both"></div>
+
+        <div class="bx-twig-unit-title">  
+			<span class="bx-twig-unit-caption"><bx_text:_bx_events_total />:</span> __total__
+		</div>
+		<div class="clear_both"></div>
+  
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption"><bx_text:_bx_events_invoice_date />:</span> __create_date__
+		</div>
+		<div class="clear_both"></div>
+
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption"><bx_text:_bx_events_invoice_due_date />:</span> __due_date__
+		</div>
+		<div class="clear_both"></div>
+
+        <div class="bx-twig-unit-title"> 
+			<span class="bx-twig-unit-caption"><bx_text:_bx_events_status />:</span> __invoice_status__
+		</div>  
+		<div class="clear_both"></div>
+
+	</div> 
+	<div class="clear_both"></div>
+</div>
+ 
+
+ 

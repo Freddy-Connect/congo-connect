@@ -1,0 +1,40 @@
+<div class="bx_sys_block_info">
+    <div class="infoMain">
+ 
+		__author_unit__
+   
+        <div class="infoText bx-def-margin-sec-top">
+            <div class="infoUnit infoUnitFontIcon">
+                <i class="sys-icon bell"></i>
+                __date__ (__date_ago__)
+            </div>
+			<bx_if:cats>
+				<div class="infoUnit infoUnitFontIcon">
+					<i class="sys-icon folder-close"></i>
+					__cats__
+				</div>
+			</bx_if:cats>
+			<bx_if:tags>
+				<div class="infoUnit infoUnitFontIcon">
+					<i class="sys-icon tags"></i>
+					__tags__
+				</div>  
+			</bx_if:tags> 
+        </div>
+        <div class="clear_both"></div>
+    </div>
+</div>
+
+<bx_if:fields> 
+   <div class="infoUnitBorder"></div>
+ 
+   <div class="bx-def-padding-thd-topbottom">
+		<div class="bx-twig-unit-line"> 
+			<b><bx_text:_bx_groups_caption_event_start />:</b> <span>__event_start__</span>
+		</div>
+		<div class="bx-twig-unit-line bx-def-padding-thd-top">   
+			<b><bx_text:_bx_groups_caption_event_end />:</b> <span class="dtend">__event_end__</span>
+		</div>
+   </div> 
+</bx_if:fields>
+

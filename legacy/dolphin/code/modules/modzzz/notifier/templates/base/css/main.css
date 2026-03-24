@@ -1,0 +1,128 @@
+.setting{
+	margin-bottom:15px;
+}
+
+.setting_text{
+	margin-top:-3px;
+	font-weight:bold;
+}
+
+.notifier_action_headgroup {
+	float:left;
+	margin-bottom: 30px;
+	width:100%; 
+}
+
+.notifier_action_rowgroup {
+	float:left;
+	margin-bottom: 10px;
+	width:100%;  
+}
+
+.notifier_action_totalgroup {
+	float:left;
+	margin-bottom: 10px;
+	width:100%; 
+	font-weight:bold;
+	font-size:14px;	
+}
+
+.notifier_action_totalrow_right {
+	float:left;
+	width:23%; 
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-left: 5px; 
+	padding-right: 5px; 
+	padding-bottom: 2px;
+	text-align:right;
+}
+
+.notifier_action_totalrow {
+	float:left;
+	width:23%; 
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-left: 5px; 
+	padding-right: 5px; 
+	padding-bottom: 2px;  
+	border:2px dotted #DADADA;
+}
+
+
+.notifier_action_head {
+	float:left;
+	width:23%; 
+	font-weight:bold;
+	font-size:14px;
+	margin-left: 2px;
+	margin-right: 2px;  
+	padding: 5px; 
+	background-color:#c0c0c0; 
+}
+
+.notifier_action_row {
+	float:left;
+	width:23%; 
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-left: 5px; 
+	padding-right: 5px; 
+	padding-bottom: 2px;   
+}
+
+.modzzz_notifier_main_photo {
+    border:1px solid #CCCCCC;
+    width:604px;
+    padding:2px 0;
+    margin:0 auto;
+    text-align:center;
+}
+
+.modzzz_notifier_main_info {
+    width:606px;
+    margin:2px auto 0px auto;
+}
+
+.modzzz_notifier_main_info a:first-child {
+    font-weight:bold;
+}
+
+.modzzz_notifier_main_info_text {
+    width:50%;
+    float:left;
+    text-align:left;
+    font-size:11px;
+    line-height:14px;
+}
+.modzzz_notifier_main_info_img {
+    width:50%;
+    float:left;
+    text-align:right;
+    font-size:11px;
+}
+
+.modzzz_notifier_main_info_img .votes_small {
+    width:auto;
+}
+.modzzz_notifier_main_info_img>img {
+    position:relative;
+    top:3px;
+}
+
+.notifier_unit {
+	padding: 0px;
+	margin: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.categories_col {
+    font-weight:bold;
+    font-size:12px; 
+}
+
+.input_wrapper_custom {
+    float: none; 
+	width:100%;
+}

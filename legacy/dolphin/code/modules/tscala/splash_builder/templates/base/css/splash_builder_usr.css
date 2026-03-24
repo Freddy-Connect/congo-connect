@@ -1,0 +1,42 @@
+
+    div.tscala_splash_builder_explanation {
+        padding:10px;
+        width:400px;
+        height:300px;
+        overflow-x:hidden;
+        overflow-y:scroll;
+        background-color:#FFFFCC;
+        line-height: 170%;
+    }
+
+    div#tscala_splash_builder_popup_window div.dbTitle img {
+        padding-bottom:2px;
+        padding-right:5px;
+        vertical-align:middle;
+    }
+
+    div#tscala_splash_builder_popup_window div.boxContent {
+        padding:0;
+    }
+
+    div#tscala_splash_builder_popup_window div.dbTopMenu img {
+        padding-top:2px;
+        vertical-align:middle;
+    }
+
+    div.tscala_splash_builder_wrapper {
+        right:0;
+        z-index:1000;
+        width:22px;
+        height:72px;
+        position:fixed;
+        cursor:pointer;
+        visibility:hidden;
+    }
+
+    div.tscala_splash_builder_explanation_auto{
+        background-color:#EDEDED;
+        font-size:10px;
+        font-weight:bold;
+        padding:2px;
+    }

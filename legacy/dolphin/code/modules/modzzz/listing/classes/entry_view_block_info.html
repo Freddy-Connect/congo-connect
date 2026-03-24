@@ -1,0 +1,89 @@
+  <div class="CSSEspaceEmploi" >
+      <table >
+         <!-- <tr>
+          <td >
+       
+       
+       
+         <div style="font-size:16px;">
+              <b> <i class="sys-icon user"></i> <bx_text:_modzzz_jobs_block_info />  </b> 
+              <br /> <br />
+				
+        </div>
+          </td> 
+          </tr> 
+          -->
+          
+          
+            <tr>
+            <td>   
+         <div class="thumbnail_block_with_info  thumb_username" >
+            __author_thumb__
+  
+    </td>
+           </tr>
+            <tr>
+            <td> 
+    <!-- AQB Soft Freddy: Befriend -->
+			<bx_if:befriend>
+				<div class="aqb-guest-actions">
+				<button class="ConnectNetworkView" onclick="$.post('list_pop.php?action=friend', {ID: __id__}, function(sData){document.location.href=document.location.href;}); return false;">
+						<i class="sys-icon user-plus"></i> <bx_text:_connexiont_btn_befriend />
+					</button>
+				</div>
+                <br>
+			</bx_if:befriend>
+  <!-- AQB Soft Freddy: Befriend -->
+  
+  <div class="clear_both"></div>
+  </div>
+   
+   <!--
+    <bx_if:contacter_url>
+         <div>
+              <button class="ConnectNetwork"   onclick="window.open ('__contacter_url__','_self');">
+		  <i class="sys-icon envelope"> &nbsp;</i><bx_text:_modzzz_jobs_message_contacter />  
+				</button>
+        </div>
+     </bx_if:contacter_url>
+     -->
+  
+        
+            
+            
+     
+           
+        <div class="bx-twig-unit-info">   
+
+           <!--
+			<bx_if:expires>
+			  
+                <div class="infoUnit infoUnitFontIcon Job_details_View">
+                      <br />
+                      <i class="sys-icon bell"></i>
+                     <bx_text:_modzzz_jobs_expires />: __expire__
+                </div> 
+			</bx_if:expires>
+            -->
+
+			<bx_if:featured> 
+			  <div class="infoUnit infoUnitFontIcon Job_details_View">
+                <i class="sys-icon trophy"></i>
+                 __featured__
+              </div>
+			</bx_if:featured>
+          
+        </div>
+        <div class="clear_both"></div>
+        
+        
+     </td>
+           </tr>
+       </table>
+    </div>
+    <div class="clear_both"></div>     
+        
+
+
+__fields__
+

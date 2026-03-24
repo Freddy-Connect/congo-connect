@@ -1,0 +1,77 @@
+#sys_manage_items_manage_fans_content { 
+	max-height:280px; 
+	overflow-y:auto;
+}
+ 
+.infoUnitBorderFirst {
+	border:2px solid #CCCCCC; 
+	width:100%;
+    margin:5px 0px 10px 0px;
+}
+
+.infoUnitBorder {
+	border:2px solid #CCCCCC; 
+	width:100%;
+    margin:5px 0px 5px 0px;
+}
+
+table.bx_groups_fields {
+    border-collapse:collapse;
+    border-spacing:0px;
+}
+ 
+td.bx_groups_field_name {
+    padding:0px 0px 10px 0px ;
+    text-align:left;
+}
+
+td.bx_groups_field_value {
+    padding:0px 0px 10px 10px ;
+    text-align:left;
+}
+ 
+.bx_groups_profile_unit {
+    overflow:hidden;
+    float:left;
+}
+
+.rss_item_topic {
+	 font-weight:bold; 
+	 font-size:12px;
+	 padding-bottom:10px;   
+}
+
+.bx-twig-unit-icon-cont {
+    float:left;
+    display:table-cell;
+    top:0;
+    left:0;
+    width:70px;
+    text-align:center;
+    vertical-align:top;
+    padding-left:2px;
+    padding-bottom:3px;
+}
+
+.bx-twig-unit-icon-cont img {
+    background-color:white;
+}
+
+.bx-twig-unit-caption {
+	color:green;
+}
+
+.bx-twig-checkbox-pad {
+	margin-left:30px;
+}
+ 
+.bx-twig-unit-desc {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.bx-twig-unit-comment{
+    margin-bottom:5px;
+}
+
+

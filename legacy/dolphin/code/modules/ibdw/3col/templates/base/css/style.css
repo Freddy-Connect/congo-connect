@@ -1,0 +1,309 @@
+.rigamenu3 {
+ height:16px;
+ margin-top:0;
+ padding:4px 0 4px 8px;
+}
+.rigamenu4 {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+    float: left;
+    margin-bottom: 1px;
+    padding: 4px 0;
+    width: 100%;
+}
+.rigamenu5 {
+ border-top: 1px solid #E1E9ED;
+ height:55px;
+ margin:0 0 1px 0;
+ padding:4px;
+}
+.rigamenu6 {
+ height: 55px;
+ margin: 0 0 1px 0;
+ padding: 4px;
+}
+.rigamenu3:hover {background:#f1f1f1;}
+.rhegionmenuelement3 {
+    float: left;
+    padding: 0 0 10px;
+    width: 100%;
+}
+.titleamicireq {
+ padding:4px 8px;
+ font-weight: bold;
+ margin-left:0
+}
+.titleamicireq a {
+    color: #999 !important;
+    font-size: 12px;
+}
+.titlesaluti {
+ color: #333 !important;
+ margin-left: 5px;
+ padding: 0 4px 4px;
+ text-decoration: none !important;
+ float: left;
+}
+.rigamenumodificadx {
+    padding: 6px 0 5px;
+}
+.titlealtro {
+    border-bottom: 1px solid #D5D5D5;
+    color: #999999;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+.titleinvita {
+    color: #333333 !important;
+    margin-left: 5px;
+    padding: 0 4px 4px;
+    text-decoration: none !important;
+}
+.titleeventirec {
+    border-bottom: 1px solid #D5D5D5;
+    color: #999999;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+.titlesugge {
+    border-bottom: 1px solid #D5D5D5;
+    color: #999999;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+.rigamenuev {
+ margin-left: 25px;
+ margin-bottom:4px 8px;
+}
+.rigamenuev a {
+ font-weight: bold;
+ color: #333 !important;
+}
+.titlecompleannirec {
+    border-bottom: 1px solid #D5D5D5;
+    color: #999999;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+.titlespionerec {
+ background:url('../images/icons/eye.png') no-repeat;
+ padding: 0px 3px 3px 20px;
+ margin-left:0px;
+ font-weight: bold;
+}
+.suggerito {
+ background: #DDD;
+ border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ box-shadow: 0 0 1px 0 #333;
+ -webkit-box-shadow: 0 0 1px 0 #333;
+ -moz-box-shadow: 0 0 1px 0 #333;
+ color: #333 !important;
+ cursor: pointer;
+ float: left;
+ margin-top: 2px;
+ padding: 1px 8px;
+}
+.suggerito:hover {
+ background-color: #FFF;
+ text-decoration: none;
+}
+.deletesuggest {
+ float:right;
+ cursor:pointer;
+}
+.rigamenuspy {
+ height:38px;
+ margin:2px 25px;
+}
+.rigamenusuggetop {
+ margin: 0;
+ padding: 0 8px;
+}
+.rigamenusugge
+{
+ border-top:1px solid #E1E9ED;
+ margin:6px 0;
+ padding: 0 8px;
+}
+.mioavatar1
+{
+ float:left;
+ margin:0 5px 0 0;
+}
+.mioavatfb {
+ border-radius: 10px;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ float: left;
+ height: 56px !important;
+ margin: 0 10px 0 6px;
+ width: 56px !important;
+}
+.mioavatfb2 {
+ float:left;
+ height: 38px !important;
+ width: 38px !important;
+ margin:0 5px 0 2px;
+ border-radius:6px;
+ -webkit-border-radius: 6px;
+ -moz-border-radius: 6px;
+}
+.iconsuggested {
+ float:left;
+ width: 70px;
+}
+.iconsuggested a {color: #333 !important;}
+.mioutentesmall2 {
+ font-size:12px;
+ font-weight:normal;
+ width:100%;
+ padding:1px 0;
+}
+.mioutentesmall4 {
+ font-size:12px;
+ font-weight:normal;
+ padding:0px 0;
+ margin-left:70px;
+}
+.mioutentesmall5 {
+ font-size:12px;
+ font-weight:normal;
+ width:100%;
+ padding:0px 0;
+ margin-left:50px;
+}
+.mioavatarsmall3 {
+    float: left;
+    padding: 2px 8px;
+}
+.mioutentesmall3 {
+ font-size:12px;
+ line-height: 12px;
+ font-weight:bolder;
+ padding:0;
+}
+.pulsante1 {padding:2px;}
+
+
+.click {
+ font-size:12px !important;
+ /*freddy modif 
+ font-weight:normal !important;
+ */
+  font-weight:normal !important;
+}
+
+.click:hover {cursor: pointer;}
+
+
+
+.pulsante {
+ float:left;
+ margin: 0 8px 0 0;
+ padding:2px;
+}
+
+
+.pulsante:hover {cursor: pointer;}
+
+.pulsante form input {
+ background: none repeat scroll 0 0 #DDD;
+ border: 0 none !important;
+ border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ box-shadow: 0 0 1px 0 #333;
+ -webkit-box-shadow: 0 0 1px 0 #333;
+ -moz-box-shadow: 0 0 1px 0 #333;
+ /* freddy modif 
+ color: #333 !important;
+ */
+  color: #0073b1  !important;
+ float: left;
+ font-size: 12px !important;
+ margin: 0;
+/*  padding: 0px 8px; */
+padding: 2px 8px 3px 8px;
+
+ 
+}
+
+
+
+.pulsante form input:hover {background:none repeat scroll 0 0 #FFF;}
+#amicomuni {
+ font-weight: normal;
+ padding: 3px 0;
+}
+
+.eventino {
+ color:#333;
+ font-size:10px;
+}
+.nomeamico {}
+.nomeamico a {
+ font-weight: bold;
+     word-wrap: break-word;
+}
+.contenitorepulsanti {margin-top:0px;float:left;}
+.riepilogo {height:68px;clear:bith;}
+.mtf {
+ width: 100%;
+}
+.itemcont {padding: 4px 0;}
+
+#distanziatore {height:20px;}
+.bubble3col {
+ background-color: #999;
+ border-radius: 4px;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ color: #FFF;
+ float: left;
+ font-size: 10px;
+ margin-left: 1px;
+ padding: 1px;
+ text-align: center;
+ width: 14px;
+ float: left;
+ font-weight: bold;
+}
+.bubble3colforceddx {
+ background-color: #999;
+ border-radius: 4px;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ color: #FFF;
+ font-size: 10px;
+ font-weight: bold;
+ margin-left: 4px;
+ padding: 1px 4px;
+}
+.rigamenumodificadx i,.rigamenu3 i, .suggerito i
+{
+	 padding-right: 6px;
+}
+.deletesuggest .sys-icon.remove:before
+{
+	color:#333;
+}
+.deletesuggest .sys-icon.remove:hover
+{
+	color:red;
+}
+
+.adi_button, .adi_btn1, .adi_btn2, .adi_invite, input[type="submit"] {
+
+	
+	height: 12px;
+    line-height: 12px;
+    
+    padding: 0 32px;	
+}
+
+.ConnectNetworkMembers { display:none;}

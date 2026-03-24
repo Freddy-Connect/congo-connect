@@ -1,0 +1,75 @@
+<div class="bx-twig-unit bx-twig-unit-admin modzzz_news_unit bx-def-margin-top-auto">
+
+    <div class="bx_sys_unit_checkbox bx-def-round-corners">
+        <input type="checkbox" name="entry[]" value="__id__" />
+    </div>
+
+	<bx_if:showphoto>
+		<div class="bx-twig-unit-thumb-cont bx-def-margin-sec-right">
+			<a href="__news_url__"><img class="bx-twig-unit-thumb bx-def-round-corners bx-def-shadow" src="__thumb_url__"></a>
+		</div>
+	</bx_if:showphoto>
+
+	<bx_if:showmember>
+		<div class="bx-twig-unit-icon-cont bx-def-margin-sec-right">
+			__post_uthumb__
+		</div>
+	</bx_if:showmember>
+
+    <div class="bx-twig-unit-info">
+
+        <div class="bx-twig-unit-title bx-def-font-h2">
+            <a href="__news_url__">__news_title__</a>
+        </div>
+
+        <div class="bx-twig-unit-line bx-twig-unit-desc">__snippet_text__</div>
+ 
+		<bx_if:school>
+			<div class="bx-twig-unit-line bx-twig-unit-special"> 
+				<bx_text:_modzzz_news_caption_news_for_school /> __school__
+			</div> 
+		</bx_if:school>
+ 
+		<bx_if:group>
+			<div class="bx-twig-unit-line bx-twig-unit-special"> 
+				<bx_text:_modzzz_news_caption_news_for_group /> __group__
+			</div> 
+		</bx_if:group>
+ 
+		<bx_if:event>
+			<div class="bx-twig-unit-line bx-twig-unit-special"> 
+				<bx_text:_modzzz_news_caption_news_for_event /> __event__
+			</div> 
+		</bx_if:event>
+ 
+		<bx_if:band>
+			<div class="bx-twig-unit-line bx-twig-unit-special"> 
+				<bx_text:_modzzz_news_caption_news_for_band /> __band__
+			</div> 
+		</bx_if:band>
+ 
+		<bx_if:business>
+			<div class="bx-twig-unit-line bx-twig-unit-special"> 
+				<bx_text:_modzzz_news_caption_news_for_business /> __business__
+			</div> 
+		</bx_if:business>
+
+        <div class="bx-twig-unit-line bx-twig-unit-special"> 
+			<a href="__category_url__">__category_name__</a><bx_if:subcategory>&nbsp;<span class="bullet">&#8594;</span> <a href="__subcategory_url__">__subcategory_name__</a></bx_if:subcategory>
+		</div>
+  
+        <bx_if:full>
+
+            <div class="bx-twig-unit-line bx-twig-unit-rate">
+                __rate__
+            </div>
+
+            <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+                __created__ <span class="bullet">&#183;</span> <bx_text:_From /> <a href="__author_url__">__author__</a>
+            </div>
+
+        </bx_if:full>
+
+    </div>    
+
+</div>

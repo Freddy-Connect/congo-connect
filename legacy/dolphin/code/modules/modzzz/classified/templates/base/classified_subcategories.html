@@ -1,0 +1,26 @@
+<div class="bx-def-bc-padding">
+	 <div class="block_header" style="width: 100%;"><a class="actions" href='__all_categories_url__'><bx_text:_modzzz_classified_all_categories /></a>
+     <br>
+     </div>
+
+	 <div class="block_header" style="width: 100%;"><a class="actions" href='__parent_category_url__'><strong>__parent_category__</strong></a>
+     <br>
+     </div>
+
+	<bx_repeat:entries> 
+    
+    
+         
+         
+           <bx_if:categorie> 
+       		 <div class="__subcategory_class__" style="width: 100%;">
+             <a class="actions" href='__subcategory_url__'><span style="font-size:14px;"><i class="sys-icon square"></i> </span><span style="font-size:14px;">__subcategory__</span> &nbsp;<span class="centerspacecategories"> __num_items__</span></a>
+             </div> 
+
+		</bx_if:categorie>  
+         
+         
+         
+	</bx_repeat:entries>  
+	<div class="clear_both"></div>
+</div>

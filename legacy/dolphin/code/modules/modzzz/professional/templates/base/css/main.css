@@ -1,0 +1,128 @@
+.input_wrapper_custom {
+    padding-top: 3px; 
+}
+
+.selected_subcat {
+    font-weight:bold;
+}
+
+.block_header{
+ 	font-weight: bold;
+	font-size:12px;
+	padding-bottom: 5px;  
+ }
+   
+#sys_manage_items_manage_fans_content {
+    max-height:280px;
+    overflow-y:auto;
+}
+
+/*--- 'Available levels', 'Current Level' Styles ---*/
+div.mbp-current-levels,
+div.mbp-available-levels {
+    margin: 0px 0px 10px 0px;
+}
+div.mbp-level {
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+
+    position: relative;
+
+    /*background-color: #f2f2ff;*/
+}
+ 
+div.mbp-level-price {
+    top: 10px;
+    right: 10px;    
+    height: 16px;
+
+    position: absolute;
+
+    font-weight: bold;
+    font-size: 12px;
+}
+div.mbp-level-price div.image {
+	width: 32px;
+	height: 16px;
+	
+	position: relative;
+	float: left;
+
+	background-repeat: no-repeat;
+    background-position: right center;
+}
+div.mbp-level-price div.text {
+	height: 16px;
+	
+	position: relative;
+	float: left;
+}
+div.mbp-level-price img {
+    width: 16px;
+    height: 16px;
+}
+div.mbp-level-content {
+    min-height: 116px; 
+    padding-left: 5px;
+}
+div.mbp-level-title {
+    font-weight: bold;
+    font-size: 12px;
+}
+div.mbp-level-info {
+    padding-top: 5px;
+}
+div.mbp-level-control {
+    padding-top: 5px;
+}
+
+div.mbp-current-level {
+    margin: 0px;
+}
+div.mbp-current-level div.mbp-level {
+    margin: 0px;
+    padding: 10px;
+    
+    position: relative;
+
+    /*background-color: #ffffff;*/
+}
+div.mbp-level-description {
+    min-height: 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+
+
+
+/* updated 7.1 */
+
+.modzzz_professional_main_photo {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.modzzz_professional_main_photo img {
+    background-color:#fff;
+}
+
+.modzzz_professional_main_info_text {
+    width:70%;
+    float:left;
+    text-align:left;
+}
+.modzzz_professional_main_info_img {
+    width:30%;
+    float:left;
+    text-align:right;
+}
+
+.modzzz_professional_main_info_img .votes_small {
+    width:auto;
+}
+
+.categories_col {
+    font-weight:bold;
+    font-size:12px; 
+}

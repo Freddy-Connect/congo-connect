@@ -1,0 +1,279 @@
+<div class="bx_sys_block_info">
+    <div class="infoMain">
+    
+     <div class="CSSJobUnit" >
+                <table > 
+                      <tr>
+                          <td> 
+                                
+                              <b> <bx_text:_modzzz_jobs_block_company /> </b>
+                            </td>
+          
+                     </tr>
+                </table >
+       </div> 
+    
+    
+     <div class="CSSJobUnit" >
+                <table >
+                    <tr>
+                        <td>
+                        
+                        
+     <bx_if:post_type_stage> 
+    <div>
+	  
+      <i class="sys-icon building"></i> __post_type_stage__ __job_status__ __job_type__ 
+      
+	</div>
+   </bx_if:post_type_stage>
+        
+   <bx_if:post_type_emploi> 
+	<div>
+	
+    <i class="sys-icon building"></i>  __post_type_emploi__ __job_status__ __job_type__ 
+    
+	</div>
+	</bx_if:post_type_emploi>   
+    
+        <bx_if:salary> 
+			<div class="bx-twig-unit-line">  
+		<span style="font-size:14px;"> 
+        <span style="color:#87868c;">
+        <i class="sys-icon money"></i>
+        <bx_text:_modzzz_jobs_salary />:  __salary_minimum__   __salary_maximum__  __salary_type__
+        </span>
+        </span>
+			</div>
+		</bx_if:salary>  
+    
+     </td>
+   </tr>
+   <tr>
+   <td >          
+                        
+       <!--   
+		<div class="thumbnail_block thumbnail_block_with_info" style="float:none;">
+
+		
+            
+            <div class="thumbnail_image" >
+				<a href="__company_url__">
+					<img src="<bx_image_url:spacer.gif />" style="background-image:url(__company_thumb__);" class="thumbnail_image_file bx-def-shadow bx-def-round-corners" /> 
+				</a>
+			</div>	
+            
+
+			<div class="thumb_username">
+				<strong><bx_text:_modzzz_jobs_listed_by /> <a class="bx-def-font-large" href="__company_url__">__company_name__</a> </strong>
+			</div> 
+
+			<div class="clear_both"></div> 
+		</div>
+        -->
+       
+<div>      
+
+			   <span style="font-size:14px;">
+               <span style="color:#87868c;">
+                <i class="sys-icon map-marker"></i>      __zip__  __city__ |__province__
+               </span>
+               </span>
+  </div>
+        
+   <!--
+    <div>
+	<strong><bx_text:_modzzz_jobs_listed_by_company /> <a class="bx-def-font-large" href="__company_url__">__company_name__</a> </strong>
+	</div> 
+    -->
+   </td>
+   </tr>
+  
+  <tr>
+  <td >
+   
+   <bx_if:experience> 
+         
+		<div>
+              <span style="font-size:14px;">
+                  
+                 
+                     <i class="sys-icon user"></i> <bx_text:_modzzz_jobs_form_caption_experience_unit />:
+                  
+            
+               <span style="color:#87868c;">
+				 __experience__
+               </span>
+             </span>
+                
+		</div>
+   </bx_if:experience>
+        
+        
+</td>
+</tr>
+<tr>
+<td >
+        
+         <bx_if:qualification> 
+			<div>
+             <span style="font-size:14px;">
+                  
+                 
+				    <i class="sys-icon graduation-cap"></i> <bx_text:_modzzz_jobs_form_caption_qualification_unit />: 
+                     
+               
+                  <span style="color:#87868c;">    
+                     __qualification__
+                  </span>
+                
+               </span>
+			</div>
+		</bx_if:qualification>
+</td>
+</tr>
+<tr>
+<td >
+        
+        
+         <bx_if:career_level> 
+			<div>
+            <span style="font-size:14px;">
+                  
+            
+				  <i class="sys-icon sliders"></i> <bx_text:_modzzz_jobs_form_caption_career_level_unit />:    
+                
+               
+               <span style="color:#87868c;">   
+                __career_level__
+               </span>
+                
+               </span>
+			</div>
+		</bx_if:career_level>
+        
+        
+        
+        
+ </td>
+ </tr>
+ <tr>
+<td >
+   <div>
+          <span style="font-size:14px;">
+             <i class="sys-icon certificate"></i> <bx_text:_modzzz_jobs_form_caption_secteur_activity_unit />:
+        </span>
+       <br> 
+                <span style="font-size:12px;">
+                
+                <a href="__category_url__">__category_name__</a><bx_if:sub_category> <span class="bullet">&#8594;</span> <a href="__subcategory_url__">__subcategory_name__</a></bx_if:sub_category>
+                </span>
+   </div>
+ </td>
+ </tr>
+ <tr>
+<td >
+
+                        
+  <!--
+        <div class="infoText bx-def-margin-sec-top">
+            <div class="infoUnit infoUnitFontIcon">
+                <i class="sys-icon time"></i>
+                __date__ (__date_ago__)
+            </div>
+         
+           
+ 
+            <div class="infoUnit infoUnitFontIcon">
+                <i class="sys-icon tags"></i>
+                __tags__
+            </div> 
+             -->
+              <div>
+                  <span style="font-size:13px;">
+                  <span style="color:#87868c;">
+                     <i class="sys-icon users"></i> __vacancies__ __vacancies_caption__ 
+                     <br><i class="sys-icon envelope"> </i>  __Application_count__ __Application_caption__ 
+                  </span>
+                </span>
+              </div>  
+      
+             <div class="infoUnit infoUnitFontIcon">
+                <span style="font-size:12px;">
+              
+                <i class="sys-icon calendar"></i>
+               <bx_text:_modzzz_jobs_date_publication />: __date__  
+              
+               
+               </span>
+             </div>
+             
+             
+        
+          </td>
+  
+                  </tr>
+              
+              <!--
+                <tr>
+             <td >
+              <bx_if:DisplayApply>
+                     <button class="bx-btn bx-btn-small bx-btn-ifont"   onclick="window.open ('__applyLink__','_self');">
+						<i class="sys-icon user"></i><strong> &nbsp;__message_title__  </strong>
+					</button>
+                    
+                   
+                    
+                </bx_if:DisplayApply>
+       
+             <div>
+                    
+						<strong> &nbsp;__message_applicant__  </strong>
+					
+                    
+                   
+                    
+                </div>
+        
+         </td>
+                       
+                    </tr>
+                    -->
+      </table>
+                                
+      </div>
+      
+      
+    <div class="CSSRecruiters" >
+       
+                <table > 
+                      <tr>
+                          <td> 
+                                
+                <div class="infoUnit infoUnitFontIcon">
+                     <span style="font-size:13px;">
+              
+                 
+                          <i class="sys-icon briefcase"></i> <a class="BoutonJobBizLien" href="__company_url__">__company_name__</a>
+                          
+               
+                    </span>
+             </div>
+             
+            
+              <div class="thumbnail_image_jobs" >
+				 <a href="__company_url__">
+		          <img class="thumbnail_image_file_jobs bx-def-shadow bx-def-round-corners-jobs" src="__company_thumb__" /> </a>
+	          </div>	
+             </td>
+          
+           </tr>
+         </table >
+      </div> 
+      
+      
+    <div class="clear_both"></div>
+    </div>
+</div>
+ 
+ 

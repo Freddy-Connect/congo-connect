@@ -1,0 +1,98 @@
+<div class="bx-def-bc-padding">
+
+	<div style="width:67%;display:inline-block;vertical-align:top;margin-right:3%;">
+		<form method="post" id="mangeprofileblocks">	
+			<div id="rwadmin_tab_con" style="margin-bottom:20px;">__content__</div>
+			<div class="ultm-action-btn">__actions_panel__ </div>
+		</form>
+	</div>
+
+	<div style="width:28%;display:inline-block;vertical-align:top;">
+	
+		<div style="background-color:#d9d9d9;margin-bottom:20px;">
+		<form method="post">
+
+			<span style="font-size:15px;color:#fff;background-color:gray;padding:5px;display:block;">Add Profile Blocks to Tab</span>
+
+			<div style="padding:8px;">
+				<select name="addnewtab" style="width:100%;">
+					__pblockoption__
+				</select>
+
+				<select name="type" style="width:77%;">
+					__tab_type_option__
+				</select>
+
+				<input type="submit" value="Add" />
+			</div>
+		
+		</form>
+		</div>
+
+		<div style="background-color:#d9d9d9;margin-bottom:20px;">
+		<form method="post">
+
+			<span style="font-size:15px;color:#fff;background-color:gray;padding:5px;display:block;">Add Profile Tab</span>
+
+			<div style="padding:8px;">
+
+				<input type="text" name="addnewptab" />
+
+				<input type="submit" value="Add" />
+			</div>
+
+		</form>
+		</div>
+
+		<div style="background-color:#d9d9d9;margin-bottom:20px;">
+
+		<form method="post" onsubmit="if(!confirm('Are you sure?')){return false;}">
+
+			<span style="font-size:15px;color:#fff;background-color:gray;padding:5px;display:block;">Edit Profile Tab</span>
+
+			<div style="padding:8px;">
+
+				<select name="editptab" style="width:100%;">
+					__tab_type_option__
+				</select>
+
+				<input style="width:100%;" type="text" name="editprofiletabCaption" />
+
+				<input type="submit" name="editprofiletab" value="Edit" />
+				<input type="submit" name="deleteprofiletab" value="Delete"  />
+
+			</div>
+
+		</form>
+		</div>
+
+	
+
+</div>
+
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script>
+
+	function confirmAction() {
+		return confirm('Are you sure?');
+	}
+
+	$(function (){
+
+	    $( "#rwadmin_tab_con" ).sortable({
+		
+		update: function () {
+			var inputs = $(this).sortable('serialize');
+			$.post("<bx_url_root />modules/?r=ptabs/administration", {'sort_tabs':inputs}, function(results) {
+				//alert(results);
+			});
+		}
+		
+		});
+
+    	$( "#rwadmin_tab_con" ).disableSelection();
+
+	});
+
+</script>

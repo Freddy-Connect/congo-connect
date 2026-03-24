@@ -1,0 +1,260 @@
+/* Section Options */
+#section-enabled {
+	margin: 0 0 30px 0;
+}
+
+#section-enabled-text {
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0 auto;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	text-align: center;
+}
+
+#section-enabled-checkbox {
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+}
+
+#section-enabled-text label {
+	cursor: pointer;
+	vertical-align: middle;
+	line-height: 1.5;
+}
+
+
+/* Contact Section */
+#contact {
+	position: relative;
+	border-top: 1px solid #e9e9e9;
+	margin: 20px 0 0 0;
+	padding: 50px 0 100px 0;
+}
+
+#contact-inner {
+	position: relative;
+	width: 100%;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	max-width: 1100px;
+ 	padding: 0 15px 0 15px;
+ 	margin: 0 auto;
+ 	overflow: hidden;
+}
+
+#contact-details {
+	float: right;	
+ 	width: 55%;
+}
+
+#contact-info {
+	background-color: #333333;
+	padding: 15px;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+
+#contact-header {
+	font-size: 30px;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+	cursor: pointer;
+        color: #FFFFFF;
+}
+
+#contact-header-edit {
+	font-size: 30px;
+	font-weight: 300;
+	font-family: inherit;
+	margin: 0 0 20px 0;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+	width: 100%;
+	border: none;
+	background-color: rgba(0,0,0, 0.15);
+	outline: none;
+	display: none;
+	padding: 0;
+}
+
+#contact-types {
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	font-size: 14px;
+ 	
+        color: #FFFFFF;
+}
+
+.contact-type {
+	cursor: pointer;
+}
+
+#contact-types input[type="text"] {
+	font-size: inherit;
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.5);
+	font-family: inherit;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+	width: 88%;
+	border: none;
+	background-color: rgba(0,0,0, 0.15);
+	outline: none;
+	display: none;
+	text-align: left;
+}
+
+.contact-type-container {
+	margin: 0 0 10px 0;
+}
+
+.contact-type-container:last-child {
+	margin-bottom: 0px;
+}
+
+.contact-type-container i {
+	margin: 0 10px 0 0;
+	width: 15px;
+}
+
+#contact-location {
+	margin: 20px 0 0 0;
+	background-color: #fbf3f0;
+	border: 1px solid #fad9ca;
+}
+
+.contact-location-form-element {
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+
+.contact-location-form-element:first-child {
+	margin: 70px 0 20px 0;
+}
+
+.contact-location-form-element label {
+	width: 90px;
+	font-weight: 300;
+	font-size: 14px;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	text-align: left;
+}
+
+.contact-location-form-element input[type="text"] {
+	width: 150px;
+	border: 1px solid #cccccc;
+	padding: 3px;
+	font-family: inherit;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+#contact-form {
+	overflow: hidden;
+	width: 40%;
+	margin: 0 5% 0 0;
+	float: left;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+
+#contact-form-enable-label {
+	font-weight: 400;
+	font-size: 14px;
+	color: #666666;
+	cursor: pointer;
+}
+
+#contact-form-enable-checkbox {
+	margin-top: 15px;
+}
+
+.form-text-element {
+	display: block;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	width: 100%;
+ 	padding: 8px;
+ 	border: 1px solid #333333;
+ 	margin: 0 0 20px 0;
+ 	font-size: 16px;
+ 	font-family: inherit;
+ 	font-weight: 300;
+	outline: none;
+ 	resize: none;
+ 	background-color: transparent;
+}
+
+.form-element-container {
+	position: relative;
+}
+
+.form-element-label-container {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+
+.form-element-label {
+	font-weight: 400;
+	font-size: 14px;
+	color: #666666;
+	cursor: pointer;
+}
+
+.form-element-label-container input[type="text"] {
+	font-weight: 300;
+	background-color: transparent;
+	font-size: 16px;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+	width: 100%;
+	border: none;
+	background-color: rgba(0,0,0, 0.15);
+	outline: none;
+	display: none;
+	color: rgba(0, 0, 0, 0.6);
+	font-family: inherit;
+}
+
+#form-message {
+	height: 200px;
+}
+
+#send-message-button {
+	width: 100%;
+	padding: 8px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+	background-color: #333333;
+	color: black;
+	color: #FFFFFF;
+}
+
+#send-message-button:hover {
+	background-color: #999999;;
+}
+
+#send-message-button-edit {
+	width: 100%;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+	padding: 8px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	background-color: transparent;
+	font-family: inherit;
+	border: none;
+	background-color: rgba(0,0,0, 0.15);
+	outline: none;
+	display: none;
+}

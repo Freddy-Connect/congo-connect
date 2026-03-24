@@ -1,0 +1,77 @@
+<div class="searchrow_block_simple bx-def-bc-padding">
+	<!-- <div class="member_block"> -->
+		
+		 <!-- Freddy : CSSInfoCle est geré dans formations/templates/base/css/view.css  -->
+         <div class="CSSInfoCle" >
+   <table >
+                   
+    <tr>
+    <td >
+        <div>__thumb__</div>
+        <div> <i class="sys-icon calendar"> </i> <bx_text:_modzzz_formations_applied_on />&nbsp;__posted__</div>
+      </td>
+     </tr>
+     <tr>
+      <td>
+			<!--<div class="applyInfo">-->
+            
+				
+       </td>
+     </tr>
+     <tr>
+      <td>
+			
+            
+            <!-- Freddy ajout lien pour telecharger le Profil/CV . Lien avec Linkedin Profile Module -->
+            <div>	<a class="BoutonFormationUnitLien" href="m/linkedin_profile/generateresume?profile=__uid__" target=_blank>  <i class="sys-icon download"> </i> <bx_text:_modzzz_formations_resume_attached /> </a></div>
+            
+             
+	            <bx_if:online>
+				<div>	<a href="__online_link__" target=_blank><bx_text:_modzzz_formations_resume_view_online /></a></div>
+			    </bx_if:online>
+		
+				<bx_if:download>
+					<div><a href="javascript:void(0)" onclick="window.location='__download_link__'" target=_blank> <i class="sys-icon download"> </i> <bx_text:_modzzz_formations_resume_attached /></a></div>
+			    </bx_if:download>
+        		
+       </td>
+     </tr>
+     <tr>
+      <td>
+
+				<div><a href='__compose_url__'> <i class="sys-icon envelope"> </i> <bx_text:_modzzz_formations_send_message /></a></div>
+          		
+       </td>
+     </tr>
+     <tr>
+      <td>
+ <div><a href="javascript: void(0)" onclick="javascript: loadHtmlInPopup('letter_popup', '__letter_url__');"> <i class="sys-icon tasks"> </i> <bx_text:_modzzz_formations_read_cover_letter /></a></div>
+        </td>
+     </tr>
+     <tr>
+      <td>
+  
+				
+	<div><a class="BoutonFormationUnitLien" href='__remove_url__'> <i class="sys-icon remove"> </i> <bx_text:_modzzz_formations_delete_application /></a> </div>
+                
+                
+      </td>
+     </tr>
+     <tr>
+      <td>
+      <bx_if:befriend>
+				<div class="aqb-guest-actions">
+					<button class="SeConnecter" onclick="$.post('list_pop.php?action=friend', {ID: __id__}, function(sData){document.location.href=document.location.href;}); return false;">
+						<i class="sys-icon user-plus"></i> <bx_text:_connexiont_btn_befriend />
+					</button>
+				</div>
+			</bx_if:befriend>
+			     
+		</td>
+                       
+          </tr>
+     </table>
+    </div> 
+	<!-- </div> -->
+	<div class='clear_both'></div>
+ </div>

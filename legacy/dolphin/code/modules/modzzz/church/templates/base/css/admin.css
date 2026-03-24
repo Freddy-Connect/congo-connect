@@ -1,0 +1,18 @@
+#modzzz_church_admin_church .block_cont {
+    padding:1px;
+}
+
+table.modzzz_church_actions {
+    border-collapse:collapse;
+    margin:5px;
+    width:100%;
+}
+
+table.modzzz_church_actions td {
+    width:33%;
+    text-align:center;
+}
+
+.modzzz_church_manage_wrapper {
+    padding:0;
+}

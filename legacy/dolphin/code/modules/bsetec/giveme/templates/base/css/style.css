@@ -1,0 +1,57 @@
+/*-----------------------------------------------------------------------------
+
+KENBURNER RESPONSIVE BASIC STYLES OF HTML DOCUMENT
+
+Screen Stylesheet
+
+version:   	1.0
+date:      	07/27/11
+author:		themepunch
+email:     	support@themepunch.com
+website:   	http://www.themepunch.com
+-----------------------------------------------------------------------------*/
+
+
+
+.boxedcontainer		{	max-width: 1170px; margin:auto; padding:0px 30px;}
+
+/*********************************************
+	-	SETTINGS FOR BANNER CONTAINERS	-
+**********************************************/
+
+.tp-banner-container{
+	width:100%;
+	position:relative;
+	padding:0;
+    z-index: 0;
+
+}
+
+.tp-banner{
+	width:100%;
+	position:relative;
+}
+
+.tp-banner-fullscreen-container {
+		width:100%;
+		position:relative;
+		padding:0;
+}
+
+.sys_mc_wrapper.container { padding: 0; width: 100%;}
+/*.tp-caption.skewfromrightshort.fadeout.start p {color: #ffffff;font-family:"Raleway-Regular"!important; font-size: 38px; font-weight: normal;margin-bottom: 3px;padding: 20px 18px;text-transform: uppercase;}
+*/
+@media (min-width: 768px) and (max-width: 979px) {
+.tp-caption.skewfromrightshort.fadeout.start p {font-size:30px; padding:10 40px;}
+.tp-caption.skewfromrightshort.fadeout.start h3{font-size:36px;}
+}
+@media (max-width: 767px) {
+.tp-caption.skewfromrightshort.fadeout.start p {font-size:20px;padding:3px 40px;}
+.tp-caption.skewfromrightshort.fadeout.start h3{font-size:30px;}
+
+}
+@media (max-width:480px) {
+.tp-caption.skewfromrightshort.fadeout.start p {font-size:16px;}
+}
+
+

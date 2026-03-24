@@ -1,0 +1,19 @@
+<div class="bx-def-bc-padding">
+<table>
+ 	<tr>
+         <bx_repeat:rows>
+            <td valign=top>
+			  <bx_repeat:entries>
+				<bx_if:region>
+					<b>__region_name__</b><br>
+					<a href='__country_url__'>__country_name__</a><br>
+				</bx_if:region>
+				<bx_if:country>
+					<a href='__country_url__'>__country_name__</a><br>
+				</bx_if:country>
+			  </bx_repeat:entries>
+			</td>
+        </bx_repeat:rows>
+ 	</tr> 
+</table> 
+</div>

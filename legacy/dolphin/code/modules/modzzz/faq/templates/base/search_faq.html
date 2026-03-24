@@ -1,0 +1,24 @@
+<script>
+	function setTitleText(sText){
+		if(document.getElementById('Keyword').value == "")
+			document.getElementById('Keyword').value = sText; 
+	}
+
+	function emptyTitleText(sText){
+		if(document.getElementById('Keyword').value == sText)
+			document.getElementById('Keyword').value = ""; 
+	}
+</script>
+
+<div class="bx-def-bc-padding"> 
+	<div style="float:left;text-align:center"> 
+		 <input type=text id="Keyword" name="Keyword" value="<bx_text:_modzzz_faq_form_caption_keyword />" style='height:20px' onblur="setTitleText('<bx_text:_modzzz_faq_form_caption_keyword />')" onfocus="emptyTitleText('<bx_text:_modzzz_faq_form_caption_keyword />')">&nbsp; 
+	</div>
+	<div style="float:left"> 
+		 <button class="bx-btn bx-btn-small bx-btn-img bx-btn-ifont" onclick="window.location='__search_url__'+document.getElementById('Keyword').value"> 
+			<i class="sys-icon search"></i>
+			<bx_text:_modzzz_faq_go />
+		</button>  
+	</div>
+	<div class='clear_both'></div>
+</div>

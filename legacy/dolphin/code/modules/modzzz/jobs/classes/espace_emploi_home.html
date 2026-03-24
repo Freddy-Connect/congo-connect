@@ -1,0 +1,153 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!--
+<div class="thumbnail_block_espace_job thumbnail_block_with_info" style="float:none;">
+
+   
+             <div class="thumbnail_image_top_home" >
+				__thumbnail__  
+			</div>	
+ </div>	
+ <div class="clear_both"></div> 
+ -->
+   
+   
+    <div class="CSSEspaceEmploi" >
+      <table >
+          <tr>
+          <td >
+            <!--  <bx_if:jobs_titre_home_page> 
+               <div class="ConnectHomeJobOffres">
+                    <i class="sys-icon black-tie"> </i>  <b> __jobs_titre_home_page__  
+               </div>
+             </bx_if:jobs_titre_home_page> 
+             
+             
+                <div class="ConnectHomeClassifiedAnnonce"><i class="sys-icon black-tie"> </i>   <bx_text:_modzzz_jobs_titre_home_page />  </div>
+                -->
+
+          
+          
+           <div>
+                      <button class="ConnectHomeClassifiedAnnonce"  onclick="window.open ('member.php','_self');">
+                          <i class="sys-icon dashboard"> </i> __thumbnail__ &nbsp;__FirstName__ __LastName__
+                        </button>
+          </div>
+          
+          
+            
+             <bx_if:JobsCountPositive> 
+                       <button class="espaceemploibouton"  onclick="window.open ('m/jobs/browse/my&filter=manage_jobs','_self');">
+		             <i class="sys-icon black-tie"> </i>  __EmploiCaption__  <span class="centerspace">  __EmploiCount__</span>
+                    </button>
+            </bx_if:JobsCountPositive> 
+            
+            
+            <!--
+             <bx_if:JobsCountZero> 
+                       <button class="espaceemploibouton"  onclick="window.open ('__page_url__','_self');">
+		             <i class="sys-icon black-tie"> </i>  __EmploiCaption__  <span class="centerspace">  __EmploiCount__</span>
+                    </button>
+            </bx_if:JobsCountZero> 
+            -->
+            
+            
+         <bx_if:JobsCandidats> 
+             <div> 
+                <i class="sys-icon users"> </i> __ApplicationCaption__  <span class="centerspace">  __ApplicationCount__</span> 
+              </div>
+        </bx_if:JobsCandidats> 
+           
+           
+           <bx_if:JobsCountJobspace> 
+             <div> 
+                 <button class="gotoyourspace"  onclick="window.open ('m/jobs/browse/my','_self');">
+			        <i class="sys-icon cog"> </i>  __go_to_your_space_caption__
+		       </button>
+              </div>
+        </bx_if:JobsCountJobspace>   
+            
+           
+           
+          
+       <!--  <bx_if:BusinessPage> 
+            
+            <div>
+                      <button class="espaceemploibouton"  onclick="window.open ('__CompanyUrl__','_self');">
+		                 <i class="sys-icon suitcase"> </i> <b> __CompanyName__ </b>
+                       </button>
+           </div>
+           
+           
+            
+          
+           
+            
+           
+        </bx_if:BusinessPage>   
+        -->
+                      
+      </div>
+      
+      
+         </td>
+           </tr>
+       </table>
+    </div>
+    <div class="clear_both"></div> 
+  
+      <div class="CSSEspaceEmploi" >
+   <table >
+                   
+    <tr>
+    
+    
+      <td >
+      
+         <bx_if:MesCandidatures> 
+              <div>
+                     <button class="espaceemploibouton"  onclick="window.open ('m/jobs/browse/application','_self');">
+		              <i class="sys-icon user"> </i> __ApplyCaption__ <span class="centerspace"> __jobapply__</span>
+                     </button>
+             </div> 
+        </bx_if:MesCandidatures>   
+        
+        
+        
+         <bx_if:FavoriteJobs> 
+              <div> 
+                  <button class="espaceemploibouton"  onclick="window.open ('m/jobs/browse/favorite','_self');">
+		             <i class="sys-icon heart-o"> </i> __FavoriteCaption__ <span class="centerspace"> __FavoriteJobs__ </span>
+                  </button>
+             </div>
+        </bx_if:FavoriteJobs>   
+            
+       
+       
+       
+       
+      </td>
+  
+     
+   
+   </tr>
+        
+     </table>
+    </div>
+    <div class="clear_both"></div> 
+    
+    
+     <div class="CSSEspaceEmploi" >
+      <table >
+          <tr>
+          <td >
+            <div> 
+           <button class="InscriptionSearch"  onclick="window.open ('m/jobs/browse/my&filter=add_job','_self');">
+            <i class="fa fa-user"></i> <i class="fa fa-briefcase"></i>  <bx_text:_modzzz_jobs_ajouter_job /> 
+           </button>
+           </div>
+      
+         </td>
+           </tr>
+       </table>
+    </div>
+    <div class="clear_both"></div> 

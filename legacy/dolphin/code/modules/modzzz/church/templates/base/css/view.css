@@ -1,0 +1,25 @@
+.modzzz_church_subdivision {
+    padding:10px;
+    font-size:11px;
+}
+
+/* update 7.1 */
+table.modzzz_church_fields {
+    border-collapse:collapse;
+    border-spacing:0px; 
+}
+
+td.modzzz_church_field_name {
+    padding-bottom:10px;
+    text-align:left;
+}
+
+td.modzzz_church_field_value {
+    padding-bottom:10px;
+    text-align:left;
+}
+
+.modzzz_church_profile_unit {
+    overflow:hidden;
+    float:left;
+}

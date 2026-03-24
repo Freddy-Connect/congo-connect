@@ -1,0 +1,39 @@
+﻿.dbcstable {
+	border: 1px solid #CCCCCC;
+	margin: 4px;
+	padding: 4px;
+}
+.container {
+	margin: 0px;
+	padding: 0px;
+	min-height: 28px;
+	min-width: 142px;
+}
+.dbcsblock {
+	margin: 2px;
+	width: 142px;
+	height: 28px;
+	float: left;
+	cursor: move;
+}
+.dbcsblocktext {
+	text-align: center;
+	padding-top: 7px;
+}
+.ui-state-highlight {
+	width: 142px;
+	height: 28px;
+	background-color: #FDA;
+}
+.dbcsheading1 {
+	font-weight: bold;
+	padding-left: 8px;
+	padding-bottom: 2px;
+	padding-top: 6px;
+}
+.dbcsheading2 {
+	font-weight: bold;
+	padding-left: 8px;
+	padding-bottom: 2px;
+	padding-top: 20px;
+}

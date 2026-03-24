@@ -1,0 +1,18 @@
+#modzzz_faq_admin_listing .block_cont {
+    padding:1px;
+}
+
+table.modzzz_faq_actions {
+    border-collapse:collapse;
+    margin:5px;
+    width:100%;
+}
+
+table.modzzz_faq_actions td {
+    width:33%;
+    text-align:center;
+}
+
+.modzzz_faq_manage_wrapper {
+    padding:0;
+}

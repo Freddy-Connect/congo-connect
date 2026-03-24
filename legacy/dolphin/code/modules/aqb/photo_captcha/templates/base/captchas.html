@@ -1,0 +1,63 @@
+<style>
+	.aqb_photo_captcha_img {
+		max-width:256px;
+		margin-right: 20px;
+		float: left;
+	}
+	.aqb_photo_captcha_entry {
+		margin: 10px;
+		background-color: #eee;
+		padding: 10px;
+	}
+	.aqb_photo_captcha_lang_entry {
+		margin-bottom: 20px;
+	}
+	.aqb_photo_captcha_entry_question {
+		float: left;
+	}
+	.aqb_photo_captcha_lang_entry_strong {
+		font-weight: bold;
+		padding-left: 20px;
+	}
+	div.aqb_photo_captcha_actions {
+		float: right;
+		visibility: hidden;
+	}
+	div.aqb_photo_captcha_actions a {
+		text-decoration: none!important;
+	}
+</style>
+<script language="javascript">
+	$(document).ready(function(){
+		$('.aqb_photo_captcha_entry').mouseenter(function(){
+			$('div.aqb_photo_captcha_actions', this).css('visibility', 'visible');
+		}).mouseleave(function(){
+			$('div.aqb_photo_captcha_actions', this).css('visibility', 'hidden');
+		});
+	});
+
+   	function aqb_photo_captcha_delete(iID) {
+    	if (!confirm(_t('_aqb_photo_captcha_confirm_delete'))) return false;
+
+        var oDate = new Date();
+        var _iID = iID;
+        $.get('__module_url__action_delete_captcha/' + iID, {_t:oDate.getTime()});
+
+        $('#aqb_photo_captcha_' + iID).fadeOut();
+    };
+</script>
+
+<bx_repeat:captchas>
+<div class="aqb_photo_captcha_entry" id="aqb_photo_captcha___id__">
+	<img src="__module_url__action_get_captcha_image/__id__" class="aqb_photo_captcha_img" />
+	<div class="aqb_photo_captcha_entry_question">
+		__question__
+	</div>
+	<div class="aqb_photo_captcha_actions">
+		<a href="#" onclick="aqb_photo_captcha_delete(__id__); return false;" title="Delete">
+			<i class="sys-icon remove"></i>
+		</a>
+	</div>
+	<div class="clear_both"></div>
+</div>
+</bx_repeat:captchas>

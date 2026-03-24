@@ -1,0 +1,35 @@
+<div class="items-members-table">
+	<center><table width="100%" class="member-info-table" cellpadding="5" cellspacing="0">
+          <tr height="20px" class="header">
+            <th><bx_text:_aqb_aff_admin_txt_level_title /></th>
+			<th><bx_text:_aqb_aff_admin_txt_people /></th>
+            __amount_for_join__
+			__amount_for_upgrade__
+			__amount_points_for_join__
+			__amount_points_for_upgrade__
+			__level_title__
+			__points_title__
+			__points_upgrade_title__
+	     </tr>
+        <bx_repeat:items>
+         <tr>
+			<td><b>__level__</b></td>
+			<td>__people__</td>
+		    __amount_join__
+			__amount_upgrade__
+			__amount_points_join__
+			__amount_points_upgrade__
+			__income__
+			__points__
+			__points_upgrade__
+	     </tr>
+        </bx_repeat:items>
+		<tr class = "total-bold">
+			<td colspan = "__cel__" style="text-align:left;">&nbsp;<bx_text:_aqb_aff_admin_txt_income_total /></td>
+			__total_income__
+			__total_points__
+			__total_upgrade_points__			
+	     </tr>
+    </table>
+	</center>
+</div>

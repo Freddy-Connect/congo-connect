@@ -1,0 +1,41 @@
+.semicolumn {width:50%;float:left;}
+
+#result {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #000000;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 6px;
+    padding: 7px 10px;
+    text-align: center;
+    text-shadow: 0 0 1px #000000;
+    width: 293px;
+    margin-bottom: 8px;
+}
+a {color:#000000;text-decoration:none;}
+a:hover {color:#FFFFFF;text-decoration:none;}
+body {background:none repeat scroll 0 0 #334962;font-family:Verdana;font-size:11px;margin:0;text-align:center;}
+#pagina {background:url("../images/spyconfiglogo.jpg") no-repeat scroll 33px 4px #283B51;border:7px solid #FFFFFF;color:#FFFFFF;margin:20px auto 20px auto;padding:20px;width:900px;height:800px;}
+#boxgeneraleconfigurazione {float:left;margin-top:110px;padding:5px;text-align:left;}
+.introtitle {font-size:14px;font-weight:bold;line-height:23px;}
+.introdesc {color:Yellow;font-size:11px;font-style:italic;line-height:13px;}
+#contentbox {float:left;font-size:10px;line-height:11px;margin:10px;padding:10px;width:398px;}
+#return {border:1px solid #FFFFFF;color:#FFFFFF;float:right;font-size:15px;height:31px;line-height:27px;margin-right:15px;margin-top:-105px;padding:0 13px;}
+#return:hover {background:none repeat scroll 0 0 #999999;}
+#return a {color:#FFF;}
+.unquarto {float:left;padding-bottom:6px;width:45%;}
+.unsesto {float:left;margin-top:4px;width:10%;}
+#litespg {float: left;margin-top: 13px;}
+.unsesto1 {float: left;margin-right: 8px;width: 180px;margin-top: 5px;}
+.unquarto1 {margin-bottom: 5px;}
+.unsesto2 {float: left;margin-right: 8px;width: 110px;margin-top: 5px;}
+.unquarto2 {margin-bottom: 5px;}
+.contentcon {border-bottom:1px solid #FFFFFF;float:left;margin:3px 2px 2px;width:100%;}
+.spazio {float:left;height:20px;width:100%;}
+input [type="submit"]
+{
+ width:100%;
+ clear:both;
+ text-align:center;
+}

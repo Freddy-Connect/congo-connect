@@ -1,0 +1,27 @@
+<form action="__action__" method="post" target="__target__"> 
+	<input type="hidden" name="pay_to_email" value="__pay_to_email__"> 
+	<input type="hidden" name="return_url" value="__cancel_url__">
+	<input type="hidden" name="cancel_url" value="__cancel_url__">
+	<input type="hidden" name="status_url" value="__status_url__"> 
+	<input type="hidden" name="language" value="EN"> 
+	<input type="hidden" name="customer_number" value="__customer_number__"> 
+	<input type="hidden" name="pay_from_email" value="__pay_from_email__"> 
+	<input type="hidden" name="currency" value="__cur_code__"> 
+	<input type="hidden" name="firstname" value="__fname__"> 
+	<input type="hidden" name="lastname" value="__name__"> 
+	<input type="hidden" name="detail1_text" value="__detail1_text__"> 
+	<input type="hidden" name="detail1_description" value="__detail1_description__"> 
+
+	<bx_if:onetime>
+		<input type="hidden" name="amount" value="__amount__">
+	</bx_if:onetime>
+
+	<bx_if:auto>
+		<input type="hidden" name="rec_amount" value="__rec_amount__"> 
+		<input type="hidden" name="rec_period" value="__rec_period__">
+		<input type="hidden" name="rec_cycle" value="__rec_cycle__">  
+	</bx_if:auto>
+	
+	<input type="submit" value="Pay!">
+</form>
+

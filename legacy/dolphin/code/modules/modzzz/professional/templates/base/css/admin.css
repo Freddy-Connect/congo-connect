@@ -1,0 +1,18 @@
+#modzzz_professional_admin_professional .block_cont {
+    padding:1px;
+}
+
+table.modzzz_professional_actions {
+    border-collapse:collapse;
+    margin:5px;
+    width:100%;
+}
+
+table.modzzz_professional_actions td {
+    width:33%;
+    text-align:center;
+}
+
+.modzzz_professional_manage_wrapper {
+    padding:0;
+}

@@ -1,0 +1,9 @@
+#sortid {
+	border : 1px solid silver;
+}
+
+#sortid div{ 
+	/*background : #E5E5E5;*/
+}
+
+#sortid { list-style-type: none; padding: 0; width: 100%; } 

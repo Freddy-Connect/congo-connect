@@ -1,0 +1,14 @@
+<div class="ebytes_profile_cover_info_inner_container">
+    <div class="ebytes_profile_cover_informations_container">
+        <bx_if:summary_action><div class="user_title">__usr_title__</div></bx_if:summary_action>
+        <div class="ebytes_profile_cover_location_container"><span class="ebytes_profile_cover_information_caption"> From  </span> __country__, __city__ </div>
+        <div class="ebytes_profile_cover_gender_container">__gender__</div>
+        <div class="prev_comps"><bx_text:_abs_plinkin_prof_view_page_prev_companies />:__companies__</div>
+ 		<div class="school_detail"><bx_text:_abs_plinkin_prof_view_page_education />:__school_name__</div>
+ 		<div class="download_pdf"><a name="exportToPdf" href="m/linkedin_profile/generateresume?profile=__uid__">_Save_to_PDF</a></div>
+        
+      <!--   <div class="ebytes_profile_cover_relationship_container"> Single </div>
+  -->
+        
+    </div>
+</div>

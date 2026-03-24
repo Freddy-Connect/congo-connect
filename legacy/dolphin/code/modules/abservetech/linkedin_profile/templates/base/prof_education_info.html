@@ -1,0 +1,171 @@
+<div class="loading">
+<!-- <img src="modules/abservetech/linkedin_profile/templates/base/images/Loading1.gif">
+ --></div>
+<div class="edu_actions">
+<a href="javascript:void(0)" class="btn add-edu"><bx_text: _abs_plinkin_Add_Education /></a>
+</div>
+<div class="prof_education_form" style="display:none;">
+ __edu_form__
+</div>
+<div class="edu_display_area">
+    <bx_repeat:edus>
+    <div class="each_container" data-eduid="__eduid__">
+       <div class="edu_info hover_show"><div class="absline edu_school_name">
+         <span data_href="page_block_957" class="scroll_con_edit"><i class="sys-icon university"></i> __school_name__</span><i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+     </div>
+    
+     
+     
+     <div class="absline edu_particular_info">
+        
+    <bx_if:type> 
+	   <span data_href="page_block_957" class="scroll_con_edit"><span class="edu_type"><b><bx_text:_abs_plinkin_Degree />:</b> __type__</span> 
+   </bx_if:type>
+         
+   <bx_if:NoType> 
+	  <span data_href="page_block_957" class="scroll_con_edit"><span class="edu_type"> __NoType__</span> <i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+   </bx_if:NoType>
+         
+         
+ <br /> <bx_if:fieldofstudy> 
+	 <i class="sys-icon desktop"></i><span class="edu_fieldofstudy"><b><bx_text:_abs_plinkin_Field_of_Study />:</b> __fieldofstudy__</span> 
+ </bx_if:fieldofstudy>
+ 
+    <bx_if:No_field_of_study> 
+	  <span data_href="page_block_957" class="scroll_con_edit"><span class="edu_type"> __No_field_of_study__</span> <i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+   </bx_if:No_field_of_study>
+
+    <bx_if:grade> 
+	 <span class="edu_grade"><i class="sys-icon certificate"></i> __grade__</span></span><i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+   </bx_if:grade>
+         
+  </div>
+  
+  
+    
+   <bx_if:period> 
+	 <div class="absline edu_period">
+         <span data_href="page_block_957" class="scroll_con_edit"><b><bx_text:_abs_plinkin_Dates_Attended />:</b>  __period__</span><i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+      </div>
+ </bx_if:period>
+ 
+  <bx_if:NoPeriod> 
+	 <div class="absline edu_period">
+         <span data_href="page_block_957" class="scroll_con_edit">  __NoPeriod__</span><i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+      </div>
+ </bx_if:NoPeriod>
+     
+   <!-- freddy change
+     <div class="absline edu_activities">
+         <span data_href="page_block_957" class="scroll_con_edit"><b><bx_text:_abs_plinkin_Activities_and_Societies />:</b>
+         <br /> __activities__</span><i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+     </div>
+     -->
+      <bx_if:activities> 
+	  <div class="absline edu_activities">
+         <span data_href="page_block_957" class="scroll_con_edit"><b><bx_text:_abs_plinkin_Activities_and_Societies />:</b>
+         <br /> __activities__</span><i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+     </div>
+   </bx_if:activities>
+    
+    
+    <!-- freddy change
+     <div class="absline edu_desc">
+         <span data_href="page_block_957" class="scroll_con_edit"> <i class="sys-icon list-alt"></i><b> <bx_text:_abs_plinkin_Description1 />:</b>
+         <br />  __desc__</span><i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+     </div>
+     -->
+     <bx_if:desc> 
+	   <div class="absline edu_desc">
+         <span data_href="page_block_957" class="scroll_con_edit"> <i class="sys-icon list-alt"></i><b> <bx_text:_abs_plinkin_Description1 />:</b>
+         <br />  __desc__</span><i data_href="page_block_957" class="fa fa-pencil scroll_edit"></i>
+       </div>
+   </bx_if:desc>
+     
+     
+ </div>
+
+ 
+ <div class="media_info_area">
+    <bx_repeat:abs_meds>
+    <div class="each_media_info each_media_info___media_id__" data-mediaid='__media_id__'>
+        <div class="media_info_container">
+            <div class="edit_icon"></div>
+            <img src="__media_image_path__" title="__media_title__">
+            <div class="m_title">__media_title__</div> 
+        </div>
+    </div>
+    </bx_repeat:abs_meds>
+    <div class="clear_both"></div>
+</div>
+<div class="media_area clearfix">
+    <label><bx_text:_Add_Media: /></label>
+    <ul data-media="edu__eduid__" class="clearfix media_info">
+   <!-- freddy comment 
+    <li data-medianame="document" class="document">
+        <a href="javascript:void(0)">
+            <i class="fa fa-file-text"></i>
+            <span><bx_text:_abs_plinkin_Document1 /></span>
+        </a>
+    </li>
+    -->
+    <li data-medianame="photo" class="photo">
+        <a href="javascript:void(0)">
+            <i class="fa fa-camera"></i>
+            <span><bx_text:_abs_plinkin_Photo /></span>
+        </a>
+    </li>
+   <!-- freddy comment 
+    <li data-medianame="link" class="link">
+        <a href="javascript:void(0)">
+            <i class="fa fa-link"></i>
+            <span><bx_text:_abs_plinkin_Link /></span>
+        </a>
+    </li>
+    -->
+    <li data-medianame="video" class="video">
+        <a href="javascript:void(0)">
+            <i class="fa fa-play-circle"></i>
+            <span><bx_text:_abs_plinkin_Video /></span>
+        </a>
+    </li>
+     <!-- freddy comment
+    <li data-medianame="presentation" class="presentation">
+        <a href="javascript:void(0)">
+            <i class="fa fa-file-powerpoint-o"></i>
+            <span><bx_text:_abs_plinkin_Presentation /></span>
+        </a>
+    </li>
+    -->
+</ul>
+<div id="edu__eduid__" class="media_container" style="display:none;">
+    <div class="ajax_loading"><img src="<bx_url_root />modules/abservetech/linkedin_profile/templates/base/images/ajax-loader.gif"></div>
+    <form action="" method="post" class="edu_media_form" data-mediatype="document" enctype="multipart/form-data">
+        <div>
+            <input type="hidden" name="edu_id" value="__eduid__">
+            <input type="hidden" name="media_type" class="media_type" value="document">
+            <input type="hidden" name="upload_type" class="upload_type" value="link">
+            <input type="hidden" name="media_for" class="media_for" value="education">
+        </div>
+        <label><bx_text:_abs_plinkin_edu_add_to_position />:</label>
+        <label>
+          <select name="media_for_id" class="edu_id_for_media">
+            <bx_repeat:media_select>
+            <option value="__edu_id__" __ed_selected__>__edu_school_name__</option>
+            </bx_repeat:media_select>
+        </select>
+    </label>
+    <div class="edu_media_error">
+        <p class="title_err" style="display:none;"><bx_text:_abs_plinkin_media_edit_title_error /></p>
+        <p class="link_err" style="display:none;"><bx_text:_abs_plinkin_media_edit_url_error /></p>
+    </div>
+    <p><span class="browse_mgs"><bx_text:_abs_provide_link /></span><input type="text" name="upload_link" class="edu_upload_link"><span class="upload_using_browse"><span class="or_class"><bx_text:_abs_provide_link_or /></span><input type="file" name="upload_file" class="btn edu_upload_file"></span></p>
+    <p><input type="submit" value="Continue" class="btn btn-primary"><input type="button" class="btn btn_cancel" value="<bx_text:_abs_plinkin_setting_Cancel />"></p>
+</form>
+</div>
+<div class="media_post_upload_form" style="display:none;">
+</div>
+</div>
+</div>
+</bx_repeat:edus>
+</div>

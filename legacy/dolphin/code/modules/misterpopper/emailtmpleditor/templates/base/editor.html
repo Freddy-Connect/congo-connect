@@ -1,0 +1,30 @@
+<form name="editor_form" id="editor_form" class="form_advanced" enctype="multipart/form-data" method="POST" action="__form_action__">
+  <table border="0">
+    <tr id="subject">
+      <td colspan="3">
+        <bx_text:_mp_emailtmpleditor_subject />:</br>
+        <input name="subject" size="70" type="text" value="__subject__">
+      </td>
+    </tr>
+    <bx_if:is_tinymce>
+      <tr id="tinymce_row">
+        <td colspan="3">
+          __tinymce_js__
+          <textarea id="textarea_mce" name="textarea_mce" class="form_input_textarea form_input_html">__text__</textarea>
+        </td>
+      </tr>
+    </bx_if:is_tinymce>
+    <bx_if:is_html>
+      <tr id="htmledit">
+        <td colspan="3">
+          <textarea id="textarea_html" rows="30" name="textarea_html" cols="93">__text__</textarea>
+        </td>
+      </tr>
+    </bx_if:is_html>
+    <tr>
+      <td colspan="3">
+        <input type="submit" value="Save" name="B1">
+      </td>
+    </tr>
+  </table>
+</form>

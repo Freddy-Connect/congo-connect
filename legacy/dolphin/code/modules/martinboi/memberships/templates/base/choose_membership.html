@@ -1,0 +1,12 @@
+<div class="choose_membership" id="__mlevel_id__">
+	<div class="button_wrapper">
+		<input type="submit" value="<bx_text:_dol_subs_choose_membership />" name="choose_membership" class="form_input_submit AbonnementPremium" />
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('.choose_membership').click(function(){
+        var membership_id = $(this).attr('id');
+		getHtmlData('upgrade_container', '<bx_url_root />m/memberships/display_payments_page/' + membership_id);
+	});    
+</script>

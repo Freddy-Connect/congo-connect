@@ -1,0 +1,9 @@
+div.aqb-member_menu {
+	position: relative;
+}
+div.aqb-mm-profile div.thumbnail_block_with_info {
+	width: 160px;
+}
+div.aqb-mm-profile div.thumb_username {
+	padding-top: 0px;
+}

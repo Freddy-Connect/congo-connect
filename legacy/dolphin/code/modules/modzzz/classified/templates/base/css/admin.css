@@ -1,0 +1,18 @@
+#modzzz_classified_admin_classified .block_cont {
+    padding:1px;
+}
+
+table.modzzz_classified_actions {
+    border-collapse:collapse;
+    margin:5px;
+    width:100%;
+}
+
+table.modzzz_classified_actions td {
+    width:33%;
+    text-align:center;
+}
+
+.modzzz_classified_manage_wrapper {
+    padding:0;
+}

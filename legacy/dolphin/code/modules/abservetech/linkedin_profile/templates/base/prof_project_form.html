@@ -1,0 +1,119 @@
+<form method="POST" name="pro_Form" class="project_form">
+	<ul>
+		<li>
+			<label for=""><bx_text:_abs_plinkin_Project_Name /><abbr class="required" title="Required">*</abbr></label>
+			<div class="fieldgroup">
+				<span id="projectName-error" class="error"><bx_text:_abs_plinkin_Please_enter_a_project_name /><br></span>
+				<div class="company-typeahead" id="">
+				<input type="text" maxlength="100" id="projectName" value="__projectname__" name="projectName" autocomplete="off">
+				</div>
+			</div>
+		</li>
+		
+
+		<li id="position-wrap" class="title">
+			<label><bx_text:_abs_plinkin_Occupation /></label>
+			
+				<span id="title-input-wrapper">
+
+					<select id="occu" name="occupation">
+					<option selected="selected" value="" maxlength="200" ><bx_text:_abs_plinkin_choose />...</option>
+					<bx_repeat:schoolname>
+						<option value= "__school_name__" __selected__> __school_name__  </option>	
+					</bx_repeat:schoolname>
+                    <bx_repeat:companyname>
+                       <option value= "__compname__" __selected__>__compname__</option>
+                    </bx_repeat:companyname>  
+
+					</select>
+
+				</span>
+		
+		</li>
+
+		</ul>
+           <fieldset>
+			
+
+            <legend><span><bx_text:_abs_plinkin_Time_Period /><abbr class="required" title="Required">*</abbr></span></legend>
+			<span class="errors"><span id="pro_startDateMonth-error" class="error"><bx_text:_abs_plinkin_Time_Period_starmonth_error /></span>
+				<span id="pro_StartYear-error" class="error"><br><bx_text:_abs_plinkin_Time_Period_startyear_error /></span>
+				<span id="pro_EndDateMonth-error" class="error"></span>
+				<span id="pro_EndYear-error" class="error"></span>
+				<span id="pro_Fatal-error" class="error"><bx_text:_abs_plinkin_Time_Period_fatal_error /></span>
+			</span>
+
+
+
+			
+			<ul>
+				<li class="start-date"><label><bx_text:_abs_plinkin_Start /></label>
+					<select id="pro_startDateMonth" name="startDateMonth">
+					<option selected="selected" value=""><bx_text:_abs_plinkin_choose_month />...</option>
+					<bx_repeat:stmonths>
+						<option value="__month_int__" __selected__>__month_text__</option>
+					</bx_repeat:stmonths>
+					</select>
+					<input type="text" placeholder="<bx_text:_abs_plinkin_project_Start_Year_example />"  onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_project_Start_Year_example />'"  id="pro_StartYear" value="__st_yr__" name="StartYear" maxlength="4">
+				  </li>
+				<li class="end-date" <bx_if:ishide>__hide__</bx_if:ishide> ><label><bx_text:_abs_plinkin_end__project /></label>
+					<select id="pro_EndDateMonth" class="EndDateMonth" name="EndDateMonth">
+					<option selected="selected" value=""><bx_text:_abs_plinkin_choose_month />...</option>
+					<bx_repeat:end_months>
+						<option value="__emonth_int__" __eselected__>__emonth_text__</option>
+					</bx_repeat:end_months>
+					</select>
+					<input type="text" placeholder="<bx_text:_abs_plinkin_project_End_Year_example />"  onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_project_End_Year_example />'"  id="pro_EndYear" class="EndYear" value="__end_year__" name="EndYear" maxlength="4">
+				</li>
+				<li>
+					<label class="checkbox"><input type="checkbox" class="still-going" value="yes" name="isCurrent" __checked__> <bx_text:_abs_plinkin_Project_ongoing /></label>
+				</li>
+			</ul>
+   </fieldset>
+
+
+   	<ul>
+   		<li>
+			<label><bx_text:_abs_plinkin_Project_URL /></label>
+			<div class="fieldgroup">
+				
+				<div class="company-typeahead" id="">
+				<input type="text" maxlength="100" id="pro-url" value="__project_url__" name="projecturl" autocomplete="off">
+				</div>
+			</div>
+		</li>
+        <li id="position-des">
+			<label for=""><bx_text:_Team_Members /></label>
+			<div class="fieldgroup">
+				<span id="desc-error" class="error"></span>
+				<textarea class="txtarea1" cols="60" rows="6" id="desc1" name="team">__project_team__</textarea>
+			</div>
+		</li>
+
+            <li id="position-des">
+			<label for=""><bx_text:_abs_plinkin_Project_Description /></label>
+			<div class="fieldgroup">
+				
+				<textarea class="txtarea1" cols="60" rows="6" id="desc" name="desc">__desc__</textarea>
+			</div>
+		</li>
+		<li>
+		     <input type="hidden" name="pro_id" value="__id__">
+		     <input type="hidden" name="user_id" value="__usr_id__">
+		     <input type="submit" value="<bx_text:_abs_plinkin_Save />" name="submit" class="btn btn-success">
+			 <input type="button" value="<bx_text:_abs_plinkin_Cancel />" class="btn pro-form-cancel" >
+			 <input type="button" value="<bx_text:_abs_plinkin_Delete />" class="btn btn-primary pro-form-delete" style="display:none;">
+			 <input type="reset" value="<bx_text:_abs_plinkin_reset />" class="btn btn-primary"/>
+		 </li>
+	 </ul>
+
+	</form>
+
+
+
+
+
+
+
+
+

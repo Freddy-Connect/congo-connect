@@ -1,0 +1,158 @@
+div.bx-classified-wall-event {    
+    position: relative;    
+}
+
+div.bx-classified-wall-caption {
+    height: 30px;
+    padding-left: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    line-height: 30px; 
+}
+
+span.bx-classified-wall-caption-owner {
+    font-weight: bold;
+}
+
+a.bx-classified-wall-caption-link,
+a.bx-classified-wall-caption-link:link {
+    text-decoration: none;
+}
+a.bx-classified-wall-caption-link:hover,
+a.bx-classified-wall-caption-link:active {
+    text-decoration: underline;
+}
+div.bx-classified-wall-content {
+    position: relative;
+}
+div.bx-classified-wall-comments {
+    padding-left: 0px;
+}
+
+/*--- Overwrite default Comment styles ---*/
+div.bx-classified-wall-comments div.cmts {
+    padding: 0px;
+    /*display: none;*/
+}
+div.bx-classified-wall-comments div.cmt-reply {
+    padding: 0px;
+    /*display: none;*/
+}
+div.bx-classified-wall-comments div.thumbnail_block {
+    left: -38px;
+    top: 1px;
+}
+/* Freddy  CSSProfessionalUnit */
+
+.CSSProfessionalUnit {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 2px 1px 2px 1px #888888;
+	border:1px solid #ffffff;
+	
+	
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.CSSProfessionalUnit table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CSSProfessionalUnit tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.CSSProfessionalUnit table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.CSSProfessionalUnit table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.CSSProfessionalUnit tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.CSSProfessionalUnit tr:hover td{
+	
+}
+.CSSProfessionalUnit tr:nth-child(odd){ background-color:#ffffff; }
+.CSSProfessionalUnit tr:nth-child(even)    { background-color:#ffffff; }.CSSProfessionalUnit td{
+	vertical-align:middle;
+	
+	
+	border:2px solid #dfe3ee;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#525354;
+}.CSSProfessionalUnit tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSProfessionalUnit tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSProfessionalUnit tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSProfessionalUnit tr:first-child td{
+		background:-o-linear-gradient(bottom, #ffffff 5%, #ffffff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f7f7f7), color-stop(1, #ffffff) );
+	background:-moz-linear-gradient( center top, #f7f7f7 5%, #ffffff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#ffffff");	background: -o-linear-gradient(top,#f7f7f7,ffffff);
+
+	background-color:#f7f7f7;
+	border:0px solid #dfe3ee;
+	text-align:left;
+	border-width:1px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#2b70a8;
+}
+.CSSProfessionalUnit tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #f7f7f7 5%, #ffffff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f7f7f7), color-stop(1, #ffffff) );
+	background:-moz-linear-gradient( center top, #f7f7f7 5%, #ffffff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#ffffff");	background: -o-linear-gradient(top,#f7f7f7,ffffff);
+
+	background-color:#f7f7f7;
+}
+.CSSProfessionalUnit tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSProfessionalUnit tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+@media (max-width:414px) {
+	.masque_projet_contenu { display:none;}
+	
+	.bx-twig-unit-tittre-fred {
+    font-size: 20px; 
+    font-size: 22px;
+    line-height: 22px;
+    line-height: 22sp; 
+	font-weight:800; 
+	color:#3a5795;
+	
+}
+	
+}

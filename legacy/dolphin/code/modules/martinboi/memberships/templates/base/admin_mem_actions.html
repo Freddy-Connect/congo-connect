@@ -1,0 +1,31 @@
+<div class="bx-def-bc-margin">
+	<link href="<bx_url_root />templates/base/css/forms_adv.css" rel="stylesheet" type="text/css" />
+	<form id="mem_actions" method="post" action="" class="form_advanced">
+		<table class="actions">
+			<thead>
+				<th class="header first">Enable</th>
+				<th class="header">Action Name</th>
+				<th class="header">Number Allowed</th>
+				<th class="header">Reset Every<br/>(In Hours)</th>
+			</thead>
+			<tbody>
+			<bx_repeat:items>	
+			<tr>
+				<td class="enable_action"><input name="actions[]" type="checkbox" value="__action_id__" __checked__/></td>
+				<td class="action_name">__action_name__</td>
+				<td class="number_allowed"><input name="num__action_id__" type="text" class="action_input" value="__num_allowed__"/></td>
+				<td class="reset_every"><input name="res__action_id__" type="text" class="action_input"value="__reset_hours__" /></td>
+			</tr>
+			</bx_repeat:items>
+			</tbody>
+			<tfoot>
+				<th class="header first">Enable</th>
+				<th class="header">Action Name</th>
+				<th class="header">Number Allowed</th>
+				<th class="header">Reset Every<br/>(In Hours)</th>
+			</tfoot>
+		</table>
+	__controls__
+	</form>
+</div>
+

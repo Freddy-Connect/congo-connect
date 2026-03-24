@@ -1,0 +1,20 @@
+<script type="text/javascript" language="javascript">
+	AqbMain._sActionsUrl = '__actions_url__';
+    AqbMain._sViewType = '__sel_view__';
+    AqbMain._sOrderBy = '__order_by__';
+	AqbMain._iMemberId = __member_id__;
+	
+	$('document').ready(function(){
+		$("tr:odd").attr("class", "ref-odd");
+	});
+</script>
+
+__FORM_BEGIN__
+<div class="aqb-aff-matrix-table">
+<span class="aqb-top-right-search">__search__</span>
+ __referrals__
+<div class="clear_both">&nbsp;</div>
+__loading__
+<div class="aqb-aff-ref-delete">__form__</div>
+</div>
+__FORM_END__

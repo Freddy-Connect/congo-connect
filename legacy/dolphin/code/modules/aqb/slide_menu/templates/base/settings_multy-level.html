@@ -1,0 +1,23 @@
+<div id="aqb_menu" class="menu">
+<nav>
+	<h2><i class="sys-icon fa-reorder"></i>Menu</h2>
+		<ul>
+			<bx_repeat:menu> 
+			  <li>
+             
+                 <a href="__link__">__main_title__</a>
+				<bx_if:sub_menu>
+					<h2>__main_title__</h2>			    
+					<ul class="menu-section-list">
+				       <bx_repeat:sub_menu> 
+							<li>
+								<a __target__ href="__sub_link__" >__sub_title__</a>
+							</li>          
+					   </bx_repeat:sub_menu> 
+				     </ul>
+				</bx_if:sub_menu>  
+			  </li>
+			</bx_repeat:menu>
+	   </ul>
+</nav>		
+</div>

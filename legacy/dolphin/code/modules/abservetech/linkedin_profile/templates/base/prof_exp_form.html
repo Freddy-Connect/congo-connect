@@ -1,0 +1,83 @@
+<form method="POST" name="Exp_Form" class="Exp_Form">
+	<ul>
+		
+		<li id="position-wrap" class="title">
+			<label for=""><bx_text:_abs_plinkin_Title1 /><abbr class="required" title="Required">*</abbr></label>
+			<div class="fieldgroup">
+				<span id="title-error" class="error"><bx_text:_abs_plinkin_Title1_error /><br></span>
+				<span id="title-input-wrapper">
+					<input type="text" maxlength="100" placeholder="<bx_text:_abs_plinkin_Title1_example />" onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_Title1_example />'" id="title" value="__title__" name="title" autocomplete="off">
+				</span>
+			</div>
+		</li>
+        
+        <li>
+			<label for=""><bx_text:_abs_plinkin_Company_Name /><abbr class="required" title="Required">*</abbr></label>
+			<div class="fieldgroup">
+				<span id="companyName-error" class="error"><bx_text:_abs_plinkin_Company_Name_error /><br></span>
+				<div class="company-typeahead" id="">
+				<input type="text" maxlength="100" placeholder="<bx_text:_abs_plinkin_Company_Name_example />" onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_Company_Name_example />'" id="companyName" value="__comp_name__" name="companyName" autocomplete="off">
+				</div>
+			</div>
+		</li>
+        
+		<li class="location">
+			<label for=""><bx_text:_abs_plinkin_Location1 /></label>
+			<div class="fieldgroup">
+				<span id="location-error" class="error"></span>
+				<input type="text" maxlength="80"  placeholder="<bx_text:_abs_plinkin_Location1_example />" onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_Location1_example />'" id="location" value="__location__" name="location" autocomplete="off">
+			</div>
+		</li>
+		<li class="time-period">
+		<fieldset>
+			<legend><span><bx_text:_abs_plinkin_Time_Period /><abbr class="required" title="Required">*</abbr></span></legend>
+			<span class="errors"><span id="startDateMonth-error" class="error"><bx_text:_abs_plinkin_select_a_month /></span>
+				<span id="StartYear-error" class="error"><br><bx_text:_abs_plinkin_Time_Period_startyear_error /></span>
+				<span id="EndDateMonth-error" class="error"></span>
+				<span id="EndYear-error" class="error"></span>
+				<span id="Fatal-error" class="error"><bx_text:_abs_plinkin_Time_Period_fatal_error /></span>
+			</span>
+			<ul>
+				<li class="start-date">
+                <label><bx_text:_abs_plinkin_Start /></label>
+					<select style="width:160px;" id="startDateMonth" name="startDateMonth">
+					
+                     <option style="width:160px;" selected="selected" value=""><bx_text:_abs_plinkin_choose_month />...</option>
+					<bx_repeat:stmonths>
+						<option value="__month_int__" __selected__>__month_text__</option>
+					</bx_repeat:stmonths>
+					</select>
+                    
+					
+                    <input style="width:120px;" type="text" placeholder="<bx_text:_abs_plinkin_experience_year />" onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_experience_year />'" id="StartYear" value="__st_yr__" name="StartYear" maxlength="4">
+				</li>
+				<li class="end-date" <bx_if:ishide>__hide__</bx_if:ishide> ><label><bx_text:_abs_plinkin_End /></label>
+					<select style="width:160px; id="EndDateMonth" class="EndDateMonth" name="EndDateMonth">
+					
+                     <option style="width:190px;" selected="selected" value=""><bx_text:_abs_plinkin_choose_month />...</option>
+					<bx_repeat:end_months>
+						<option value="__emonth_int__" __eselected__>__emonth_text__</option>
+					</bx_repeat:end_months>
+					</select>
+					
+                     <input style="width:120px;" type="text" placeholder="<bx_text:_abs_plinkin_experience_end_year />"  onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_experience_end_year />'" id="EndYear" class="EndYear" value="__end_year__" name="EndYear" maxlength="4">
+				</li>
+			</ul>
+			<label class="checkbox"><input type="checkbox" class="still-here" value="yes" name="isCurrent" __checked__><bx_text:_abs_plinkin_I_currently_work_ here /></label>
+		</fieldset>
+		</li>
+		<li id="position-desc">
+			<label><bx_text:_abs_plinkin_Description1 /></label>
+			<div class="fieldgroup">
+				<span id="desc-error" class="error"></span>
+				<textarea style="width:90%; height:80px;" class="txtarea" cols="60" rows="6" placeholder="<bx_text:_abs_plinkin_description_exemple />" onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_description_exemple />'" id="desc" name="desc">__desc__</textarea>
+			</div>
+		</li>
+	</ul>
+	<input type="hidden" name="user_id" value="__usr_id__">
+	<input type="hidden" name="exp_id" value="__id__">
+	<input type="submit" value="<bx_text:_abs_plinkin_setting_Save />" name="submit" class="btn btn-success">
+	<input type="button" value="<bx_text:_abs_plinkin_setting_cancel />" class="btn exp-form-cancel">
+	<input type="button" value="<bx_text:_abs_plinkin_setting_Delete />" class="btn btn-primary exp-form-delete" style="display:none">
+	<input type="reset" value="<bx_text:_abs_plinkin_setting_Reset />"  class="btn btn-primary">
+</form>

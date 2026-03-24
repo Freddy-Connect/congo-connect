@@ -1,0 +1,28 @@
+.bx-twig-unit-icon-cont {
+    float:left;
+    display:table-cell;
+    top:0;
+    left:0;
+    width:70px;
+    text-align:center;
+    vertical-align:top;
+    padding-left:2px;
+    padding-bottom:3px;
+}
+
+.bx-twig-unit-icon-cont img {
+    background-color:white;
+}
+
+.bx-twig-unit-caption {
+	color:green;
+}
+
+.bx-twig-checkbox-pad {
+	margin-left:30px;
+}
+ 
+.bx-twig-unit-desc {
+    padding-top:5px;
+    padding-bottom:5px;
+}

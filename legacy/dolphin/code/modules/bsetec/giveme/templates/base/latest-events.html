@@ -1,0 +1,36 @@
+
+<bx_if:events>
+<div class="latest-events">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h3><bx_text:_giveme_latest_events /></h3>
+<div class="head-line"><div class="splash_line"></div></div>
+<p><bx_text:_giveme_latest_content /></p>
+</div>
+<div class="latest_cont clearfix">
+	<bx_repeat:events>
+	<div class="col-sm-6">
+    <div class="border">
+		<div class="latest_left clearfix">
+        <div class="eve_img"><img src="__photo__" /></div>
+		<div class="late_eve">
+		<h3>__title__</h3>
+		<ul>
+		<li>__date__ <span><img src="__url__modules/bsetec/giveme/templates/base/images/lat_line.png" /></span></li>
+		<li>__place__<span><img src="__url__modules/bsetec/giveme/templates/base/images/lat_line.png" /></span></li>
+		<li><a href="__url__m/events/view/__uri__"><bx_text:_giveme_event_details /></a></li>
+		</ul>
+		</div>
+		</div>
+        </div>
+	</div>
+	</bx_repeat:events>
+</div>
+<bx_if:event_count>
+	<div class="viwe_events"><a href="m/events/home"><bx_text:_giveme_view_events /></a></div>
+</bx_if:event_count/>
+</div>
+</div>
+</div>
+</bx_if:events>

@@ -1,0 +1,137 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="thumbnail_image_espacement_mobile " style="float:none;">
+
+   
+             <div>
+				  
+                 <a href="__company_url__"><img class="bx-twig-unit-thumb-jobs-view bx-def-round-corners bx-def-shadow " src="__thumb_url__"></a>
+			</div>	
+ </div>	
+ <div class="clear_both"></div> 
+   
+   
+    <div class="CSSEspaceEmploi" >
+      <table >
+          <tr>
+          <td >
+             <div>
+     
+            
+            <div class="bx-twig-unit-thumb-cont-jobs-desktop bx-def-margin-sec-right">
+            <a href="__company_url__"><img class="bx-twig-unit-thumb-jobs-view bx-def-round-corners bx-def-shadow" src="__thumb_url__"></a>
+              </div>
+                    
+     
+     
+     
+    <div class="bx-twig-unit-info">
+    
+    
+               <div class="Espacement_title" >
+                 
+                    __title__  
+                   
+               </div>
+             
+          
+          
+           <div class="Espacement_sous_title" >
+                      
+                        <a href="__company_url__" > 
+      <i class="sys-icon building"> </i>  __company_name__ 
+                         </a>
+                        
+          </div>
+          
+            <div class="Espacement_sous_title" >
+                      <span style="font-size:16px; font-weight:300; line-height:28px; color: rgba(0,0,0,.6); " >  __drapeau__  __city__, __country__</span>
+                      
+          </div>
+          
+         
+         <div class="Espacement_sous_title_created_views " > 
+             <i class="sys-icon clock-o"></i> <bx_text:_modzzz_jobs_date_publication />  __date_ago__ <bx_if:views> &nbsp;&nbsp;__views__  </bx_if:views>  
+             </span> 
+          </div>
+          
+          
+          
+        
+        </div>
+        </div>
+         </td>
+           </tr>
+       </table>
+    </div>
+    <div class="clear_both"></div> 
+  
+      <div class="CSSEspaceEmploi" >
+   <table >
+                   
+    <tr>
+  <td style="text-align:right;width:50%;">
+          
+        <div>
+           <div>
+             <button class="SaveEmploi"  onclick="getHtmlData ('ajaxy_popup_result_div___id__','__Favorite_Url__', false, 'post');return false;">
+						  __AddToFavorite__
+	       </button> 
+           </div>
+      <div class="clear_both"></div> 
+                  
+      <div id="ajaxy_popup_result_div___id__" style="display:none;"></div> 
+     
+      </div>  
+       
+      </td>
+   
+    <td style="text-align:left; width:50%;">
+      
+        <bx_if:applyLink> 
+              <div>  
+			  <button class="PostulerJob"   onclick="window.open ('__applyLink__','_self');">
+						<strong><i class="fa fa-briefcase"></i>  &nbsp;__APPLY__  </strong>
+			</button>
+           </div>
+		 </bx_if:applyLink>
+         
+          <bx_if:Message> 
+              <div>  
+			 <!-- <button class="PostulerJob"   onclick="window.open ('__MessageApplyLink__','_self');">-->
+						<strong><i class="fa fa-briefcase"></i>  &nbsp;__Mssage_Deja_Apply__  </strong>
+			<!-- </button>-->
+           </div>
+		 </bx_if:Message>
+         
+         
+         
+        
+         
+          
+          <!-- 
+          <div>  
+			  <button class="PostulerJob"   onclick="window.open ('__ApplyLink__','_self');">
+						<strong><i class="fa fa-briefcase"></i>  &nbsp;__APPLY__  </strong>
+			</button>
+           </div>
+            -->
+         
+         
+         
+          <bx_if:applyLinkExternal> 
+		     <div style='float:left;width:50%'>  
+          
+            <button class="PostulerJob"   onclick="window.open ('__applyLinkExternal__');">
+						<strong><i class="fa fa-briefcase"></i>  &nbsp;__APPLYExternal__  </strong>
+			</button>
+          
+           </div>
+		 </bx_if:applyLinkExternal>
+     </td>
+    </tr>
+   </table>
+    </div>
+    <div class="clear_both"></div> 
+    
+    
+    

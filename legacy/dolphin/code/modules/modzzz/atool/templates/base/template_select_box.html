@@ -1,0 +1,48 @@
+<script>
+	function getTemplateContent()
+	{
+		document.selform.submit(); 
+	}
+</script>
+<style>
+	.input_wrapper_textarea {
+		width:500px;
+	}
+</style>
+
+<div> 
+	<form name='selform' method='get' action='__action_url__'>
+	<table><tr> 
+		<td style='width:30%;margin-right:10px'>
+				<b><bx_text:_modzzz_atool_form_caption_template /></b>:&nbsp; 
+				<select style='width:200px' name="template" onchange="getTemplateContent()" >
+					<bx_repeat:template_items>
+						<option value="__template_value__" __template_selected__>
+							__template_caption__
+						</option>
+					</bx_repeat:template_items>
+				</select>
+		</td>
+
+		<td style='width:30%;margin-right:10px'>
+				<b><bx_text:_modzzz_atool_form_caption_language /></b>:&nbsp; 
+				<select name="language" onchange="getTemplateContent()" >
+					<bx_repeat:lang_items>
+						<option value="__language_value__" __language_selected__>
+							__language_caption__
+						</option>
+					</bx_repeat:lang_items>
+				</select>
+		</td>
+<!--
+		<td style='width:30%'>
+				<b><bx_text:_modzzz_atool_form_caption_editor /></b>:&nbsp; 
+				<select name="editor" onchange="getTemplateContent()" > 
+					<option __tinymce_selected__ value="tinymce"><bx_text:_modzzz_atool_form_option_tinymce /></option>
+					<option __plain_selected__ value="plain"><bx_text:_modzzz_atool_form_option_plain /></option>  
+				</select>
+		</td>
+-->
+	</tr></table>
+	</form>  
+</div>

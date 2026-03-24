@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*slider*/
+.bannercontainer { 
+background-color: #fff;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+width: 100%;
+}
+
+.banner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.caption {
+  z-index:500;
+  display:block!important;
+  position:absolute;
+  bottom:0;
+  left:0;
+  height:30px;
+  padding:5px 20px 0 20px;
+  background:#000;
+  background:rgba(0,0,0,.5);
+  width:540px;
+  font-size:1.3em;
+  line-height:1.33;
+  color:#fff;
+  border-top:1px solid #000;
+  text-shadow:none;
+}
+#slides img { width:100%; }

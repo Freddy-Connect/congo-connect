@@ -1,0 +1,43 @@
+<div class="bx_sys_file_upload_line" style='margin-bottom:10px'> 
+   
+   <div style='float:left'> 
+
+		<select class="form_input_select bx-def-font" name="day[]" style='width:110px' />
+			__day_options__ 
+		</select>
+ 
+		&nbsp;<bx_text:_modzzz_listing_from />&nbsp; 
+
+		<select class="form_input_select bx-def-font" name="from_hour[]" style='width:65px' />
+			__from_hour_options__ 
+		</select>:
+
+		<select class="form_input_select bx-def-font" name="from_minute[]" style='width:65px' />
+			__from_minute_options__ 
+		</select>:
+
+		<select class="form_input_select bx-def-font" name="from_period[]" style='width:65px' />
+			__from_period_options__ 
+		</select> 
+
+		&nbsp;<bx_text:_modzzz_listing_to />&nbsp;
+
+		<select class="form_input_select bx-def-font" name="to_hour[]" style='width:65px' />
+			__to_hour_options__ 
+		</select>:
+
+		<select class="form_input_select bx-def-font" name="to_minute[]" style='width:65px' />
+			__to_minute_options__ 
+		</select>:
+
+		<select class="form_input_select bx-def-font" name="to_period[]" style='width:65px' />
+			__to_period_options__ 
+		</select> 
+   </div> 
+   <div style='float:left'>  
+		<i title="Add" alt="Add" class="multiply_add_button sys-icon plus-circle" onclick="$(this).parent().parent().parent().append($(this).parent().parent().clone().find('i.multiply_add_button').remove().end().find('i.multiply_remove_button').show().end().hide()).find('.bx_sys_file_upload_line').slideDown();"></i>
+		<i title="Remove" alt="Remove" class="multiply_remove_button sys-icon minus-circle" onclick="var $this = this; $(this).parent().parent().slideUp(function () { $($this).parent().parent().remove(); });" style="__display__"></i> 
+   </div>  
+	<div class="clear_both"></div>
+</div>
+<div class="clear_both"></div>

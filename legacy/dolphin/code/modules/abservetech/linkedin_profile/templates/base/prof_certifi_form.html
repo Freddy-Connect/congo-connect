@@ -1,0 +1,100 @@
+<form method="POST" name="certifi_Form" class="certificate_form">
+	<ul>
+		<li>
+			<label for=""><bx_text:_abs_plinkin_Certificate_Name /><abbr class="required" title="Required">*</abbr></label>
+			<div class="fieldgroup">
+				<span id="certificateName-error" class="error"><bx_text:_abs_plinkin_Please_enter_a _certificate_name /><br></span>
+				<div class="company-typeahead" id="">
+				<input type="text" maxlength="100" placeholder="<bx_text:_abs_plinkin_cerification_name_example />"  onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_cerification_name_example />'" id="certificateName" value="__certificatename__" name="certificateName" autocomplete="off">
+				</div>
+			</div>
+		</li>
+
+
+		<li>
+			<label for=""><bx_text:_abs_plinkin_Certificate_Authority /></label>
+			<div class="fieldgroup">
+				
+			    <div class="company-typeahead" id="">
+				<input type="text" maxlength="100" id="certificateAuthority" value="__certificateauthority__" name="certificateAuthority" autocomplete="off">
+				</div>
+			</div>
+		</li>
+		
+        <li>
+			<label for=""><bx_text:_abs_plinkin_License_Number /></label>
+			<div class="fieldgroup">
+				
+			    <div class="company-typeahead" id="">
+				<input type="text" maxlength="100" id="certificateLicense" value="__certificatelicense__" name="certificateLicense" autocomplete="off">
+				</div>
+			</div>
+		</li>
+
+		
+        <li>
+			<label for=""><bx_text:_abs_plinkin_Certification_URL /></label>
+			<div class="fieldgroup">
+				
+			    <div class="company-typeahead" id="">
+				<input type="text" maxlength="100" id="certificateUrl" value="__certificateurl__" name="certificateUrl" autocomplete="off">
+				</div>
+			</div>
+		</li>
+        
+
+		</ul>
+
+  <fieldset>
+			
+            <legend><span><bx_text:_abs_plinkin_Time_Period_validity /><abbr class="required" title="Required">*</abbr></span></legend>
+			<span class="errors"><span id="cert_startDateMonth-error" class="error"><bx_text:_abs_plinkin_cerification_Please_select_a_month /></span>
+				<span id="cert_StartYear-error" class="error"><br><bx_text:_abs_plinkin_Please_enter_a_year /></span>
+				<span id="cert_EndDateMonth-error" class="error"></span>
+				<span id="cert_EndYear-error" class="error"></span>
+				<span id="cert_Fatal-error" class="error"><bx_text:_abs_plinkin_Please_be_sure_the_start_date_is_not_after_the_end_date /></span>
+			</span>
+	
+
+
+			<ul>
+				<li class="start-date"><label><bx_text:_abs_plinkin_Start_cerification /></label>
+					<select id="cert_startDateMonth" name="startDateMonth">
+					<option selected="selected" value=""><bx_text:_abs_plinkin_certification_month />...</option>
+					<bx_repeat:stmonths>
+						<option value="__month_int__" __selected__>__month_text__</option>
+					</bx_repeat:stmonths>
+					</select>
+					<input type="text" placeholder="<bx_text:_abs_plinkin_Start_Year_cerification />"  onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_Start_Year_cerification />'"  id="cert_StartYear" value="__st_yr__" name="StartYear" maxlength="4">
+				  </li>
+				<li class="end-date" <bx_if:ishide>__hide__</bx_if:ishide> ><label><bx_text:_abs_plinkin_End_cerification /></label>
+					<select id="cert_EndDateMonth" class="EndDateMonth" name="EndDateMonth">
+					<option selected="selected" value=""><bx_text:_abs_plinkin_certification_month />...</option>
+					<bx_repeat:end_months>
+						<option value="__emonth_int__" __eselected__>__emonth_text__</option>
+					</bx_repeat:end_months>
+					</select>
+					<input type="text" placeholder="<bx_text:_abs_plinkin_End_Year_cerification />"  onfocus="this.placeholder = ''" onblur="this.placeholder = '<bx_text:_abs_plinkin_End_Year_cerification />'" id="cert_EndYear" class="EndYear" value="__end_year__" name="EndYear" maxlength="4">
+				</li>
+			</ul>
+			<label class="checkbox"><input type="checkbox" class="still-going" value="yes" name="isCurrent" __checked__><bx_text:_abs_plinkin_This_certificate_does_not_expire /></label>
+   </fieldset>
+
+     <input type="hidden" name="cert_id" value="__id__">
+     <input type="hidden" name="user_id" value="__usr_id__">
+     <input type="submit" value="<bx_text:_abs_plinkin_setting_Save />" name="submit" class="btn btn-success">
+	 <input type="button" value="<bx_text:_abs_plinkin_setting_cancel />" class="btn cert-form-cancel" >
+	 <input type="button" value="<bx_text:_abs_plinkin_setting_Delete />" class="btn btn-primary cert-form-delete" style="display:none;">
+	 <input type="reset" value="<bx_text:_abs_plinkin_setting_reset />"class="btn btn-primary"/>
+
+
+	</form>
+
+
+
+
+
+
+
+
+

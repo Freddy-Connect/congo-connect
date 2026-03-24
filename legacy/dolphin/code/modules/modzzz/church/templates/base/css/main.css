@@ -1,0 +1,135 @@
+.mbp-level-info {
+    white-space: normal;
+}
+
+.input_wrapper_custom {
+    padding-top: 3px; 
+}
+
+.block_header{
+ 	font-weight: bold;
+	font-size:12px;
+	padding-bottom: 5px;  
+ }
+
+.modzzz_church_main_photo {
+    border:1px solid #CCCCCC;
+    width:604px;
+    padding:2px 0;
+    margin:0 auto;
+    text-align:center;
+}
+
+.modzzz_church_main_info {
+    width:606px;
+    margin:2px auto 0px auto;
+}
+
+.modzzz_church_main_info a:first-child {
+    font-weight:bold;
+}
+
+.modzzz_church_main_info_text {
+    width:50%;
+    float:left;
+    text-align:left;
+    font-size:11px;
+    line-height:14px;
+}
+.modzzz_church_main_info_img {
+    width:50%;
+    float:left;
+    text-align:right;
+    font-size:11px;
+}
+
+.modzzz_church_main_info_img .votes_small {
+    width:auto;
+}
+.modzzz_church_main_info_img>img {
+    position:relative;
+    top:3px;
+} 
+
+.modzzz_church_default_padding {
+    padding:10px;
+}
+
+.modzzz_church_extra_wrtapper {
+    padding-top:10px;
+}
+ 
+/*--- 'Available levels', 'Current Level' Styles ---*/
+div.mbp-current-levels,
+div.mbp-available-levels {
+    margin: 0px 0px 10px 0px;
+}
+div.mbp-level {
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+
+    position: relative;
+
+    /*background-color: #f2f2ff;*/
+}
+ 
+div.mbp-level-price {
+    top: 10px;
+    right: 10px;    
+    height: 16px;
+
+    position: absolute;
+
+    font-weight: bold;
+    font-size: 12px;
+}
+div.mbp-level-price div.image {
+	width: 32px;
+	height: 16px;
+	
+	position: relative;
+	float: left;
+
+	background-repeat: no-repeat;
+    background-position: right center;
+}
+div.mbp-level-price div.text {
+	height: 16px;
+	
+	position: relative;
+	float: left;
+}
+div.mbp-level-price img {
+    width: 16px;
+    height: 16px;
+}
+div.mbp-level-content {
+    min-height: 116px; 
+    padding-left: 5px;
+}
+div.mbp-level-title {
+    font-weight: bold;
+    font-size: 12px;
+}
+div.mbp-level-info {
+    padding-top: 5px;
+}
+div.mbp-level-control {
+    padding-top: 5px;
+}
+
+div.mbp-current-level {
+    margin: 0px;
+}
+div.mbp-current-level div.mbp-level {
+    margin: 0px;
+    padding: 10px;
+    
+    position: relative;
+
+    /*background-color: #ffffff;*/
+}
+div.mbp-level-description {
+    min-height: 0px;
+    padding: 10px 0px 0px 0px;
+}

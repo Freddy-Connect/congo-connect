@@ -1,0 +1,13 @@
+<div class="bx-def-bc-padding">
+ 
+	  <bx_repeat:entries>  
+		  <bx_if:selstate> 
+				<div class="categories_col_must" style="width: 100%;"><i class="sys-icon square"></i> <span style="font-size:17px;"><b>__state_name__</b></span> (__num_items__)</div>
+				<div class='clear_both'></div>	 
+ 		  </bx_if:selstate> 
+		  <bx_if:regstate> 
+ 				<div class="categories_col_must" style="width: 100%;"><a class="BoutonFormationUnitLien" href='__state_url__'><i class="sys-icon square"></i> <span style="font-size:16px;"><span style="font-weight:normal;">__state_name__</span></span> (__num_items__)</a></div>  
+				<div class='clear_both'></div>	 
+		  </bx_if:regstate> 
+	  </bx_repeat:entries>  
+ </div>

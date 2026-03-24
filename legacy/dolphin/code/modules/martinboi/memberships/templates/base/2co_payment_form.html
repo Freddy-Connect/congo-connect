@@ -1,0 +1,32 @@
+<div id="checkout_form">
+	<form action="__action__" method="post" target="_parent">
+		<input type="hidden" name="sid" value="__sid__" />
+		<input type="hidden" name="mode" value="__mode__" />
+		<input type="hidden" name="li_0_type" value="__li_0_type__" />
+		<input type="hidden" name="li_0_name" value="__li_0_name__" />
+		<input type="hidden" name="li_0_price" value="__li_0_price__" />
+		<input type="hidden" name="li_0_quantity" value="__li_0_quantity__" />
+		<input type="hidden" name="return_url" value="__return_url__" />
+		<input type="hidden" name="x_receipt_link_url" value="__x_receipt_link_url__" />
+		<input type="hidden" name="merchant_order_id" value="__merchant_order_id__" />
+	
+		<bx_if:auto>
+            <input type="hidden" name="li_0_recurrence" value="__li_0_recurrence__" />
+            <input type="hidden" name="li_0_duration" value="__li_0_duration__" />
+		</bx_if:auto>
+        
+		<bx_if:startup_fee>
+			<input type="hidden" name="li_0_startup_fee" value="__li_0_startup_fee__" />
+		</bx_if:startup_fee>
+		
+        <bx_if:demo>
+            <input type="hidden" name="demo" value="__demo__" />
+        </bx_if:demo>
+        
+		<!--<input type="image" name="submit-2co" src="<bx_url_root />modules/harvest/memberships/images/2checkout.gif" alt="2Checkout"  />-->
+		
+		<div class="button_wrapper">
+			<input type="submit" class="form_input_submit bx-btn" name="submit-pp" alt="2Checkout" value="<bx_text:_Checkout_with_2Checkout />"  />
+		</div>
+	</form>
+</div>

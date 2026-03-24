@@ -1,0 +1,13 @@
+@media (max-width:720px) {
+	/*--- Categories ---*/
+	.bx_ads_categories_cols .bx_ads_categories_col {
+		float: none;
+		width: 100% !important;
+	}
+	
+	/*--- Categories ---*/
+    .bx_ads_main_photo img {
+        width: auto;
+        max-width: 100%;
+    }
+}

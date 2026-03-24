@@ -1,0 +1,19 @@
+.adm_friend {
+    /*margin-bottom:10px;*/
+    padding: 5px 0px;
+}
+.adm_friend .adm_check {
+    float: left;
+}
+.adm_friend .text {
+    margin-left:25px;
+}
+.adm_friend .auth {
+    margin-left:25px;
+    color:#999999;
+    font-size:9px;
+}
+
+.input_wrapper_custom {
+    padding-top: 3px; 
+}

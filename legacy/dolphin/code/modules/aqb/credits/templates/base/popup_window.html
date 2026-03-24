@@ -1,0 +1,28 @@
+<div class="aqb-credits-popup-window-table">
+<table cellpadding="3" cellspacing="5" class="aqb-credits-popup-actions-table">
+	<tr>
+		<td colspan="2" class="aqb-credits-justify"><bx_text:_aqb_credits_popup_text /></td>
+	</tr>
+	<tr>
+		<th><bx_text:_aqb_credits_action_name /></th>
+		<th><bx_text:_aqb_credits_price /></th>
+	</tr>
+	<bx_repeat:actions>
+		<tr>
+			<td>__name__</td>
+			<td>__price__</td>			
+		</tr>
+	</bx_repeat:actions>
+</table>
+<span>
+	<center><a href="modules/?r=aqb_credits/my_credits/"><bx_text:_aqb_credits_popup_go_to /></a></center>
+</span>
+<span>
+__checkbox__
+</span>
+</div>
+<script type="text/javascript" language="javascript">
+	$('document').ready(function(){
+		$("tr:odd").attr("class", "credits-odd");
+	});
+</script>

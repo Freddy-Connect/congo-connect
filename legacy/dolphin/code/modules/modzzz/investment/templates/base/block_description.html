@@ -1,0 +1,114 @@
+<div class="bx-def-font-large"> 
+	
+    
+   <div class="etapeTitle" style="box-sizing: border-box; position: relative; font-size: 20px; font-weight: bold; margin: 0px 0px; background: #18a5a5; font-family: Lato, sans-serif; line-height: 1 !important; padding: 15px 20px !important; color: white !important; text-transform: none !important; border-radius:10px;">
+		 __title__
+        <br>
+	</div>
+    
+    <div class="CSSCapitalview" > 
+    <table class="modzzz_investment_fields">
+	
+	
+		<tr> 
+	       <td class="modzzz_investment_field_name" valign="top"><i class="sys-icon cog"></i>
+           <bx_if:min>
+            <span style="font-weight:normal; font-size:14px"> <bx_text:_modzzz_investment_form_caption_min_investment_unit />:</span> __min_investment__ 
+             <br>
+            </bx_if:min>
+             <bx_if:max><span style="font-weight:normal; font-size:14px"> 
+             <bx_text:_modzzz_investment_form_caption_max_investment_unit />:</span> __max_investment__
+             </bx_if:max>
+           </td>
+            
+		</tr> 
+        <tr> 
+	       <td>
+         <i class="sys-icon map-marker"></i>
+              <span style="font-size:14px"> <bx_text:_modzzz_investment_projet_location_unit />: </span> <span style="font-weight:normal; font-size:14px"> __city__  __drapeau__ __country__</span>
+              
+            </td>
+            
+		</tr>
+       
+       
+       <bx_if:stade>
+        <tr> 
+	       <td>
+         
+             <span style="font-size:14px">
+                <i class="sys-icon wrench"></i>  <bx_text:_modzzz_investment_stade_unit />:</span> <span style="font-weight:normal; font-size:14px"> __stade__
+                </span>
+            
+              
+            </td>
+            
+		</tr>
+        </bx_if:stade>
+        
+        
+        
+         <tr> 
+	       <td>
+         
+             
+         <div class="bx-twig-unit-line bx-twig-unit-special">
+        <span style="font-weight:normal; font-size:12px"> <bx_text:_Categories />: __all_categories__ </span>
+			
+			
+		  
+			
+		</div>
+              
+            </td>
+            
+		</tr>
+        
+         <tr> 
+	       <td>
+         
+             
+         <div class="bx-twig-unit-line bx-twig-unit-special">
+        
+			<span style="font-weight:normal; font-size:12px"> <i class="sys-icon comments"></i> __comments_count__ &nbsp;&nbsp;&nbsp;<i class="sys-icon eye"></i> __views__  </span>
+		  
+			
+		</div>
+              
+            </td>
+            
+		</tr>
+        
+       
+
+	
+</table>
+</div>
+
+
+
+
+
+
+ <div class="CSSbusinessListingUnit" > 
+ <table>
+    <bx_if:why>
+    <tr>
+    <td>
+		<div class="modzzz_investment_why">
+			<span class="attribute-title"><b><bx_text:_modzzz_investment_why /></b> </span>
+			<img src="<bx_icon_url:start_quote_gray.gif />" /> 
+				<span style="color:#333; text-align:left;">__why__</span>
+			<img src="<bx_icon_url:end_quote_gray.gif />" /> 
+		</div>
+        </td>
+        </tr>
+	</bx_if:why>
+    </table>
+</div>
+    
+    
+	<div>
+		<br />__description__
+	</div>
+</div>

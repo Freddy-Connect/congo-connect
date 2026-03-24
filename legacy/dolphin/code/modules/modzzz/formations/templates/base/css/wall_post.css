@@ -1,0 +1,123 @@
+.bx-twig-unit-tittre-fred {
+    font-size: 24px; 
+    font-size: 24sp;
+    line-height: 24px;
+    line-height: 24sp; 
+	font-weight:800; 
+	color:#3a5795;
+	
+}
+
+.BoutonFormationUnitTitle {
+
+	height: auto;
+	
+	border-width: 0px;
+	
+	padding:0px;
+	margin:0px;
+	text-align:left;
+	font-size:20px;
+	font-weight:600
+	
+	line-height: auto;
+
+    background-color: rgba(139,157,195,0.0);
+	
+	webkit-transition: all ease 1.0s; 
+    -moz-transition: all ease 1.0s;
+     transition: all ease 1.1s; 
+ 
+}
+.BoutonFormationUnitTitle {  cursor: pointer;}
+.BoutonFormationUnitTitle:hover {background: #dfe3ee;   font-weight:700; position: relative;bottom: 0.5px; transition: all 0.8s ease;}
+
+
+/* Freddy  BoutonFormationUnit */
+.BoutonFormationUnit {
+
+	height: auto;
+	
+	border-width: 0px;
+	
+	padding:0px;
+	margin:0px;
+	text-align:left;
+	color:#3b5998;
+	font-weight:bold;
+	
+	
+	line-height: auto;
+
+    background-color: rgba(139,157,195,0.0);
+	
+	webkit-transition: all ease 1.0s; 
+    -moz-transition: all ease 1.0s;
+     transition: all ease 1.1s; 
+ 
+}
+.BoutonFormationUnit {  cursor: pointer;}
+.BoutonFormationUnit:hover {  font-weight:normal; position: relative;bottom: 1px; transition: all 0.8s ease;}
+
+
+
+div.bx-formations-wall-event {    
+    position: relative;    
+}
+
+div.bx-formations-wall-caption {
+    height: 30px;
+    padding-left: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    line-height: 30px; 
+}
+
+span.bx-formations-wall-caption-owner {
+    font-weight: bold;
+}
+
+a.bx-formations-wall-caption-link,
+a.bx-formations-wall-caption-link:link {
+    text-decoration: none;
+}
+a.bx-formations-wall-caption-link:hover,
+a.bx-formations-wall-caption-link:active {
+    text-decoration: underline;
+}
+div.bx-formations-wall-content {
+    position: relative;
+}
+div.bx-formations-wall-comments {
+    padding-left: 0px;
+}
+
+/*--- Overwrite default Comment styles ---*/
+div.bx-formations-wall-comments div.cmts {
+    padding: 0px;
+    /*display: none;*/
+}
+div.bx-formations-wall-comments div.cmt-reply {
+    padding: 0px;
+    /*display: none;*/
+}
+div.bx-formations-wall-comments div.thumbnail_block {
+    left: -38px;
+    top: 1px;
+}
+
+@media (max-width:414px) {
+	.masque_projet_contenu { display:none;}
+	
+	.bx-twig-unit-tittre-fred {
+    font-size: 20px; 
+    font-size: 20sp;
+    line-height: 20px;
+    line-height: 20sp; 
+	font-weight:800; 
+	color:#3a5795;
+	
+}
+	
+}

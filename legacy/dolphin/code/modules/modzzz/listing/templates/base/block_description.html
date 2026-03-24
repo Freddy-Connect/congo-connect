@@ -1,0 +1,91 @@
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+ 
+ <div class="CSSBusinessListingViewTop" >
+   <table >
+            
+   
+      <tr>
+      
+      <td>
+        <div style="font-size:22px; color:#1E2E3E; text-align:center; font-weight:800;"><i class="sys-icon building"></i> __listing_title__</div>
+        
+         
+          <bx_if:parent_category>
+        <div class="biz-badge_view" style="text-align:center;">
+        <a href="__category_url__">  <i class="sys-icon cog"></i> __category_name__  </a>
+      
+         </div>
+            </bx_if:parent_category>
+         </td>
+       </tr>
+       <tr>
+      
+      <td>
+      
+      
+      <!-- <div style=' text-align:center;  background-color: #56687A;  box-shadow: 5px 5px 5px rgb(0 0 0 / 30%); padding: 5px; display: inline-block; font-size: 15px; font-weight:500; margin-right: 3px; margin-bottom: 3px; color:  #fff;
+    border: 1px solid #56687A; '> <i class="sys-icon map-marker"></i> <bx_text:_modzzz_listing_action_adresse /> </div>
+    -->
+        
+        
+            <bx_if:adresse>
+        <div class="infoUnit infoUnitFontIcon  bx-twig-unit-line  bx-def-font-grayed" style="font-size:14px;">
+              <i class="sys-icon map"></i>  __adresse__
+            </div>
+            </bx_if:adresse>
+             
+             
+             
+             <div class="infoUnit infoUnitFontIcon bx-twig-unit-line  bx-def-font-grayed" style="font-size:14px;">
+                <i class="sys-icon map-marker"></i>
+            <bx_if:zip>__zip__</bx_if:zip>
+             __city__  __drapeau__ <b>Province:</b> __province__
+            </div>   
+            
+            
+            
+            
+            
+             <div style=' text-align:center;  background-color: #56687A;  box-shadow: 5px 5px 5px rgb(0 0 0 / 30%); padding: 5px; display: inline-block; font-size: 15px; font-weight:500; margin-right: 3px; margin-bottom: 3px; color:  #fff;
+    border: 1px solid #56687A; '> <i class="sys-icon building"></i> Contact </div>
+        
+               
+                  <bx_if:businesstelephone>
+            <div class="infoUnit infoUnitFontIcon bx-twig-unit-line" style="font-size:14px;">
+             
+           
+           <i class="fa fa-phone"></i> __businesstelephone__
+            </div>
+             </bx_if:businesstelephone>
+             
+             
+            <bx_if:businessemail>
+         <div class="infoUnit infoUnitFontIcon bx-twig-unit-line" style="font-size:14px;">
+            <i class="sys-icon envelope"></i>  __businessemail__
+          </div>
+          </bx_if:businessemail>
+          
+           <bx_if:businesswebsite>
+          <div class="infoUnit infoUnitFontIcon bx-twig-unit-line" style="font-size:14px;">
+            <i class="sys-icon desktop"></i>
+            __businesswebsite__
+          </div>
+          </bx_if:businesswebsite>
+                  
+      
+       </td>
+       </tr>
+     </table>
+    </div>
+
+    
+    
+   
+
+	
+    
+
+	<div><br>__desc__</div>
+    
+

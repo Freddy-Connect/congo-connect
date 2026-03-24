@@ -1,0 +1,93 @@
+<?
+/************************************************************************************************************
+ * EmmetBytes Default Profile Cover
+ * Default Profile Cover For Creating New Boonex Modules
+ ************************************************************************************************************/
+
+$sLangCategory = 'EmmetBytes ProfileCover';
+
+$aLangContent = array(
+    '_sbs_txt_title_emmet_bytes_profile_cover' => 'Couverture de Profil',
+    '_emmet_bytes_profile_cover' => 'Couverture de Profil',
+    '_emmet_bytes_profile_cover_single' => 'Couverture de Profil',
+    '_emmet_bytes_profile_cover_plural' => 'Couverture de Profil',
+    '_emmet_bytes_profile_cover_administration' => 'Profile Cover Administration',
+    '_emmet_bytes_profile_cover_administration_settings' => 'Paramètres',
+    '_emmetbytes_profile_cover_insert_background_caption' => 'Ajouter la photo de couverture',
+    '_emmetbytes_profile_cover_change_background_caption' => 'Changer la photo de couverture',
+    '_emmetbytes_profile_cover_edit_background_caption' => 'Changer la photo de couverture',
+    '_emmetbytes_profile_cover_upload_background_caption' => 'Télécharger la photo',
+    '_emmetbytes_profile_cover_reposition_background_caption' => 'Repositionner la Photo',
+    '_emmetbytes_profile_cover_remove_background_caption' => 'Supprimer la Photo',
+    '_emmetbytes_profile_cover_background_image_size_problem' => 'Votre image doit avoir au moins {0} px largeur et {1} px de hauteur',
+    '_emmetbytes_profile_cover_background_image_file_size_problem' => 'La taille de votre image ne doit pas être supérieure à {0} octets',
+    '_emmetbytes_profile_cover_background_image_upload_problem' => '
+Désolé, un problème le téléchargement de l\'image . Veuillez réessayer plus tard',
+    '_emmetbytes_profile_cover_insert_avatar_caption' => 'Ajouter la photo de profil',
+    '_emmetbytes_profile_cover_update_info_caption' => 'Actualiser mes infos',
+    '_emmetbytes_profile_cover_remove_friend_caption' => 'Retirer de la liste d\'amis',
+    '_emmetbytes_profile_cover_add_friend_caption' => 'Ajouter comme ami(e)',
+    '_emmetbytes_profile_cover_accept_friend_request_caption' => 'Accepter la demande d\'ami',
+    '_emmetbytes_profile_cover_member_cancel_friend_request' => 'Annuler la demande d\'ami',
+    '_emmetbytes_profile_cover_send_message_caption' => 'Envoyer un message',
+    '_emmetbytes_profile_cover_about_caption' => 'À propos',
+    '_emmetbytes_profile_cover_popup_close_caption' => 'Fermer',
+    '_emmetbytes_profile_cover_nickname_caption' => 'Nom d\'utilisateur ',
+    '_emmetbytes_profile_cover_not_allowed_error' => 'Désolé, mais vous n\'êtes pas autorisé à modifier ces données',
+    '_emmetbytes_profile_cover_insert_headline_caption' => 'Ajouter votre titre professionnel',
+    '_emmetbytes_profile_cover_help_headline_caption' => 'Aidez vos amis à vous trouver en ajoutant votre titre professionnel',
+    '_emmetbytes_profile_cover_popup_submit_headline_caption' => 'Ajouter votre titre professionnel',
+    '_emmetbytes_profile_cover_no_headline_problem' => 'Veuillez ajouter votre titre professionnel',
+    '_emmetbytes_profile_cover_headline_caption' => 'Titre professionnel',
+    '_emmetbytes_profile_cover_location_caption' => '>  ',
+    '_emmetbytes_profile_cover_add_location_caption' => 'Indiquer votre lieu de résidence',
+    '_emmetbytes_profile_cover_help_location_caption' => 'Help your friends find you by adding your location',
+    '_emmetbytes_profile_cover_no_country_problem' => 'Veuillez entrer votre pays',
+    '_emmetbytes_profile_cover_no_city_problem' => 'Veuillez entrer votre ville',
+    '_emmetbytes_profile_cover_popup_submit_location_caption' => 'Ajouter votre localisation',
+    '_emmetbytes_profile_cover_add_birthdate_caption' => 'Ajouter votre date de naissance',
+    '_emmetbytes_profile_cover_no_birthdate_problem' => 'Veuillez indiquer votre date de naissance',
+    '_emmetbytes_profile_cover_birthdate_caption' => 'Né(e) le ',
+    '_emmetbytes_profile_cover_help_birthdate_caption' => 'Aidez vos amis à vous trouver en ajoutant votre date de naissance',
+    '_emmetbytes_profile_cover_popup_submit_birthdate_caption' => 'Ajouter votre date de naissance',
+    '_emmetbytes_profile_cover_add_gender_caption' => 'Indiquez votre sexe (genre)',
+    '_emmetbytes_profile_cover_no_gender_problem' => 'Veuillez indiquer votre sexe (genre)',
+    '_emmetbytes_profile_cover_gender_caption' => 'Sexe ',
+    '_emmetbytes_profile_cover_help_gender_caption' => 'Aidez vos amis à vous trouver en ajoutant votre sexe (genre)',
+    '_emmetbytes_profile_cover_popup_submit_gender_caption' => 'Ajouter votre sexe (genre)',
+    '_emmetbytes_profile_cover_add_relationship_caption' => 'Ajouter votre situation amoureuse',
+    '_emmetbytes_profile_cover_no_relationship_problem' => 'Veuillez indiquer votre situation amoureuse',
+    '_emmetbytes_profile_cover_relationship_caption' => 'Situation amoureuse',
+    '_emmetbytes_profile_cover_help_relationship_caption' => 'Aidez vos amis à vous trouver en ajoutant votre situation amoureuse',
+    '_emmetbytes_profile_cover_popup_submit_relationship_caption' => 'Situation amoureuse',
+    '_emmetbytes_profile_cover_friends_count_caption' => 'Amis <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_photo_albums_count_caption' => 'Photos <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_video_albums_count_caption' => 'Vidéos <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_sound_albums_count_caption' => 'Musiques <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_file_folders_count_caption' => 'Fichiers <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_ads_count_caption' => 'Ads <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_blogs_count_caption' => 'Blog Posts <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_polls_count_caption' => 'Sondages <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_websites_count_caption' => 'Websites <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_events_count_caption' => 'Evénements <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_stores_count_caption' => 'Store Products <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    '_emmetbytes_profile_cover_groups_count_caption' => 'Associations <span class="ebytes_profile_cover_member_activity_counter">{0}</span>',
+    // bof the spy languages
+    '_eb_profile_cover_add_spy_post_background' => '<a href={profile_link}>{profile_nick}</a> a ajouté la photo de couverture',
+    '_eb_profile_cover_change_spy_post_background' => '<a href={profile_link}>{profile_nick}</a> a changé la photo de couverture',
+    '_eb_profile_cover_repositioned_spy_post_background' => '<a href={profile_link}>{profile_nick}</a> a repositionné la photo de couverture',
+    '_eb_profile_cover_remove_spy_post_background' => '<a href={profile_link}>{profile_nick}</a> a supprimé la photo de',
+    '_eb_profile_cover_add_spy_post_thumbnail' => '<a href={profile_link}>{profile_nick}</a> a ajouté la photo de couverture',
+    '_eb_profile_cover_add_spy_post_thumbnail' => '<a href={profile_link}>{profile_nick}</a> a changé la photo de couverture',
+    // eof the spy languages
+    // bof the wall langauges
+    '_eb_profile_cover_add_wall_post_background' => ' a ajouté la photo de couverture',
+    '_eb_profile_cover_change_wall_post_background' => ' a changé la photo de couverture',
+    '_eb_profile_cover_repositioned_wall_post_background' => ' a repositionné la photo de couverture',
+    '_eb_profile_cover_remove_wall_post_background' => ' a supprimé la photo de couverture',
+    '_eb_profile_cover_add_wall_post_thumbnail' => ' a ajouté la photo de couverture',
+    '_eb_profile_cover_add_wall_post_thumbnail' => ' a changé la photo de couverture',
+    // bof the wall langauges
+);
+
+?>

@@ -1,0 +1,71 @@
+<style>
+.maillist td {
+	border: 1px solid #ccc;
+	font-size: 10pt;
+}
+.header_row {
+	background-color:#E5E5E5;
+	text-align: center;
+	font-weight: bold;
+	font-size: 10pt;
+}
+.inactive_row {
+	background-color:#F0F0F0;
+	color: #999;
+}
+.maillist p {
+	padding-left: 10px;
+}
+</style>
+<script language="javascript">
+function aqbAutomailerActivate(id) {
+	$('#aqb_hform_id').val(id);
+	$('#aqb_hform_action').val('activate');
+	$('#aqb_hform').submit();
+}
+function aqbAutomailerDeactivate(id) {
+	$('#aqb_hform_id').val(id);
+	$('#aqb_hform_action').val('deactivate');
+	$('#aqb_hform').submit();
+}
+function aqbAutomailerDelete(id) {
+	$('#aqb_hform_id').val(id);
+	$('#aqb_hform_action').val('delete');
+	$('#aqb_hform').submit();
+}
+function aqbAutomailerEdit(id) {
+	$('#aqb_hform_id').val(id);
+	$('#aqb_hform_action').val('edit');
+	$('#aqb_hform').submit();
+}
+function aqbAutomailerTest(id) {
+	$('#aqb_hform_id').val(id);
+	$('#aqb_hform_action').val('test');
+	$('#aqb_hform').ajaxSubmit(function(sResponce){alert(sResponce);});
+}
+</script>
+<form method="post" action="__action_url__" id="aqb_hform">
+	<input type="hidden" name="id" value="0" id="aqb_hform_id" />
+	<input type="hidden" name="action" value="" id="aqb_hform_action" />
+</form>
+<center>
+	<table cellpadding="5" class="maillist" width="100%">
+	    <tr class="header_row">
+	        <td><bx_text:_aqb_automailer_name /></td><td><bx_text:_aqb_automailer_subject /></td><td><bx_text:_aqb_automailer_filter_t /></td><td><bx_text:_aqb_automailer_schedule_t /></td><td>&nbsp;</td>
+	    </tr>
+		<bx_repeat:mails>
+	    	<tr __inactive_row__>
+        		<td>__name__</td>
+        		<td>__subject__</td>
+        		<td width="25%">__filter__</td>
+        		<td>__schedule__</td>
+        		<td><center>
+        			<div><input type="button" name="__action_name__" value="__action_caption__" onclick="javascript: __action_function__(__id__);" class="bx-btn" style="margin-bottom: 2px; width: 130px; float: none; padding: 0 5px;"/></div>
+        			<div><input type="button" name="test" value="<bx_text:_aqb_automailer_test />" onclick="javascript: aqbAutomailerTest(__id__);" class="bx-btn"  style="margin-bottom: 2px; width: 130px; float: none; padding: 0 5px;"/></div>
+        			<div><input type="button" name="edit" value="<bx_text:_Edit />" onclick="javascript: aqbAutomailerEdit(__id__);" class="bx-btn" style="margin-bottom: 2px; width: 130px; float: none; padding: 0 5px;"/></div>
+        			<div><input type="button" name="delete" value="<bx_text:_Delete />" onclick="javascript: if (confirm('<bx_text:_aqb_automailer_delete_confirm />')) aqbAutomailerDelete(__id__);" class="bx-btn" style="margin-bottom: 2px; width: 130px; float: none; padding: 0 5px;"/></div>
+        		</center></td>
+			</tr>
+    	</bx_repeat:mails>
+	</table>
+</center>

@@ -1,0 +1,28 @@
+<div class="items-members-table-commission" id = "mass_pay_form">
+    <table width="100%" class="items-members-table" cellpadding="0" cellspacing="0">
+        <tr height="20px">
+			<th>&nbsp;</th>
+			<th><bx_text:_aqb_aff_admin_txt_username /> </th>
+			<th style="text-align:center;"><bx_text:_aqb_aff_admin_txt_price /> __currency__</th>
+		    <th style="text-align:center;"><bx_text:_aqb_aff_admin_txt_transaction_date_start /> </th>   
+			<th style="text-align:center;">__points_title__</th>
+	     </tr>
+        <bx_repeat:items>
+            <tr class="items-active">
+    	        <td width="20"><input type="checkbox" class="form_input_checkbox" id="t-__id__" name="members[]" value="__id__" /></td>
+      			<td width="*"><u>__username__</u></td>
+				<td width="*" style="text-align:center;">__price__</td>
+				<td width="*" style="text-align:center;">__date_start__</td>
+				<td width="*" style="text-align:center;">__points__</td>
+	        </tr>
+        </bx_repeat:items>
+		<tr class="items-active" style="background-color:#EEE;">
+				<td width="*" colspan="2"><b><bx_text:_aqb_aff_admin_txt_price_total /></b></td>
+				<td width="*" style="text-align:center;"><b>__price_total__</b></td>
+				<td width="*" style="text-align:center;"></td>
+				<td width="*" style="text-align:center;"><b>__points_total__</b></td>
+	        </tr>
+    </table>
+	__controls__
+</div>
+__loading__

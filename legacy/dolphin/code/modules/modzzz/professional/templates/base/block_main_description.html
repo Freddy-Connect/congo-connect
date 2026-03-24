@@ -1,0 +1,34 @@
+<div class="bx-def-font-large">
+ 
+	<bx_if:businessname>
+		<div class="bx-twig-unit-line">
+			__businessname__
+		</div>
+
+		<div class="bx-def-border bx-def-margin-sec-top bx-def-margin-sec-bottom"></div>
+	</bx_if:businessname>
+
+	<bx_if:proprietor>
+		<div class="bx-twig-unit-line">
+			<span class="bx-def-font-grayed"><bx_text:_modzzz_professional_form_caption_proprietor />:</span>&nbsp;__proprietor__
+		</div>
+
+		<div class="bx-def-border bx-def-margin-sec-top bx-def-margin-sec-bottom"></div>
+	</bx_if:proprietor>
+ 
+	<div class="bx-def-border bx-def-margin-sec-bottom"></div>
+
+	<div class="bx-twig-unit-line">
+		<span class="bx-def-font-grayed"><bx_text:_modzzz_professional_listed_in />:</span>&nbsp;<a href="__category_url__">__category_name__</a><bx_if:sub_category> <span class="bullet">&#8594;</span> <a href="__subcategory_url__">__subcategory_name__</a></bx_if:sub_category>
+	</div>
+
+	<div class="bx-def-border bx-def-margin-sec-top bx-def-margin-sec-bottom"></div>
+ 
+	<div class="bx-twig-unit-line">
+		<span class="bx-def-font-grayed"><bx_text:_modzzz_professional_located_at />:</span>&nbsp;__location__
+	</div>
+
+	<div class="bx-def-border bx-def-margin-sec-top bx-def-margin-sec-bottom"></div>
+ 
+	<div class="bx-twig-unit-line bx-def-margin-sec-top">__description__</div>
+</div>

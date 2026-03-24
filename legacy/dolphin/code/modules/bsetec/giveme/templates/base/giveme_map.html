@@ -1,0 +1,41 @@
+<div id="tabsholder">
+<div class="logo clsClearfix">
+ <h1 class="clsFloatLeft"><a target="_blank" href="http://www.bsetec.com"><img src="<bx_url_root />modules/bsetec/giveme/templates/base/images/logo.png"></a></h1>
+ <div class="themepanel clsFloatRight"><a target="_blank" href="http://www.bsetec.com">Theme-panel</a></div>
+ <div class="clear"></div>
+ </div>
+<div class="panelwhole">
+  <bx_injection:injection_bsetecgivemefootermenu />
+<div class="contents marginbot">
+<div class="tabscontent">
+<div class="templatesettings">
+<h2>Splash Map Content</h2>
+<div class="tabcontentinner">
+   <form method="post" action="<bx_url_root />modules/?r=giveme/administration/map" enctype="multipart/form-data" id="giveme_map">
+		<div class="socialshare">
+		<div class="formrowwhole">
+		<div class="formrow">
+		<div class="formrowcotent-left clsFloatLeft"> 
+		<label>Map content </label></div>
+		<div class="formrowcotent-right clsFloatLeft">	 
+		<textarea name="giveme_content" id="giveme_content" value="">__map__</textarea></div>
+		<div class="clear"></div>
+		      
+		</div>
+		</div>      
+		<div class="formrow">		
+		<div class="formrowcotent-left clsFloatLeft"><label>&nbsp; </label></div>
+		     <div class="formrowcotent-right clsFloatLeft"> 
+			 <input type="submit" name="save_map" value="save">
+		     <input type="submit" name="reset_map" value="Reset" onclick="return confirm('Are you sure to reset map data?')">
+		     </div>
+		     <div class="clear"></div>		
+		</div>	
+		</div>	 
+</form>	
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div>

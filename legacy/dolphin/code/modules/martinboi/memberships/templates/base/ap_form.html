@@ -1,0 +1,28 @@
+<div id="alertpay_form">
+	<form action="__action__" method="post">
+		<input type="hidden" name="ap_merchant" value="__ap_merchant__" />
+		<input type="hidden" name="ap_purchasetype" value="__auto__" />
+		<input type="hidden" name="ap_currency" value="__currency__" />
+		<input type="hidden" name="ap_itemname" value="__item_name__" />
+		<input type="hidden" name="ap_itemcode" value="__item_number__" />
+		<input type="hidden" name="ap_amount" value="__amount__" />
+		
+		<bx_if:auto>
+		<input type="hidden" name="ap_periodcount" value="0" />
+		<input type="hidden" name="ap_periodlength" value="__length__" />
+		<input type="hidden" name="ap_timeunit" value="__unit__" />
+		</bx_if:auto>
+		<bx_if:trial>
+		<input type="hidden" name="ap_trialamount" value="0" />
+		<input type="hidden" name="ap_trialperiodlength" value="__t_length__" />
+		<input type="hidden" name="ap_trialtimeunit" value="Day" />
+		</bx_if:trial>
+		<input type="hidden" name="ap_cancelurl" value="__cancel__" />
+		<input type="hidden" name="ap_returnurl" value="__return__" />
+		<input type="image" name="submit-ap" src="<bx_url_root />modules/harvest/memberships/images/alertpay.png" alt="Alertpay" value="Subscribe" />
+	</form>
+</div>
+
+
+
+

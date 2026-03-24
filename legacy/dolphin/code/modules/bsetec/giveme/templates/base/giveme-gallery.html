@@ -1,0 +1,41 @@
+
+</style>
+<bx_if:gallery>
+<div class="giving-gallery">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 giving-gallery-title">
+<h3><bx_text:_giveme_gallery /></h3>
+<div class="head-line"><div class="splash_line"></div></div>
+<p><bx_text:_giveme_gallery_content /></p>
+</div>
+</div>
+</div>
+<div class="giving-menu">
+<ul class="mix-filter">
+<li class="filter active" data-filter="all"><a href="javascript:void(0)" ><bx_text:_giveme_view_all /></a></li>
+<bx_repeat:category>
+<li  class="filter" data-filter="__Categories__"><a href="javascript:void(0)">__Categories__</a></li>
+</bx_repeat:category>
+</ul>
+</div>
+<div class="mix-grid thumbnails" >
+<bx_repeat:gallery>
+<div class="col-md-3 col-sm-6 col-xs-6 mix __category__"><a href=""><img data-original="__photo__" class="img-responsive lazy" /></a></div>
+</bx_repeat:gallery>
+
+</div>
+</div>
+
+</bx_if:gallery>
+
+<script>
+
+ $("img.lazy").lazyload({
+    effect : "fadeIn",
+   });
+$(function(){
+	$('.mix-grid').mixitup();
+$("img.lazy").show().lazyload();
+});
+</script>
