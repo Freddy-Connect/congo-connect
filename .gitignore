@@ -13,6 +13,8 @@
 /legacy/dolphin/code/cache_public/
 /legacy/dolphin/code/tmp/
 /legacy/dolphin/code/logs/
+legacy/dolphin/code/modules/deet/modules/error_log
+legacy/dolphin/code/**/error_log
 
 # Médias Dolphin (trop lourds)
 /legacy/dolphin/code/media/
