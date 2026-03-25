@@ -1,1 +1,0 @@
-DELETE FROM `sys_box_download` WHERE `title`='_bx_desktop_title';

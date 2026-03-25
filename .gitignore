@@ -21,6 +21,7 @@ legacy/dolphin/code/**/error_log
 /legacy/dolphin/code/images/
 
 /node_modules/
+legacy/
 
 # OS
 .DS_Store

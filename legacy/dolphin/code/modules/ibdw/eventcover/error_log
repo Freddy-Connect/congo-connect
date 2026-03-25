@@ -1,9 +1,0 @@
-[07-May-2018 08:27:13 America/New_York] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/midlands/public_html/modules/ibdw/eventcover/removeimage.php on line 26
-[07-May-2018 08:28:17 America/New_York] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/midlands/public_html/modules/ibdw/eventcover/removeimage.php on line 26
-[07-May-2018 08:36:14 America/New_York] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/midlands/public_html/modules/ibdw/eventcover/removeimage.php on line 26
-[07-May-2018 08:36:37 America/New_York] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/midlands/public_html/modules/ibdw/eventcover/removeimage.php on line 26
-[07-May-2018 09:36:26 America/New_York] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/midlands/public_html/modules/ibdw/eventcover/removeimage.php on line 26
-[07-May-2018 09:41:39 America/New_York] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/midlands/public_html/modules/ibdw/eventcover/removeimage.php on line 26
-[07-May-2018 10:09:44 America/New_York] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/midlands/public_html/modules/ibdw/eventcover/removeimage.php on line 26
-[07-May-2018 10:14:54 America/New_York] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/midlands/public_html/modules/ibdw/eventcover/removeimage.php on line 26
-[10-May-2018 02:42:34 America/New_York] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/midlands/public_html/modules/ibdw/eventcover/removeimage.php on line 26
